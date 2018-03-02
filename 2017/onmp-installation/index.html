@@ -13,7 +13,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 	<meta name="theme-color" content="">
-	<title>hexo主题casper使用教程 | 划船不用桨，靠浪</title>
+	<title>ONMP 安装教程 | 划船不用桨，靠浪</title>
 	<meta name="description" content="划船不用桨，靠浪" />
 	<meta name="generator" content="徐某的博客">
 	
@@ -85,8 +85,8 @@
     <div class="inner">
         <header class="post-full-header">
             <section class="post-full-meta">
-                <time  class="post-full-meta-date" datetime="2017-11-18T05:43:00.000Z" itemprop="datePublished">
-                    2017-11-18
+                <time  class="post-full-meta-date" datetime="2017-08-02T14:05:54.000Z" itemprop="datePublished">
+                    2017-08-2
                 </time>
                 
                 <span class="date-divider">/</span>
@@ -95,73 +95,56 @@
                 
                 
             </section>
-            <h1 class="post-full-title">hexo主题casper使用教程</h1>
+            <h1 class="post-full-title">ONMP 安装教程</h1>
         </header>
-        <article class="post-full ">
-            
-            <figure class="post-full-image" style="background-image: url(https://i.loli.net/2018/02/28/5a964332cd7d9.png)">
-            </figure>
+        <article class="post-full no-image">
             
             <section class="post-full-content">
                 <div id="lightgallery" class="markdown-body">
-                    <h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>这是本人移植自 <a href="https://github.com/TryGhost/Casper" target="_blank" rel="noopener">Ghost’s Casper theme</a> 的一个 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 主题。</p>
-<p>项目地址 <a href="https://github.com/xzhih/hexo-theme-casper" target="_blank" rel="noopener">https://github.com/xzhih/hexo-theme-casper</a></p>
-<p>DEMO <a href="https://xzhih.github.io/hexo-theme-casper/" target="_blank" rel="noopener">https://xzhih.github.io/hexo-theme-casper/</a></p>
-<h2 id="项目来由"><a href="#项目来由" class="headerlink" title="项目来由"></a>项目来由</h2><p>最近搞了个博客，用的是 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> ，发现了很多不错的主题，在寻找主题的过程中发现了另一个博客程序 <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a> 。它的新版默认主题很和我的胃口，但是在github上搜索一通后，发现只有老版本的被移植到了 hexo，于是想自己动手把它移植过来，看了官方文档后发现hexo的主题还是相当好制作的，用了几天弄好了。当然，功能还不是很完善。</p>
-<p>下面我就说一下主题的使用方法。</p>
-<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
-<li>文章封面图（在首页文章摘要上显示）</li>
-<li>文章特色图（在文章详细页面上置顶）</li>
-<li>自定义菜单 </li>
-<li>自定义 favicon, logo, 头部背景, 作者头像</li>
-<li>社交链接 ( 现在支持微博、推特、脸书 ) </li>
-<li>共三个插件（最新文章、分类、标签云）</li>
-<li>内容目录</li>
-<li>代码高亮 ( 使用 <a href="https://highlightjs.org" target="_blank" rel="noopener">highlight.js</a> 的 github 风格 )</li>
-<li>自适应网页设计</li>
-</ul>
-<h2 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h2><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><pre><code>git clone https://github.com/xzhih/hexo-theme-casper.git themes/hexo-casper
-</code></pre><h4 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h4><p>把hexo配置文件 <code>_config.yml</code> 里的 <code>theme</code> 字段内容改为 <code>hexo-casper</code> 。</p>
-<h4 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h4><p>建议先备份一下在执行下面的操作。</p>
-<pre><code>cd themes/casper 
-git pull
-</code></pre><h4 id="添加统一的文章模板参数"><a href="#添加统一的文章模板参数" class="headerlink" title="添加统一的文章模板参数"></a>添加统一的文章模板参数</h4><p>把下面的内容加入到 <code>scaffolds/post.md</code>, </p>
-<pre><code>cover_img:     # 在文章摘要上显示
-feature_img:   # 在文章详细页面上置顶
-</code></pre><h2 id="自定义配置"><a href="#自定义配置" class="headerlink" title="自定义配置"></a>自定义配置</h2><p>编辑 <code>themes/hexo-casper/_config.yml</code> 设置你想显示出来的特性</p>
-<pre><code class="yaml"># config
-rss:            # 链接
-favicon:        # 链接
-blog_logo:      # 链接
-header_image: //demo.ghost.io/content/images/2017/07/blog-cover.jpg 
-
-# 菜单
-menu:
-  About: /about
-  Archives: /archives
-  # 其他的可以按照上面的模板添加
-
-# 作者头像
-author_image:   # 链接
-
-# 社交链接
-social:
-  facebook: https://www.facebook.com
-  twitter: https://www.twitter.com
-  # You only can use that I have added, I will keep adding
-
-# 插件（显示在网站底部）
-widgets:
-  recent_posts: true
-  category: true
-  tagcloud: true
-  # 这是个简洁的主题，我认为3个就够了
-
-# 文章图片相册（点击图片可以放大）
-# https://github.com/sachinchoolur/lightgallery.js
-lightgallery: true
-</code></pre>
-<h2 id="源主题的版权声明和-License"><a href="#源主题的版权声明和-License" class="headerlink" title="源主题的版权声明和 License"></a>源主题的版权声明和 License</h2><p><a href="https://github.com/TryGhost/Casper/blob/master/LICENSE" target="_blank" rel="noopener">https://github.com/TryGhost/Casper/blob/master/LICENSE</a></p>
+                    <p>之前用过极路由1s，刷了恩山H大的固件，发现内置了 web 环境，没想到一个路由器都能跑的动 LNMP。我之前最极限的尝试就是在一个4刀3年的 sentris ovz 小鸡上跑过 WordPress ，那台小鸡 配置很低，只有 64M 的内存😂。不过 LNMP 流畅运行的因素挺多，PHP 吃 CPU、MySQL 吃 IO，不同的程序表现也不一样。那台极路由被我折腾了没两下就放弃了在上面搭网站，毕竟性能太低。</p>
+<p>后来我上车了斐讯K2P，拿回来花了一个晚上改好了32+512+usb，刷的是灯大的硬改固件，少了H大固件的里面的丰富拓展，感觉都不对了，k2p既然硬改了，那就好好玩它，之前不是嫌弃极1s的性能不足嘛，现在K2P比起它来说，性能强了一些，运存大、CPU强、还是USB3.0，那就写个一键安装web环境吧，于是就有了这个项目。</p>
+<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>ONMP 是一个 web 环境快速安装脚本，适用于安装了 <a href="http://entware.net/about/" target="_blank" rel="noopener">Entware</a> 的路由器，目前已经在 Padavan、LEDE（openwrt）、梅林上测试成功。</p>
+<p>和 LNMP 有什么不同？<br>LNMP 代表的是：Linux 系统下 Nginx/MySQL/PHP 这种网站服务器架构，而为了区分路由器环境的不同，使用的 ONMP 这个命名，本质还是 LNMP。</p>
+<p>项目地址：<a href="https://github.com/xzhih/ONMP" target="_blank" rel="noopener">https://github.com/xzhih/ONMP</a></p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><p>此脚本不仅自动化安装 web 环境，还内置了一些好用的网站程序一键免配置快速安装。</p>
+<pre><code>ONMP内置了以下程序的一键安装：
+(1) phpMyAdmin（数据库管理工具）
+(2) WordPress（使用最广泛的CMS）
+(3) Owncloud（经典的私有云）
+(4) Nextcloud（Owncloud团队的新作，美观强大的个人云盘）
+(5) h5ai（优秀的文件目录）
+(6) Lychee（一个很好看，易于使用的Web相册）
+(7) Kodexplorer（可道云aka芒果云在线文档管理器）
+(8) Netdata（详细得惊人的服务器监控面板）
+(9) Typecho (流畅的轻量级开源博客程序)
+</code></pre><h2 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h2><h3 id="1-安装-Entware"><a href="#1-安装-Entware" class="headerlink" title="1. 安装 Entware"></a>1. 安装 Entware</h3><p>Entware-ng是一个适用于嵌入式系统的软件包库，使用opkg包管理系统进行管理，现在在官方的源上已经有超过2000个软件包了，可以说是非常的丰富</p>
+<p>不同的固件，安装方式都不一样，请认准安装方式（自己是什么固件总该懂得吧😂）</p>
+<p><em>Padavan：</em></p>
+<p><em>LEDE(openwrt)：</em><a href="https://zhih.me/2017/LEDE-entware">https://zhih.me/2017/LEDE-entware</a></p>
+<p><em>梅林：</em><a href="https://zhih.me/2017/Merlin-entware">https://zhih.me/2017/Merlin-entware</a></p>
+<h3 id="2-安装onmp"><a href="#2-安装onmp" class="headerlink" title="2. 安装onmp"></a>2. 安装onmp</h3><p>伪一键命令，复制-&gt;粘贴-&gt;回车</p>
+<pre><code> cd /opt &amp;&amp; opkg install wget unzip &amp;&amp; wget --no-check-certificate -O /opt/onmp.zip https://github.com/xzhih/ONMP/archive/master.zip &amp;&amp; unzip /opt/onmp.zip &amp;&amp; cd /opt/ONMP-master &amp;&amp; chmod +x ./onmp_intall.sh &amp;&amp; ./onmp_intall.sh
+</code></pre><p>一长串的复制如果出错，可以按照以下给出的命令，一步步进行安装</p>
+<pre><code> cd /opt &amp;&amp; opkg install wget unzip # 进入 entware 挂载目录
+# 下载软件包
+wget --no-check-certificate -O /opt/onmp.zip https://github.com/xzhih/ONMP/archive/master.zip 
+unzip /opt/onmp.zip # 解压
+cd /opt/ONMP-master 
+chmod +x ./onmp_intall.sh 
+./onmp_intall.sh # 运行
+</code></pre><p>要是正常运行到脚本，会出现下面的情景，选1安装即可</p>
+<p><img src="https://i.loli.net/2018/03/03/5a99ac096c6a1.png" alt="安装"></p>
+<p>正常安装中要是出现错误，会有错误信息，根据提示操作，目前得到的大多数反馈都是网络问题，因为 entware 的源在国外，而且他们的管理者说之前受到了来自亚洲的DDOS，所以对这边限流了，速度较慢。遇到这种情况，可以去看看剧，没准回来的时候就好了😄</p>
+<p>安装成功得到的结果是这样的</p>
+<p><img src="https://i.loli.net/2018/03/03/5a99aeda756ac.png" alt="安装成功"></p>
+<p>如果你也是和上图一样，那么恭喜你，成功的安装上了 ONMP，你可以尽情的玩耍了</p>
+<h2 id="ONMP-详细使用教程"><a href="#ONMP-详细使用教程" class="headerlink" title="ONMP 详细使用教程"></a>ONMP 详细使用教程</h2><p><strong>基本命令：</strong></p>
+<pre><code>管理：onmp open
+启动、停止、重启：onmp start|stop|restart
+查看网站列表：onmp list
+</code></pre><p><strong>设置数据库密码：</strong></p>
+<p>输入 <code>onmp open</code> 后选择3，会提示 <code>Enter password:</code> ，这个时候要输入当前数据库的密码，比如我初始设置的数据库密码是123456，回车后要是密码正确，会提示输入你要设置的新密码，回车后会提示再次输入确认。也就是，一次旧密码，两次新密码。</p>
+<p>这个位置很简单，但是很多人都说改不了密码，其实是没看提示，没输入旧密码，所以我写清楚一些。</p>
 
                 </div>
             </section>
@@ -171,14 +154,14 @@ lightgallery: true
 <nav class="pagination">
     
     
-    <a class="prev-post" href="/2018/format-Upan-partition/">
-        ← 如何在路由器上格式化U盘、硬盘
+    <a class="prev-post" href="/2017/Merlin-entware/">
+        ← 在梅林上使用Entware
     </a>
     
     <span class="prev-next-post">•</span>
     
-    <a class="next-post" href="/2017/LEDE-entware/">
-        在LEDE上使用Entware →
+    <a class="next-post" href="/2017/about/">
+        关于 →
     </a>
     
     
@@ -200,7 +183,7 @@ lightgallery: true
 <div class="toc-main" style="right: -100%">
     <div class="post-toc">
         <span>TOC</span>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简述"><span class="toc-text">简述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目来由"><span class="toc-text">项目来由</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#特性"><span class="toc-text">特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装方法"><span class="toc-text">安装方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#下载"><span class="toc-text">下载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#激活"><span class="toc-text">激活</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#升级"><span class="toc-text">升级</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#添加统一的文章模板参数"><span class="toc-text">添加统一的文章模板参数</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#自定义配置"><span class="toc-text">自定义配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#源主题的版权声明和-License"><span class="toc-text">源主题的版权声明和 License</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简述"><span class="toc-text">简述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#特性"><span class="toc-text">特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装教程"><span class="toc-text">安装教程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-安装-Entware"><span class="toc-text">1. 安装 Entware</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-安装onmp"><span class="toc-text">2. 安装onmp</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ONMP-详细使用教程"><span class="toc-text">ONMP 详细使用教程</span></a></li></ol>
     </div>
 </div>
 

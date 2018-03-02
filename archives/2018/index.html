@@ -95,14 +95,10 @@
 	<div class="inner">
 		<div class="post-feed">
 			
-			<article class="post-card post ">
-				
-				<a class="post-card-image-link" href="/2017/hexo-casper-usage/">
-					<div class="post-card-image" style="background-image: url(https://i.loli.net/2018/02/28/5a964280c7ff9.png)"></div>
-				</a>
+			<article class="post-card post  no-image ">
 				
 				<div class="post-card-content">
-					<a class="post-card-content-link" href="/2017/hexo-casper-usage/">
+					<a class="post-card-content-link" href="/2018/format-Upan-partition/">
 						<header class="post-card-header">
 							<span class="post-card-tags">
 								
@@ -110,183 +106,31 @@
 								教程
 								| 
 								
-								<time datetime="2017-11-18T05:43:00.000Z" itemprop="datePublished">
-									2017-11-18
+								<time datetime="2018-03-02T20:35:19.000Z" itemprop="datePublished">
+									2018-03-03
 								</time>
 							</span>
-							<h2 class="post-card-title">hexo主题casper使用教程</h2>
+							<h2 class="post-card-title">如何在路由器上格式化U盘、硬盘</h2>
 						</header>
 						<section class="post-card-excerpt">
 							<p>
 								
 								
 								
-								简述这是本人移植自 Ghost’s Casper theme 的一个 Hexo 主题。
-项目地址 https://github.com/xzhih/hexo-theme-casper
-DEMO htt
+								
+								
+								本教程适用于梅林、padavan、LEDE（openwrt）等固件
+以下具体方法都基于ext4，NTFS相关错误不做回答
+使用ssh连接路由器，把U盘插到路由器上
+我们需要在命令行进行以下4步操作：
+安装fdisk一般梅林、Padavan固件都会自带的，不用安装，如果没有则按照下面给出的命令
+opkg update
+opkg install fdisk
+# 输出Configuring fdisk. 并且没有错误
+# fdisk就安装好了
+查看你的设备fdisk -l 
+# 这
 								...
-							</p>
-						</section>
-					</a>
-					<footer class="post-card-meta">
-						
-						<img class="author-profile-image" src="https://i.loli.net/2018/02/28/5a964456a19f1.png" alt="徐某" />
-						
-						<span class="post-card-author">徐某</span>
-					</footer>
-				</div>
-			</article>
-			
-			<article class="post-card post  no-image ">
-				
-				<div class="post-card-content">
-					<a class="post-card-content-link" href="/2017/LEDE-entware/">
-						<header class="post-card-header">
-							<span class="post-card-tags">
-								
-								
-								教程
-								| 
-								
-								<time datetime="2017-08-03T18:43:39.000Z" itemprop="datePublished">
-									2017-08-04
-								</time>
-							</span>
-							<h2 class="post-card-title">在LEDE上使用Entware</h2>
-						</header>
-						<section class="post-card-excerpt">
-							<p>
-								
-								
-								
-								
-								
-								Entware-ng是一个适用于嵌入式系统的软件包库，使用opkg包管理系统进行管理，现在在官方的源上已经有超过2000个软件包了，可以说是非常的丰富
-官方地址：Entware-ng
-U盘格式化我们的设备本身的储存较少，而且如果哪天崩了，数据还有找不回的风险，所以我们一般把软件包和程序安装到U盘之类的外置设备上，所以需要对它进行格式化，NTFS格式我个人不推荐使用
-格式化教程：如何格式化U盘
-U盘挂载分区、格式都没问题之后，开始挂载
-mkdir /mnt/onmp
-# 挂载方
-								...
-							</p>
-						</section>
-					</a>
-					<footer class="post-card-meta">
-						
-						<img class="author-profile-image" src="https://i.loli.net/2018/02/28/5a964456a19f1.png" alt="徐某" />
-						
-						<span class="post-card-author">徐某</span>
-					</footer>
-				</div>
-			</article>
-			
-			<article class="post-card post  no-image ">
-				
-				<div class="post-card-content">
-					<a class="post-card-content-link" href="/2017/Merlin-entware/">
-						<header class="post-card-header">
-							<span class="post-card-tags">
-								
-								
-								教程
-								| 
-								
-								<time datetime="2017-08-02T18:43:56.000Z" itemprop="datePublished">
-									2017-08-03
-								</time>
-							</span>
-							<h2 class="post-card-title">在梅林上使用Entware</h2>
-						</header>
-						<section class="post-card-excerpt">
-							<p>
-								
-								
-								
-								
-								
-								Entware-ng是一个适用于嵌入式系统的软件包库，使用opkg包管理系统进行管理，现在在官方的源上已经有超过2000个软件包了，可以说是非常的丰富
-官方地址：Entware-ng
-U盘格式化我们的设备本身的储存较少，而且如果哪天崩了，数据还有找不回的风险，所以我们一般把软件包和程序安装到U盘之类的外置设备上，所以需要对它格式化为ext4，NTFS格式不推荐使用
-格式化教程：如何格式化U盘
-U盘挂载分区、格式都没问题之后，开始挂载
-mkdir /mnt/sda1
-mount
-								...
-							</p>
-						</section>
-					</a>
-					<footer class="post-card-meta">
-						
-						<img class="author-profile-image" src="https://i.loli.net/2018/02/28/5a964456a19f1.png" alt="徐某" />
-						
-						<span class="post-card-author">徐某</span>
-					</footer>
-				</div>
-			</article>
-			
-			<article class="post-card post  no-image ">
-				
-				<div class="post-card-content">
-					<a class="post-card-content-link" href="/2017/onmp-installation/">
-						<header class="post-card-header">
-							<span class="post-card-tags">
-								
-								
-								教程
-								| 
-								
-								<time datetime="2017-08-02T14:05:54.000Z" itemprop="datePublished">
-									2017-08-02
-								</time>
-							</span>
-							<h2 class="post-card-title">ONMP 安装教程</h2>
-						</header>
-						<section class="post-card-excerpt">
-							<p>
-								
-								
-								
-								
-								
-								之前用过极路由1s，刷了恩山H大的固件，发现内置了 web 环境，没想到一个路由器都能跑的动 LNMP。我之前最极限的尝试就是在一个4刀3年的 sentris ovz 小鸡上跑过 WordPress ，那台小鸡 配置很低，只有 64M 的内存😂。不过 LNMP 流畅运行的因素挺多，PHP 吃 CPU、MySQL 吃 IO，不同的程序表现也不一样。那台极路由被我折腾了没两下就放弃了在上面搭网站，毕竟性能太低。
-后来我上车了斐讯K2P，拿回来花了一个晚上改好了32+512+us
-								...
-							</p>
-						</section>
-					</a>
-					<footer class="post-card-meta">
-						
-						<img class="author-profile-image" src="https://i.loli.net/2018/02/28/5a964456a19f1.png" alt="徐某" />
-						
-						<span class="post-card-author">徐某</span>
-					</footer>
-				</div>
-			</article>
-			
-			<article class="post-card post  no-image ">
-				
-				<div class="post-card-content">
-					<a class="post-card-content-link" href="/2017/about/">
-						<header class="post-card-header">
-							<span class="post-card-tags">
-								
-								<time datetime="2017-08-01T15:09:38.000Z" itemprop="datePublished">
-									2017-08-01
-								</time>
-							</span>
-							<h2 class="post-card-title">关于</h2>
-						</header>
-						<section class="post-card-excerpt">
-							<p>
-								
-								
-								
-								
-								
-								喜欢新老事物，爱折腾，关注科技、数码，不信中医。
-
-								
 							</p>
 						</section>
 					</a>

@@ -129,6 +129,8 @@ body,
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; 
     font-size: 1.7rem;
 }
 
@@ -181,7 +183,8 @@ body,
 
 .post-toc>ol, 
 .post-toc>ul, 
-.post-toc>li {
+.post-toc>li,
+.toc-child {
     list-style: none;
 }
 
@@ -203,7 +206,8 @@ body,
 .markdown-body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5;
-    word-wrap: break-word
+    word-wrap: break-word;
+    font-size: 20px;
 }
 
 .markdown-body::before {

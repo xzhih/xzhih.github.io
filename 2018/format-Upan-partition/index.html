@@ -13,7 +13,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 	<meta name="theme-color" content="">
-	<title>hexo主题casper使用教程 | 划船不用桨，靠浪</title>
+	<title>如何在路由器上格式化U盘、硬盘 | 划船不用桨，靠浪</title>
 	<meta name="description" content="划船不用桨，靠浪" />
 	<meta name="generator" content="徐某的博客">
 	
@@ -85,8 +85,8 @@
     <div class="inner">
         <header class="post-full-header">
             <section class="post-full-meta">
-                <time  class="post-full-meta-date" datetime="2017-11-18T05:43:00.000Z" itemprop="datePublished">
-                    2017-11-18
+                <time  class="post-full-meta-date" datetime="2018-03-02T20:35:19.000Z" itemprop="datePublished">
+                    2018-03-3
                 </time>
                 
                 <span class="date-divider">/</span>
@@ -95,73 +95,75 @@
                 
                 
             </section>
-            <h1 class="post-full-title">hexo主题casper使用教程</h1>
+            <h1 class="post-full-title">如何在路由器上格式化U盘、硬盘</h1>
         </header>
-        <article class="post-full ">
-            
-            <figure class="post-full-image" style="background-image: url(https://i.loli.net/2018/02/28/5a964332cd7d9.png)">
-            </figure>
+        <article class="post-full no-image">
             
             <section class="post-full-content">
                 <div id="lightgallery" class="markdown-body">
-                    <h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>这是本人移植自 <a href="https://github.com/TryGhost/Casper" target="_blank" rel="noopener">Ghost’s Casper theme</a> 的一个 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 主题。</p>
-<p>项目地址 <a href="https://github.com/xzhih/hexo-theme-casper" target="_blank" rel="noopener">https://github.com/xzhih/hexo-theme-casper</a></p>
-<p>DEMO <a href="https://xzhih.github.io/hexo-theme-casper/" target="_blank" rel="noopener">https://xzhih.github.io/hexo-theme-casper/</a></p>
-<h2 id="项目来由"><a href="#项目来由" class="headerlink" title="项目来由"></a>项目来由</h2><p>最近搞了个博客，用的是 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> ，发现了很多不错的主题，在寻找主题的过程中发现了另一个博客程序 <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a> 。它的新版默认主题很和我的胃口，但是在github上搜索一通后，发现只有老版本的被移植到了 hexo，于是想自己动手把它移植过来，看了官方文档后发现hexo的主题还是相当好制作的，用了几天弄好了。当然，功能还不是很完善。</p>
-<p>下面我就说一下主题的使用方法。</p>
-<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
-<li>文章封面图（在首页文章摘要上显示）</li>
-<li>文章特色图（在文章详细页面上置顶）</li>
-<li>自定义菜单 </li>
-<li>自定义 favicon, logo, 头部背景, 作者头像</li>
-<li>社交链接 ( 现在支持微博、推特、脸书 ) </li>
-<li>共三个插件（最新文章、分类、标签云）</li>
-<li>内容目录</li>
-<li>代码高亮 ( 使用 <a href="https://highlightjs.org" target="_blank" rel="noopener">highlight.js</a> 的 github 风格 )</li>
-<li>自适应网页设计</li>
-</ul>
-<h2 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h2><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><pre><code>git clone https://github.com/xzhih/hexo-theme-casper.git themes/hexo-casper
-</code></pre><h4 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h4><p>把hexo配置文件 <code>_config.yml</code> 里的 <code>theme</code> 字段内容改为 <code>hexo-casper</code> 。</p>
-<h4 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h4><p>建议先备份一下在执行下面的操作。</p>
-<pre><code>cd themes/casper 
-git pull
-</code></pre><h4 id="添加统一的文章模板参数"><a href="#添加统一的文章模板参数" class="headerlink" title="添加统一的文章模板参数"></a>添加统一的文章模板参数</h4><p>把下面的内容加入到 <code>scaffolds/post.md</code>, </p>
-<pre><code>cover_img:     # 在文章摘要上显示
-feature_img:   # 在文章详细页面上置顶
-</code></pre><h2 id="自定义配置"><a href="#自定义配置" class="headerlink" title="自定义配置"></a>自定义配置</h2><p>编辑 <code>themes/hexo-casper/_config.yml</code> 设置你想显示出来的特性</p>
-<pre><code class="yaml"># config
-rss:            # 链接
-favicon:        # 链接
-blog_logo:      # 链接
-header_image: //demo.ghost.io/content/images/2017/07/blog-cover.jpg 
-
-# 菜单
-menu:
-  About: /about
-  Archives: /archives
-  # 其他的可以按照上面的模板添加
-
-# 作者头像
-author_image:   # 链接
-
-# 社交链接
-social:
-  facebook: https://www.facebook.com
-  twitter: https://www.twitter.com
-  # You only can use that I have added, I will keep adding
-
-# 插件（显示在网站底部）
-widgets:
-  recent_posts: true
-  category: true
-  tagcloud: true
-  # 这是个简洁的主题，我认为3个就够了
-
-# 文章图片相册（点击图片可以放大）
-# https://github.com/sachinchoolur/lightgallery.js
-lightgallery: true
+                    <p>本教程适用于梅林、padavan、LEDE（openwrt）等固件</p>
+<p>以下具体方法都基于ext4，NTFS相关错误不做回答</p>
+<p>使用ssh连接路由器，把U盘插到路由器上</p>
+<p>我们需要在命令行进行以下4步操作：</p>
+<h2 id="安装fdisk"><a href="#安装fdisk" class="headerlink" title="安装fdisk"></a>安装fdisk</h2><p>一般梅林、Padavan固件都会自带的，不用安装，如果没有则按照下面给出的命令</p>
+<pre><code>opkg update
+opkg install fdisk
+# 输出Configuring fdisk. 并且没有错误
+# fdisk就安装好了
+</code></pre><h2 id="查看你的设备"><a href="#查看你的设备" class="headerlink" title="查看你的设备"></a>查看你的设备</h2><pre><code class="bash">fdisk -l 
+# 这里先输出系统分区之类的不用管，外置设备一般在最后
+Disk /dev/sda: 30.7 GB, 30752000000 bytes
+64 heads, 32 sectors/track, 29327 cylinders
+Units = cylinders of 2048 * 512 = 1048576 bytes
+Device Boot      Start         End      Blocks  Id System
+/dev/sda1               2       29327    30029824  83 Linux
 </code></pre>
-<h2 id="源主题的版权声明和-License"><a href="#源主题的版权声明和-License" class="headerlink" title="源主题的版权声明和 License"></a>源主题的版权声明和 License</h2><p><a href="https://github.com/TryGhost/Casper/blob/master/LICENSE" target="_blank" rel="noopener">https://github.com/TryGhost/Casper/blob/master/LICENSE</a></p>
+<p>上面的信息注意看到和你的存储大小一样的设备，我的是<code>/dev/sda</code>，在它里面有个<code>/dev/sda1</code>的分区</p>
+<h2 id="删除分区、新建分区"><a href="#删除分区、新建分区" class="headerlink" title="删除分区、新建分区"></a>删除分区、新建分区</h2><pre><code>fdisk /dev/sda # 这是你的设备別打成分区
+
+Welcome to fdisk (util-linux 2.29.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Command (m for help): d # 输入d回车，我只有一个分区，它自动选择了，如果你有多个分区，可以多次使用d
+Selected partition 1
+Partition 1 has been deleted.
+
+Command (m for help): n # 输入n会车，创建分区
+Partition type
+p   primary (0 primary, 0 extended, 4 free)
+e   extended (container for logical partitions)
+
+Select (default p): p # 选择p
+Partition number (1-4, default 1): # 回车
+First sector (2048-2065023, default 2048): #回车
+Last sector, +sectors or +size{K,M,G,T,P} (2048-2065023, default 2065023): # 回车
+Created a new partition 1 of type &#39;Linux&#39; and of size 1007.3 MiB.
+
+Command (m for help): w # 输入w回车，保存并退出
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+</code></pre><p>经过以上的操作，你可以用<code>fdisk -l</code>命令查看U盘上是否只有一个Linux分区</p>
+<pre><code class="bash">fdisk -l 
+# 找到你的设备 可以看到ID为83就对了
+Disk /dev/sda: 30.7 GB, 30752000000 bytes
+64 heads, 32 sectors/track, 29327 cylinders
+Units = cylinders of 2048 * 512 = 1048576 bytes
+Device Boot      Start         End      Blocks  Id System
+/dev/sda1               2       29327    30029824  83 Linux
+</code></pre>
+<h2 id="格式化分区"><a href="#格式化分区" class="headerlink" title="格式化分区"></a>格式化分区</h2><p>分区已经有了，现在开始格式化，其实现在的分区已经是ext4格式的了，不过我们还是对它进行一下格式化，算是熟悉一下命令，以后直接这样格式化吧</p>
+<pre><code class="bash">mkfs.ext4 /dev/sda1 
+# 如果你的硬盘比较大，256G以上的话，是这个命令：mkfs.ext4 -T largefile /dev/sda1
+mke2fs 1.43.3 (04-Sep-2016)
+/dev/sda1 contains a ext4 file system labelled &#39;ONMP&#39;
+last mounted on Sun Nov 12 09:21:22 2017
+Proceed anyway? (y,n) y # 输入y回车
+
+umount /dev/sda1 # 如果出错，可能是因为已经被挂载了，先执行这个卸载
+</code></pre>
+<p>这样，U盘就被格式化完了</p>
 
                 </div>
             </section>
@@ -171,14 +173,10 @@ lightgallery: true
 <nav class="pagination">
     
     
-    <a class="prev-post" href="/2018/format-Upan-partition/">
-        ← 如何在路由器上格式化U盘、硬盘
-    </a>
-    
     <span class="prev-next-post">•</span>
     
-    <a class="next-post" href="/2017/LEDE-entware/">
-        在LEDE上使用Entware →
+    <a class="next-post" href="/2017/hexo-casper-usage/">
+        hexo主题casper使用教程 →
     </a>
     
     
@@ -200,7 +198,7 @@ lightgallery: true
 <div class="toc-main" style="right: -100%">
     <div class="post-toc">
         <span>TOC</span>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简述"><span class="toc-text">简述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目来由"><span class="toc-text">项目来由</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#特性"><span class="toc-text">特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装方法"><span class="toc-text">安装方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#下载"><span class="toc-text">下载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#激活"><span class="toc-text">激活</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#升级"><span class="toc-text">升级</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#添加统一的文章模板参数"><span class="toc-text">添加统一的文章模板参数</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#自定义配置"><span class="toc-text">自定义配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#源主题的版权声明和-License"><span class="toc-text">源主题的版权声明和 License</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装fdisk"><span class="toc-text">安装fdisk</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看你的设备"><span class="toc-text">查看你的设备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#删除分区、新建分区"><span class="toc-text">删除分区、新建分区</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#格式化分区"><span class="toc-text">格式化分区</span></a></li></ol>
     </div>
 </div>
 
