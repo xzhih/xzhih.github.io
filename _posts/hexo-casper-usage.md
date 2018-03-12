@@ -37,8 +37,8 @@ DEMO [https://xzhih.github.io/hexo-theme-casper/](https://xzhih.github.io/hexo-t
 
 #### 下载
 
-```
-git clone https://github.com/xzhih/hexo-theme-casper.git themes/hexo-casper
+```shell
+$ git clone https://github.com/xzhih/hexo-theme-casper.git themes/hexo-casper
 ```
 
 #### 激活
@@ -49,9 +49,9 @@ git clone https://github.com/xzhih/hexo-theme-casper.git themes/hexo-casper
 
 建议先备份一下在执行下面的操作。
 
-```
-cd themes/casper 
-git pull
+```shell
+$ cd themes/casper 
+$ git pull
 ```
 
 #### 添加统一的文章模板参数
@@ -59,7 +59,7 @@ git pull
 把下面的内容加入到 `scaffolds/post.md`, 
 
 ```
-cover_img:     # 在文章摘要上显示
+cover_img:     # 在文章摘要上显示
 feature_img:   # 在文章详细页面上置顶
 ```
 

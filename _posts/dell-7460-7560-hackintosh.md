@@ -3,7 +3,7 @@ title: 戴尔燃7000黑苹果EFI
 date: 2017-12-03 19:42:54
 tags: hackintosh
 categories: 教程
-cover_img:
+cover_img: https://i.loli.net/2018/03/12/5aa6a1f0b4de8.jpg
 feature_img:
 ---
 
@@ -45,7 +45,11 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 日常使用：安装好系统后，使用 `clover configurator` 挂载MacOS所在硬盘的ESP分区，把EFI拷贝进去，重启按F2进入BIOS设置此引导为首选，保存重启即可
 
-**2. 一键开启HIDPI并注入EDID**
+**2. 声卡、耳机**
+
+声卡驱动都已经有了，只需要进入 `黑果小兵的ALCPlugFix` 这个文件夹，双击 `install...` 运行即可，可以解决唤醒无声、耳机无声、耳机杂音等问题
+
+**3. 一键开启HIDPI并注入EDID**
 
 此一键命令可开启接近原生的HIDPI设置，不需要RDM软件即可在系统显示器设置中设置
 
@@ -55,7 +59,7 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ![设置.png](https://i.loli.net/2017/10/26/59f199e85deb7.png)
 
-**3. 网卡驱动**
+**4. 网卡驱动**
 
 机器自带的无线网卡无法驱动，只能购买可驱动的网卡更换，推荐购买 `dw1560/dw1830` 这两款网卡，需要注意的是燃系列有个超燃版也就是没有独显的版本，它因为主板结构不同不能安装dw1830，另外dw1830是3天线网卡，在购买时可向商家索要一根 `7~15cm` 的天线，安装时将第三根天线放置在HDD下的开槽处防止金属屏蔽信号
 
@@ -89,10 +93,16 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ## Change log
 
+2018-03-12
+
+- 常规更新clover
+- 更新 SSDT hotpath 
+- 支持 MacOS 10.13.4 beta4
+
 2017-12-9
 
 - 常规更新clover
-- 支持13.2
+- 支持 MacOS 10.13.2
 
 2017-11-24
 

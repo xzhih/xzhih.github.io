@@ -57,20 +57,27 @@ Entware-ng是一个适用于嵌入式系统的软件包库，使用opkg包管理
 
 伪一键命令，复制->粘贴->回车
 
-```
- cd /opt && opkg install wget unzip && wget --no-check-certificate -O /opt/onmp.zip https://github.com/xzhih/ONMP/archive/master.zip && unzip /opt/onmp.zip && cd /opt/ONMP-master && chmod +x ./onmp_intall.sh && ./onmp_intall.sh
+```shell
+ $ cd /opt && opkg install wget unzip && wget --no-check-certificate -O /opt/onmp.zip https://github.com/xzhih/ONMP/archive/master.zip && unzip /opt/onmp.zip && cd /opt/ONMP-master && chmod +x ./onmp_intall.sh && ./onmp_intall.sh
 ```
 
 一长串的复制如果出错，可以按照以下给出的命令，一步步进行安装
 
-```
- cd /opt && opkg install wget unzip # 进入 entware 挂载目录
+```shell
+# 进入 entware 挂载目录
+ $ cd /opt && opkg install wget unzip 
+
 # 下载软件包
-wget --no-check-certificate -O /opt/onmp.zip https://github.com/xzhih/ONMP/archive/master.zip 
-unzip /opt/onmp.zip # 解压
-cd /opt/ONMP-master 
-chmod +x ./onmp_intall.sh 
-./onmp_intall.sh # 运行
+$ wget --no-check-certificate -O /opt/onmp.zip https://github.com/xzhih/ONMP/archive/master.zip 
+
+# 解压
+$ unzip /opt/onmp.zip
+
+$ cd /opt/ONMP-master
+
+# 运行
+$ chmod +x ./onmp_intall.sh 
+$ ./onmp_intall.sh
 ```
 
 要是正常运行到脚本，会出现下面的情景，选1安装即可

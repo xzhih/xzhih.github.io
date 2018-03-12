@@ -21,17 +21,17 @@ feature_img:
 
 一般梅林、Padavan固件都会自带的，不用安装，如果没有则按照下面给出的命令
 
-```
-opkg update
-opkg install fdisk
+```shell
+$ opkg update
+$ opkg install fdisk
 # 输出Configuring fdisk. 并且没有错误
 # fdisk就安装好了
 ```
 
 ## 查看你的设备
 
-```bash
-fdisk -l 
+```shell
+$ fdisk -l 
 # 这里先输出系统分区之类的不用管，外置设备一般在最后
 Disk /dev/sda: 30.7 GB, 30752000000 bytes
 64 heads, 32 sectors/track, 29327 cylinders
@@ -45,13 +45,14 @@ Device Boot      Start         End      Blocks  Id System
 ## 删除分区、新建分区
 
 ```
-fdisk /dev/sda # 这是你的设备別打成分区
+$ fdisk /dev/sda # 这是你的设备別打成分区
 
 Welcome to fdisk (util-linux 2.29.2).
 Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command.
 
-Command (m for help): d # 输入d回车，我只有一个分区，它自动选择了，如果你有多个分区，可以多次使用d
+Command (m for help): d 
+# 输入d回车，我只有一个分区，它自动选择了，如果你有多个分区，可以多次使用d
 Selected partition 1
 Partition 1 has been deleted.
 
@@ -74,8 +75,8 @@ Syncing disks.
 
 经过以上的操作，你可以用`fdisk -l`命令查看U盘上是否只有一个Linux分区
 
-```bash
-fdisk -l 
+```shell
+$ fdisk -l 
 # 找到你的设备 可以看到ID为83就对了
 Disk /dev/sda: 30.7 GB, 30752000000 bytes
 64 heads, 32 sectors/track, 29327 cylinders
@@ -88,15 +89,15 @@ Device Boot      Start         End      Blocks  Id System
 
 分区已经有了，现在开始格式化，其实现在的分区已经是ext4格式的了，不过我们还是对它进行一下格式化，算是熟悉一下命令，以后直接这样格式化吧
 
-```bash 
-mkfs.ext4 /dev/sda1 
+```shell
+$ mkfs.ext4 /dev/sda1 
 # 如果你的硬盘比较大，256G以上的话，是这个命令：mkfs.ext4 -T largefile /dev/sda1
 mke2fs 1.43.3 (04-Sep-2016)
 /dev/sda1 contains a ext4 file system labelled 'ONMP'
 last mounted on Sun Nov 12 09:21:22 2017
 Proceed anyway? (y,n) y # 输入y回车
 
-umount /dev/sda1 # 如果出错，可能是因为已经被挂载了，先执行这个卸载
+$ umount /dev/sda1 # 如果出错，可能是因为已经被挂载了，先执行这个卸载
 ```
 
 这样，U盘就被格式化完了
