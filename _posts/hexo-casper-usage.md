@@ -63,6 +63,10 @@ cover_img:     # 在文章摘要上显示
 feature_img:   # 在文章详细页面上置顶
 ```
 
+#### valine 评论系统
+
+使用方法请到他的[官网](https://valine.js.org)查看，并结合下面的配置文件详细添加appID和appKey
+
 ## 自定义配置
 
 编辑 `themes/hexo-casper/_config.yml` 设置你想显示出来的特性
@@ -99,6 +103,18 @@ widgets:
 # 文章图片相册（点击图片可以放大）
 # https://github.com/sachinchoolur/lightgallery.js
 lightgallery: true
+
+# valine 评论系统
+# https://valine.js.org
+comment: false
+valine:
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki 
+  verify: false # Verification code
+  appId: # your leancloud application appid
+  appKey: # your leancloud application appkey
+  placeholder: Just go go # comment box placeholder
+  avatar: mm # gravatar style
+  pageSize: 10 # pagination size
 
 ```
 

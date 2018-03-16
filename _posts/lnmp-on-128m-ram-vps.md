@@ -32,7 +32,7 @@ $ apt-get update && apt-get upgrade
 $ apt-get install curl wget
 ```
 
-1. 添加软件源
+**1. 添加软件源**
 
 系统是 debian8，自带源内没有 PHP7，所以添加一个 [dotdeb](http://www.dotdeb.org) 源，它里面有 debian7、debian8 的各种软件包，同时他们也提供世界各地的[镜像](https://www.dotdeb.org/mirrors/)。
 
@@ -49,7 +49,7 @@ deb-src http://mirrors.asnet.am/dotdeb/ jessie all
 
 如果你直接从官网复制过来，或者是你的系统是 debian7，记得修改网址后面的版本名。
 
-2. 安装 GnuPG 密匙
+**2. 安装 GnuPG 密匙**
 
 GPG主要是实现官方发布的包的签名。
 
@@ -58,13 +58,13 @@ $ wget https://www.dotdeb.org/dotdeb.gpg
 $ sudo apt-key add dotdeb.gpg
 ```
 
-3. 源添加完毕
+**3. 源添加完毕**
 
 运行 `apt-get updeta && apt-get upgrade`，现在你应该能从 dotdeb 上获取软件了。
 
 ## 二、软件包
 
-1. Nginx
+**1. Nginx**
 
 ```
 $ apt-get install nginx -y
@@ -72,7 +72,7 @@ $ apt-get install nginx -y
 
 打开浏览器，输入你的 IP，能显示 `Welcome to nginx!`，就说明安装成功了。
 
-2. PHP7
+**2. PHP7**
 
 ```
 $ apt-get install php7.0 php7.0-cgi php7.0-cli php7.0-fpm php7.0-mysql php7.0-odbc php7.0-opcache -y
@@ -82,7 +82,7 @@ $ apt-get install php7.0 php7.0-cgi php7.0-cli php7.0-fpm php7.0-mysql php7.0-od
 
 安装成功后，运行 `php -v` 可以看到 PHP 的版本信息。
 
-3. MySQL
+**3. MySQL**
 
 ```
 $ apt-get install mysql-client mysql-server -y
