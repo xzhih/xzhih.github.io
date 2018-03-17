@@ -32,6 +32,8 @@ DEMO [https://xzhih.github.io/hexo-theme-casper/](https://xzhih.github.io/hexo-t
 - 内容目录
 - 代码高亮 ( 使用 [highlight.js](https://highlightjs.org) 的 github 风格 )
 - 自适应网页设计
+- valine 评论系统
+- Baidu 链接提交、Google Analytics
 
 ## 安装方法
 
@@ -116,6 +118,14 @@ valine:
   avatar: mm # gravatar style
   pageSize: 10 # pagination size
 
+chromeNavColor: 3c484e
+
+# Baidu 链接提交
+baidu: false
+
+# Google Analytics
+googleAnalytics: false
+GA_TRACKING_ID: UA-XXXXXXXXXX-1
 ```
 
 ## 源主题的版权声明和 License 
