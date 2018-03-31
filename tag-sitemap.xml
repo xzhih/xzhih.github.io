@@ -2,13 +2,6 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://zhih.me/tags/hackintosh/</loc>
-        <lastmod>2018-03-12T15:51:35.690Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://zhih.me/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/</loc>
         <lastmod>2018-03-12T16:11:36.038Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -51,22 +44,29 @@
     </url>
 
     <url>
+        <loc>http://zhih.me/tags/hexo/</loc>
+        <lastmod>2018-03-17T20:16:55.292Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://zhih.me/tags/shell/</loc>
-        <lastmod>2018-03-17T17:51:44.181Z</lastmod>
+        <lastmod>2018-03-18T21:05:15.656Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://zhih.me/tags/onmp/</loc>
-        <lastmod>2018-03-17T17:51:44.181Z</lastmod>
+        <lastmod>2018-03-18T21:05:15.656Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://zhih.me/tags/hexo/</loc>
-        <lastmod>2018-03-17T20:16:55.292Z</lastmod>
+        <loc>http://zhih.me/tags/hackintosh/</loc>
+        <lastmod>2018-03-31T11:54:46.948Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
