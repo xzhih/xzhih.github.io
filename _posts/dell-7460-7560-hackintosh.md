@@ -23,7 +23,7 @@ RAM: 2x4G DDR4 2400MHz (但是这个U只支持2133MHz，不过也是可以了)
 
 ## 说明
 
-此合集适用于戴尔燃7000系列型号为7460/7560的笔记本电脑
+此合集适用于戴尔燃7000系列第一第二代型号为7460/7560/7472/7572的笔记本电脑
 EFI可直接用于安装和日常使用
 
 项目地址：[https://github.com/xzhih/dell-7460-7560-hackintosh](https://github.com/xzhih/dell-7460-7560-hackintosh)
@@ -91,32 +91,5 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 四指向下轻扫：显示桌面
 ```
 
-## Change log
-
-2018-03-12
-
-- 常规更新clover
-- 更新 SSDT hotpath 
-- 支持 MacOS 10.13.4 beta4
-
-2017-12-9
-
-- 常规更新clover
-- 支持 MacOS 10.13.2
-
-2017-11-24
-
-- 重新制作 SSDT hotpath 
-
-2017-11-13
-
-- 更新 clover 4297
-- 更新 黑果小兵的ALCPlugFix
-- 更新 HIDPI脚本，之前的版本虽然模糊过渡自然，但是睡眠唤醒闪屏，鱼与熊掌不可兼得
-- 适配 MacOS 10.13.2
-- Lilu相关常规更新
-- 修复iTunes退出问题
-- 可能修复了关机亮度保存，开机亮度恢复问题
-- SSDT hotpath来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Config) 
 
 

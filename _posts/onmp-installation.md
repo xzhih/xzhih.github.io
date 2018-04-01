@@ -22,6 +22,8 @@ LNMP 代表的是：Linux 系统下 Nginx/MySQL/PHP 这种网站服务器架构�
 
 项目地址：[https://github.com/xzhih/ONMP](https://github.com/xzhih/ONMP)
 
+QQ交流群：346477750
+
 ## 特性
 
 此脚本不仅自动化安装 web 环境，还内置了一些好用的网站程序一键免配置快速安装。
