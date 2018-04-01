@@ -3,12 +3,17 @@
 
     <sitemap>
         <loc>http://zhih.me/post-sitemap.xml</loc>
-        <lastmod>2018-03-31T13:05:57.261Z</lastmod>
+        <lastmod>2018-04-01T14:46:02.904Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>http://zhih.me/page-sitemap.xml</loc>
+        <lastmod>2018-04-01T18:15:26.373Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>http://zhih.me/category-sitemap.xml</loc>
-        <lastmod>2018-03-31T13:05:57.261Z</lastmod>
+        <lastmod>2018-04-01T14:46:02.904Z</lastmod>
     </sitemap>
 
     <sitemap>
