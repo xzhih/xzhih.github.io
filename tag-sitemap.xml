@@ -51,22 +51,36 @@
     </url>
 
     <url>
-        <loc>http://zhih.me/tags/shell/</loc>
-        <lastmod>2018-03-18T21:05:15.656Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://zhih.me/tags/onmp/</loc>
-        <lastmod>2018-03-18T21:05:15.656Z</lastmod>
+        <lastmod>2018-04-02T21:02:12.730Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://zhih.me/tags/hackintosh/</loc>
-        <lastmod>2018-04-01T14:46:02.904Z</lastmod>
+        <lastmod>2018-04-02T21:03:20.959Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://zhih.me/tags/MacOS/</loc>
+        <lastmod>2018-04-02T21:12:37.530Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://zhih.me/tags/shell/</loc>
+        <lastmod>2018-04-02T21:12:37.530Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://zhih.me/tags/%E8%84%9A%E6%9C%AC/</loc>
+        <lastmod>2018-04-02T21:12:37.530Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
