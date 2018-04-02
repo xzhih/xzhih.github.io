@@ -1,7 +1,9 @@
 ---
 title: 黑苹果安装教程
 date: 2018-03-31 19:42:54
-tags: hackintosh
+tags: 
+- hackintosh
+- MacOS
 categories: 教程
 cover_img: https://i.loli.net/2018/04/01/5ac0f0a0d425d.jpg
 feature_img:
@@ -13,7 +15,7 @@ feature_img:
 
 # 视频版
 
-B站：https://www.bilibili.com/video/av21503652/
+B站：https://www.bilibili.com/video/av21503652
 
 YouTube：https://youtu.be/IZCF3E_oQB8
 

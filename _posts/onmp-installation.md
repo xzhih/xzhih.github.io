@@ -4,6 +4,7 @@ date: 2017-08-02 22:05:54
 tags: 
 - onmp
 - shell
+- 脚本
 categories: 教程
 cover_img: https://i.loli.net/2018/03/18/5aad558e2b5f3.jpg
 feature_img:
