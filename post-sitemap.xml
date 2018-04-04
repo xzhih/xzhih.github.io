@@ -7,32 +7,16 @@
     </url>
 
     <url>
-        <loc>http://zhih.me/2018/make-macos-better/</loc>
-        <lastmod>2018-04-04T07:36:16.189Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://zhih.me/2018/one-key-hidpi/</loc>
-        <lastmod>2018-04-02T21:12:37.530Z</lastmod>
+        <lastmod>2018-04-04T21:02:10.221Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>http://zhih.me/2018/hackintosh-install-guide/</loc>
-        <lastmod>2018-04-02T21:03:20.959Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://zhih.me/2017/dell-7460-7560-hackintosh/</loc>
-        <lastmod>2018-04-02T21:03:07.276Z</lastmod>
+        <loc>http://zhih.me/2017/Padavan-entware/</loc>
+        <lastmod>2018-04-04T20:55:19.775Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -40,15 +24,23 @@
 
     <url>
         <loc>http://zhih.me/2017/onmp-installation/</loc>
-        <lastmod>2018-04-02T21:02:12.730Z</lastmod>
+        <lastmod>2018-04-04T20:52:25.622Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>http://zhih.me/2017/hexo-casper-usage/</loc>
-        <lastmod>2018-03-17T20:16:55.292Z</lastmod>
+        <loc>http://zhih.me/2017/dell-7460-7560-hackintosh/</loc>
+        <lastmod>2018-04-04T20:43:58.624Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://zhih.me/2018/make-macos-better/</loc>
+        <lastmod>2018-04-04T20:41:43.804Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -56,7 +48,23 @@
 
     <url>
         <loc>http://zhih.me/2018/lnmp-on-128m-ram-vps/</loc>
-        <lastmod>2018-03-16T21:21:53.419Z</lastmod>
+        <lastmod>2018-04-04T20:31:17.783Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://zhih.me/2018/hackintosh-install-guide/</loc>
+        <lastmod>2018-04-04T20:26:13.002Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://zhih.me/2017/hexo-casper-usage/</loc>
+        <lastmod>2018-04-04T20:09:13.815Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -81,14 +89,6 @@
     <url>
         <loc>http://zhih.me/2017/format-Upan-partition/</loc>
         <lastmod>2018-03-12T16:11:36.038Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://zhih.me/2017/Padavan-entware/</loc>
-        <lastmod>2018-03-03T09:51:31.001Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
