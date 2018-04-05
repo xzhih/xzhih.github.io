@@ -2,22 +2,22 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <sitemap>
-        <loc>http://zhih.me/post-sitemap.xml</loc>
+        <loc>https://zhih.me/post-sitemap.xml</loc>
         <lastmod>2018-04-04T21:02:10.221Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://zhih.me/page-sitemap.xml</loc>
+        <loc>https://zhih.me/page-sitemap.xml</loc>
         <lastmod>2018-04-01T18:15:26.373Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://zhih.me/category-sitemap.xml</loc>
+        <loc>https://zhih.me/category-sitemap.xml</loc>
         <lastmod>2018-04-04T20:41:43.804Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://zhih.me/tag-sitemap.xml</loc>
+        <loc>https://zhih.me/tag-sitemap.xml</loc>
         <lastmod>2018-03-12T16:11:36.038Z</lastmod>
     </sitemap>
 
