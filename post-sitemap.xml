@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/2017/LEDE-entware/</loc>
+        <lastmod>2018-04-06T09:25:29.705Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/2017/Merlin-entware/</loc>
+        <lastmod>2018-04-06T07:45:46.290Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/2018/one-key-hidpi/</loc>
         <lastmod>2018-04-04T21:02:10.221Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -65,22 +81,6 @@
     <url>
         <loc>https://zhih.me/2017/hexo-casper-usage/</loc>
         <lastmod>2018-04-04T20:09:13.815Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/2017/LEDE-entware/</loc>
-        <lastmod>2018-03-12T16:14:42.247Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/2017/Merlin-entware/</loc>
-        <lastmod>2018-03-12T16:12:07.095Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
