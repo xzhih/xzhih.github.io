@@ -16,20 +16,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/hackintosh/</loc>
-        <lastmod>2018-04-15T16:11:56.101Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/LEDE/</loc>
-        <lastmod>2018-04-15T16:12:57.672Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://zhih.me/tags/Linux/</loc>
         <lastmod>2018-04-15T16:13:38.459Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -39,55 +25,6 @@
     <url>
         <loc>https://zhih.me/tags/lnmp/</loc>
         <lastmod>2018-04-15T16:13:38.459Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/%E6%A2%85%E6%9E%97/</loc>
-        <lastmod>2018-04-15T16:24:25.283Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/shell/</loc>
-        <lastmod>2018-04-15T16:26:41.005Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/%E8%84%9A%E6%9C%AC/</loc>
-        <lastmod>2018-04-15T16:26:41.005Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/onmp/</loc>
-        <lastmod>2018-04-15T16:27:08.317Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/entware/</loc>
-        <lastmod>2018-04-15T16:27:08.317Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/MacOS/</loc>
-        <lastmod>2018-04-15T16:27:23.085Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/Python/</loc>
-        <lastmod>2018-04-15T16:27:23.085Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -109,6 +46,69 @@
     <url>
         <loc>https://zhih.me/tags/web%E4%BC%98%E5%8C%96/</loc>
         <lastmod>2018-04-17T18:55:04.967Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/Python/</loc>
+        <lastmod>2018-04-19T15:12:40.097Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/hackintosh/</loc>
+        <lastmod>2018-04-19T15:14:40.609Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/LEDE/</loc>
+        <lastmod>2018-04-19T15:15:22.790Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/MacOS/</loc>
+        <lastmod>2018-04-19T15:16:04.153Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/%E6%A2%85%E6%9E%97/</loc>
+        <lastmod>2018-04-19T15:16:13.288Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/shell/</loc>
+        <lastmod>2018-04-19T15:16:56.488Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/%E8%84%9A%E6%9C%AC/</loc>
+        <lastmod>2018-04-19T15:16:56.488Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/onmp/</loc>
+        <lastmod>2018-04-19T15:17:12.329Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/entware/</loc>
+        <lastmod>2018-04-19T15:17:12.329Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
