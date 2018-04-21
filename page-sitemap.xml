@@ -7,6 +7,13 @@
     </url>
     
     <url>
+        <loc>https://zhih.me/404/</loc>
+        <lastmod>2018-04-21T01:10:55.264Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://zhih.me/about/</loc>
         <lastmod>2018-04-20T01:01:14.799Z</lastmod>
         <changefreq>weekly</changefreq>
