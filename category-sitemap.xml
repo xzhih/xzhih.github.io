@@ -15,7 +15,14 @@
 
     <url>
         <loc>https://zhih.me/categories/%E6%95%99%E7%A8%8B/</loc>
-        <lastmod>2018-04-24T11:03:21.568Z</lastmod>
+        <lastmod>2018-04-26T19:57:57.523Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/categories/WEB%E7%BC%96%E7%A8%8B/</loc>
+        <lastmod>2018-04-26T19:58:36.564Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

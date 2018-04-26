@@ -58,13 +58,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/hexo/</loc>
-        <lastmod>2018-04-20T01:08:10.477Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://zhih.me/tags/nginx/</loc>
         <lastmod>2018-04-20T11:50:21.293Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -109,6 +102,55 @@
     <url>
         <loc>https://zhih.me/tags/%E8%84%9A%E6%9C%AC/</loc>
         <lastmod>2018-04-24T11:03:21.568Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/hexo/</loc>
+        <lastmod>2018-04-26T19:57:57.523Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/web/</loc>
+        <lastmod>2018-04-26T19:57:57.523Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+        <lastmod>2018-04-26T19:58:36.564Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/%E5%85%A8%E6%A0%88/</loc>
+        <lastmod>2018-04-26T19:58:36.564Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/Web/</loc>
+        <lastmod>2018-04-26T19:58:36.564Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/MVC/</loc>
+        <lastmod>2018-04-26T19:58:36.564Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/MVVM/</loc>
+        <lastmod>2018-04-26T19:58:36.564Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
