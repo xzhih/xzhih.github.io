@@ -7,13 +7,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/categories/%E6%95%99%E7%A8%8B/</loc>
-        <lastmod>2018-04-26T20:06:10.719Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://zhih.me/categories/%E5%BF%83%E5%BE%97/</loc>
         <lastmod>2018-04-26T20:06:22.266Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -21,8 +14,15 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/categories/%E6%95%99%E7%A8%8B/</loc>
+        <lastmod>2018-04-27T16:37:57.102Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://zhih.me/categories/WEB/</loc>
-        <lastmod>2018-04-27T15:45:09.747Z</lastmod>
+        <lastmod>2018-04-27T16:38:16.064Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -79,15 +79,8 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/hexo/</loc>
-        <lastmod>2018-04-26T19:57:57.523Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/web/</loc>
-        <lastmod>2018-04-26T19:57:57.523Z</lastmod>
+        <loc>https://zhih.me/tags/web%E4%BC%98%E5%8C%96/</loc>
+        <lastmod>2018-04-26T20:06:10.719Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -107,13 +100,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/web%E4%BC%98%E5%8C%96/</loc>
-        <lastmod>2018-04-26T20:06:10.719Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://zhih.me/tags/MacOS/</loc>
         <lastmod>2018-04-26T20:06:22.266Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -121,36 +107,43 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/tags/hexo/</loc>
+        <lastmod>2018-04-27T16:37:57.102Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/web/</loc>
+        <lastmod>2018-04-27T16:38:16.064Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://zhih.me/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
-        <lastmod>2018-04-27T15:45:09.747Z</lastmod>
+        <lastmod>2018-04-27T16:38:16.064Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://zhih.me/tags/%E5%85%A8%E6%A0%88/</loc>
-        <lastmod>2018-04-27T15:45:09.747Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/Web/</loc>
-        <lastmod>2018-04-27T15:45:09.747Z</lastmod>
+        <lastmod>2018-04-27T16:38:16.064Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://zhih.me/tags/MVC/</loc>
-        <lastmod>2018-04-27T15:45:09.747Z</lastmod>
+        <lastmod>2018-04-27T16:38:16.064Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://zhih.me/tags/MVVM/</loc>
-        <lastmod>2018-04-27T15:45:09.747Z</lastmod>
+        <lastmod>2018-04-27T16:38:16.064Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
