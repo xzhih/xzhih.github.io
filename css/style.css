@@ -148,11 +148,6 @@ body,
     font-size: 1.2rem!important;
 }
 
-
-.floating-header {
-    height: 2px;
-}
-
 .read-next-card-content-ext {
     position: relative;
     z-index: 50;
