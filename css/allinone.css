@@ -3180,8 +3180,8 @@ body,
 		visibility: inherit!important;
 	}
 	.floating-header-logo {
-		margin-right: 5px;
 		margin-left: 10px;
+		padding-right: 5px;
 	}
 	.floating-header-divider {
 		margin-left: 0px;
