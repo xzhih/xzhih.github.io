@@ -16,13 +16,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/hexo/</loc>
-        <lastmod>2018-05-14T14:56:15.719Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://zhih.me/tags/LEDE/</loc>
         <lastmod>2018-05-14T14:57:19.890Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -114,13 +107,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/web/</loc>
-        <lastmod>2018-05-15T05:06:40.924Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://zhih.me/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
         <lastmod>2018-05-15T05:06:40.924Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -144,6 +130,20 @@
     <url>
         <loc>https://zhih.me/tags/MVVM/</loc>
         <lastmod>2018-05-15T05:06:40.924Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/web/</loc>
+        <lastmod>2018-05-17T08:27:29.639Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/hexo/</loc>
+        <lastmod>2018-05-17T08:27:29.639Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

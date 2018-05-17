@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/hexo-casper-usage/</loc>
+        <lastmod>2018-05-17T08:27:29.639Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/my-weapp-topmov/</loc>
         <lastmod>2018-05-15T05:06:40.924Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -81,14 +89,6 @@
     <url>
         <loc>https://zhih.me/LEDE-entware/</loc>
         <lastmod>2018-05-14T14:57:19.890Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/hexo-casper-usage/</loc>
-        <lastmod>2018-05-14T14:56:15.719Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
