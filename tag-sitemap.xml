@@ -9,13 +9,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/hackintosh/</loc>
-        <lastmod>2018-05-14T14:21:51.432Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://zhih.me/tags/LEDE/</loc>
         <lastmod>2018-05-14T14:57:19.890Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -93,13 +86,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/MacOS/</loc>
-        <lastmod>2018-05-15T05:03:49.081Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://zhih.me/tags/Python/</loc>
         <lastmod>2018-05-15T05:03:49.081Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -144,6 +130,20 @@
     <url>
         <loc>https://zhih.me/tags/hexo/</loc>
         <lastmod>2018-05-17T08:27:29.639Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/hackintosh/</loc>
+        <lastmod>2018-05-17T08:54:17.209Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/MacOS/</loc>
+        <lastmod>2018-05-17T08:54:17.209Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
