@@ -7,8 +7,40 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/onmp-installation/</loc>
+        <lastmod>2018-05-27T22:46:07.750Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/one-key-hidpi/</loc>
+        <lastmod>2018-05-27T22:46:07.745Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/my-weapp-topmov/</loc>
+        <lastmod>2018-05-27T22:46:07.740Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/lnmp-on-128m-ram-vps/</loc>
+        <lastmod>2018-05-27T22:46:07.733Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/how-the-web-works/</loc>
-        <lastmod>2018-05-26T01:34:22.782Z</lastmod>
+        <lastmod>2018-05-27T22:43:54.360Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -31,32 +63,8 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/onmp-installation/</loc>
-        <lastmod>2018-05-26T01:31:49.483Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/one-key-hidpi/</loc>
-        <lastmod>2018-05-26T01:31:49.479Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/nginx-http2-https/</loc>
         <lastmod>2018-05-26T01:31:49.474Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/my-weapp-topmov/</loc>
-        <lastmod>2018-05-26T01:31:49.466Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -73,14 +81,6 @@
     <url>
         <loc>https://zhih.me/make-macos-better/</loc>
         <lastmod>2018-05-26T01:31:49.450Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/lnmp-on-128m-ram-vps/</loc>
-        <lastmod>2018-05-26T01:31:49.442Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
