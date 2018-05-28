@@ -1,13 +1,14 @@
 ---
-title: MacOS这样更好用
+title: MacOS 这样更好用
 date: 2018-04-04 02:35:34
 tags: MacOS
 categories: 心得
-cover_img:
-feature_img:
+cover_img: https://pic.zhih.me/blog/posts/make-macos-better/cover.jpg
+description: 工欲善其事，必先利其器，教你如何配置 MacOS，让它更好用
+keywords: MacOS, Xcode, Homebrew, Oh My Zsh, GitHub
 ---
 
-我之所以选择使用MacOS，是因为它是简洁高效的类Unix系统，对各种开发环境友好，并且近年来随着国内Mac的普及，各种应用软件也在MacOS上适配了，软件丰富度方面完全不用担心，并且MacOS下的软件更加的纯净简洁，不会像Windows下那样出现 “全家桶” 效应。
+我之所以选择使用 MacOS，是因为它是简洁高效的类 Unix 系统，对各种开发环境友好，并且近年来随着国内 Mac 的普及，各种应用软件也在 MacOS 上适配了，软件丰富度方面完全不用担心，并且 MacOS 下的软件更加的纯净简洁，不会像 Windows 下那样出现 “全家桶” 效应。
 
 俗话说得好：工欲善其事，必先利其器
 
@@ -17,7 +18,7 @@ feature_img:
 
 ### dock栏（程序坞）
 
-系统默认的dock栏是在底部的，在打开应用时会减少信息流可视面积，所以我们可以设置
+系统默认的 dock 栏是在底部的，在打开应用时会减少信息流可视面积，所以我们可以设置
 
 - 把它放到屏幕左边
 - 调小图标
@@ -25,11 +26,11 @@ feature_img:
 
 这样就可以省出更多的空间，并且按照从左到右的阅读习惯，放在右边比较合适。
 
-![程序坞](https://i.loli.net/2018/04/04/5ac3f084c5899.png)
+![程序坞](https://pic.zhih.me/blog/posts/make-macos-better/程序坞.jpg)
 
 ### finder（访达）
 
-finder作为一个文件资源管理中心，一些小设置可以让你用的得心应手
+finder 作为一个文件资源管理中心，一些小设置可以让你用的得心应手
 
 - 文件夹
     - 在用户目录里新建 `home`、`code` 目录
@@ -43,15 +44,15 @@ finder作为一个文件资源管理中心，一些小设置可以让你用的�
     - 添加 `home` 目录
     - 添加 `code` 目录
 
-![访达.png](https://i.loli.net/2018/04/04/5ac3f398d988a.png)
+![访达.png](https://pic.zhih.me/blog/posts/make-macos-better/访达.jpg)
 
 ## 2. Xcode
 
-Xcode是MacOS下重要的IDE
+Xcode 是 MacOS 下重要的 IDE，你要是开发苹果系的原生 App，需要它，而我们更多是需要他的命令行工具
 
 首先，在[App Store](https://itunes.apple.com/cn/app/xcode/id497799835?mt=12)安装Xcode。
 
-Xcode提供了编译软件必备的Xcode Command Line Tools，它包含了GCC编译器，在装完Xcode之后我们需要执行一下命令安装它
+Xcode 提供了编译软件必备的 `Xcode Command Line Tools`，它包含了 GCC 编译器，在装完 Xcode 之后我们需要执行一下命令安装它
 
 ```
 $ xcode-select --install
@@ -61,11 +62,11 @@ $ xcode-select --install
 
 ## 3. Homebrew
 
-用过Linux的都知道包管理器，Debian系用的dpkg、红帽系用的rpm，而MacOS下最受追捧的就是[Homebrew](https://brew.sh/)了，它可以让我们安装和更新应用程序或库，是个大杀器。
+用过 Linux 的都知道包管理器，Debian 系用的 dpkg、红帽系用的 rpm，而 MacOS 下最受追捧的就是 [Homebrew](https://brew.sh/) 了，它可以让我们安装和更新应用程序或库，是个大杀器。
 
 ### 安装
 
-安装Homebrew需要前面提到的Xcode Command Line Tools，之后Homebrew所执行的编译包的任务全都依靠它。
+安装 Homebrew 需要前面提到的 `Xcode Command Line Tools`，之后 Homebrew 所执行的编译包的任务全都依靠它。
 
 在终端输入命令以下回车就能进行安装了
 
@@ -73,17 +74,17 @@ $ xcode-select --install
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-在安装完成后执行以下命令，诊断一下有没有什么错误，或者Homebrew需要你做什么样的设置
+在安装完成后执行以下命令，诊断一下有没有什么错误，或者 Homebrew 需要你做什么样的设置
 
 ```
 $ brew doctor
 ```
 
-brew就是homebrew的包管理命令了，用法类似debian的apt-get
+brew 就是 Homebrew 的包管理命令了，用法类似 debian 的 apt-get
 
 ### 换源
 
-Homebrew默认的源服务器在国外，这样我们在国内使用的时候速度可能比较慢，阿里云提供了镜像源，我们可以使用以下命令替换
+Homebrew 默认的源服务器在国外，这样我们在国内使用的时候速度可能比较慢，阿里云提供了镜像源，我们可以使用以下命令替换
 
 注意，以下命令为Zsh终端的配置，所以要执行 `brew install zsh` 安装zsh。
 
@@ -106,7 +107,7 @@ source ~/.zshrc
 
 ### 用法
 
-homebrew的用法和其它包管理器一样，如果你使用过，那么这步你可以不看
+homebrew 的用法和其它包管理器一样，如果你使用过，那么这步你可以不看
 
 ```
 # 安装软件包
@@ -128,22 +129,34 @@ $ brew update
 $ brew upgrade
 ```
 
-## 4. 终端
+## 4. 快速查看
 
-终端绝对是MacOS秒杀Windows的第一大杀器了，当然，有很多人会推荐使用iTerm2之类的第三方终端，在这里我想说的是，系统自带的足以，功能丰富不代表好用，简洁快捷才是第一生产力。
+QuickLook 是 MacOS 中相当高效的功能，按一下空格键就可以预览文件，不比打开文件浏览，很方便快捷，它自带的功能可能没有很全，有些文件无法预览，那么就需要给它装上插件。
+
+这里是一些常用的插件： https://github.com/sindresorhus/quick-look-plugins#manually
+
+可以直接使用 homebrew 进行安装
+
+```
+$ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package quicklookase qlvideo
+```
+
+## 5. 终端
+
+终端绝对是 MacOS 秒杀 Windows 的第一大杀器了，当然，有很多人会推荐使用 iTerm2 之类的第三方终端，就我个人而言，系统自带的就足够，不用再去装那些功能丰富的终端，适合自己的才是第一生产力，学习怎么去用的时间，可以写一个 [onmp](https://zhih.me/onmp-installation/) 了。
 
 ### 字体
 
-终端的偏好设置你随便设置，怎么适合怎么来，我在这里只推荐一个必须设置的项，[FiraCode字体](https://github.com/tonsky/FiraCode)，你可以去他们的github页看看，相信你一定会爱上它。
+终端的偏好设置你随便设置，怎么适合怎么来，我在这里只推荐一个必须设置的项，[FiraCode字体](https://github.com/tonsky/FiraCode)，你可以去他们的 github 页看看，相信你一定会爱上它。
 
 ### Zsh
 
-我们在上面已经提到过zsh，它是个令人感到惊艳的shell，关于它，自行搜索看看吧。
+我们在上面已经提到过 zsh，它是个令人感到惊艳的 shell，关于它，自行搜索看看吧。
 
-使用homebrew安装
+使用 homebrew 安装
 
 ```
-$ brew install zsh zsh-completions
+$ brew install zsh
 ```
 
 不出意外，现在就安装上了
@@ -160,7 +173,7 @@ $ vi ~/.zshrc
 
 ### Oh My Zsh
 
-[Oh My Zsh](http://ohmyz.sh)是zsh的一个扩展工具集，提供了丰富的扩展功能，没有他，zsh将不再完整
+[Oh My Zsh](http://ohmyz.sh) 是 zsh 的一个扩展工具集，提供了丰富的扩展功能，没有他，zsh 将不再完整
 
 #### 安装
 
@@ -170,17 +183,17 @@ $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools
 
 #### 插件
 
-Oh My Zsh有丰富的插件，你可以在 `~/.zshrc` 里的 `plugins` 字段添加插件
+Oh My Zsh 有丰富的插件，你可以在 `~/.zshrc` 里的 `plugins` 字段添加插件
 
-这里我给几个推荐的插件
+这里我给几个推荐的插件，在 https://github.com/zsh-users 这里能找到后面 3 个安装方法，前面的不用其他安装方式
 
 ```
-plugins=(git colored-man colorize github  pip python osx zsh-syntax-highlighting)
+plugins=(git autojump colored-man-pages colorize pip python osx brew zsh-autosuggestions zsh-syntax-highlighting history-substring-search)
 ```
 
-## 5. Git
+## 6. Git
 
-我不是针对谁，我只想说，不用git的程序员都是辣鸡
+我不是针对谁，我只想说，不用 git 的程序员都是辣鸡
 
 ### 安装
 
@@ -196,7 +209,7 @@ $ brew install git
 
 我这里就把它的简化一下
 
-github可以通过https和ssh连接，我这里推荐使用https连接，原因是设置简单、不易被防火墙挡
+github 可以通过 https 和 ssh 连接，我这里推荐使用 https 连接，原因是设置简单、不易被防火墙挡
 
 ```
 $ git config --global user.name "github用户名"
@@ -205,19 +218,19 @@ $ git config --global user.email "github注册邮箱"
 
 这些配置信息会存到 `~/.gitconfig` 里
 
-只是这样设置，每次使用都会提示输入密码，所以要告诉Git使用osxkeychain helper全局credential.helper配置
+只是这样设置，每次使用都会提示输入密码，所以要告诉 Git 使用 osxkeychain helper 全局 credential.helper 配置
 
 ```
 $ git config --global credential.helper osxkeychain 
 ```
 
-下一次克隆需要密码的HTTPS URL时，系统会提示您输入用户名和密码，并授予访问OSX钥匙串的权限。完成此操作后，用户名和密码将存储在您的钥匙串中，并且不需要再次将它们输入到Git中。
+下一次克隆需要密码的 HTTPS URL 时，系统会提示您输入用户名和密码，并授予访问 OSX 钥匙串的权限。完成此操作后，用户名和密码将存储在您的钥匙串中，并且不需要再次将它们输入到 Git 中。
 
 至此，大功告成
 
-## 6. 后话
+## 7. 后话
 
-MacOS作为一个对开发者友好的系统，还有很对技巧等着大家发掘，并且每个人的习惯都是不同的，而MacOS也容纳了大家的不同，提供了大家个性化设置的基础，相信在你的调教下，它会成为你手中的大杀器。
+MacOS 作为一个对开发者友好的系统，还有很对技巧等着大家发掘，并且每个人的习惯都是不同的，而 MacOS 也容纳了大家的不同，提供了大家个性化设置的基础，相信在你的调教下，它会成为你手中的大杀器。
 
 
 

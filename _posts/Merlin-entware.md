@@ -1,23 +1,25 @@
 ---
-title: 在梅林上使用Entware
+title: 在梅林上使用 Entware
 date: 2017-08-03 02:43:56
 tags: 
 - 梅林
+- onmp
 - entware
 categories: 教程
-cover_img:
-feature_img:
+cover_img: https://pic.zhih.me/blog/posts/Merlin-entware/cover.jpg
+description: 在安装 ONMP 前，你要学会安装 Entware
+keywords: 梅林固件, onmp, entware
 ---
 
-Entware-ng是一个适用于嵌入式系统的软件包库，使用opkg包管理系统进行管理，现在在官方的源上已经有超过2000个软件包了，可以说是非常的丰富
+Entware-ng 是一个适用于嵌入式系统的软件包库，使用 opkg 包管理系统进行管理，现在在官方的源上已经有超过 2000 个软件包了，可以说是非常的丰富
 
-官方地址：[Entware-ng](http://entware.net/about/)
+官方地址：[Entware-ng](http://entware.net/)
 
 ## U盘、硬盘格式化（可选）
 
-我们的设备本身的储存较少，而且如果哪天崩了，数据还有找不回的风险，所以我们一般把软件包和程序安装到U盘之类的外置设备上，所以需要对它格式化为ext4，NTFS格式不推荐使用
+我们的设备本身的储存较少，而且如果哪天崩了，数据还有找不回的风险，所以我们一般把软件包和程序安装到U盘之类的外置设备上，所以需要对它格式化为 ext4，NTFS 格式不推荐使用
 
-格式化教程：[如何在路由器上格式化U盘、硬盘](https://zhih.me/2018/format-Upan-partition)
+格式化教程：[如何在路由器上格式化U盘、硬盘](https://zhih.me/format-Upan-partition)
 
 ## U盘挂载（可选）
 
@@ -52,16 +54,16 @@ Info:  Looking for available partitions...
 # 跑完之后只要不提示错误，就是安装成功了
 ```
 
-经过以上步骤，已经可以从 `Entware-ng` 上进行下载安装包并安装到U盘上
+经过以上步骤，已经可以从 Entware-ng 上进行下载安装包并安装到U盘上
 
 这下可以享受丰富的软件包，还不占用内部储存空间
 
 ## PS 
 
-[在Padavan上使用entware](https://zhih.me/2017/Padavan-entware/)
+[在Padavan上使用entware](https://zhih.me/Padavan-entware/)
 
-[在LEDE上使用Entware](https://zhih.me/2017/LEDE-entware/)
+[在LEDE上使用Entware](https://zhih.me/LEDE-entware/)
 
 ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](http://entware.net/about/) 的路由器，目前已经在 Padavan、LEDE（openwrt）、梅林上测试成功。
 
-[ONMP 安装教程: ](https://zhih.me/2017/onmp-installation/)
+[ONMP 安装教程: ](https://zhih.me/onmp-installation/)

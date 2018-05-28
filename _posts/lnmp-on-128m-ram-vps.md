@@ -1,16 +1,22 @@
 ---
-title: 我是如何在128M内存的vps上安装lnmp的
+title: 我是如何在 128M 内存的 vps 上安装 lnmp 的
 date: 2018-03-13 22:07:59
 tags: 
 - Linux
 - lnmp
-- shell
 categories: 教程
-cover_img:
-feature_img:
+cover_img: https://pic.zhih.me/blog/posts/lnmp-on-128m-ram-vps/cover.jpg
+description: 作为一个整天折腾 VPS 的博主，手里少不了各种便宜的低配小鸡，今天我要祭出我那经常被 BAN 😒的 128M 内存小鸡，为大家写一篇小内存 VPS 安装 lnmp 的教程，并且，我要让它把 WordPress 跑起来
+keywords: OVZ, VPS, lnmp, Linux
 ---
 
-作为一个整天折腾 VPS 的博主，手里少不了各种便宜的低配小鸡，今天我要祭出我那经常被 BAN 😒的 128M 内存小鸡，为大家写一篇小内存 VPS 安装 lnmp的教程，并且，我要让它把 WordPress 跑起来。
+封面那张图和这篇文章无关😂，那是之前在学校的时候拍的，一台 64M 古董大脑壳装 win me，然后玩三维弹球🤪 2333
+
+![三维弹球](https://pic.zhih.me/blog/posts/lnmp-on-128m-ram-vps/winme.jpg)
+
+## 前言
+
+作为一个整天折腾 VPS 的博主，手里少不了各种便宜的低配小鸡，今天我要祭出我那经常被 BAN 😒的 128M 内存小鸡，为大家写一篇小内存 VPS 安装 lnmp 的教程，并且，我要让它把 WordPress 跑起来。
 
 先上配置：
 CPU：Intel(R) Xeon(R) CPU X5560 @ 2.80GHz 单核
@@ -32,7 +38,7 @@ $ apt-get update && apt-get upgrade
 $ apt-get install curl wget
 ```
 
-**1. 添加软件源**
+### 1. 添加软件源
 
 系统是 debian8，自带源内没有 PHP7，所以添加一个 [dotdeb](http://www.dotdeb.org) 源，它里面有 debian7、debian8 的各种软件包，同时他们也提供世界各地的[镜像](https://www.dotdeb.org/mirrors/)。
 
@@ -49,7 +55,7 @@ deb-src http://mirrors.asnet.am/dotdeb/ jessie all
 
 如果你直接从官网复制过来，或者是你的系统是 debian7，记得修改网址后面的版本名。
 
-**2. 安装 GnuPG 密匙**
+### 2. 安装 GnuPG 密匙
 
 GPG主要是实现官方发布的包的签名。
 
@@ -58,13 +64,13 @@ $ wget https://www.dotdeb.org/dotdeb.gpg
 $ sudo apt-key add dotdeb.gpg
 ```
 
-**3. 源添加完毕**
+### 3. 源添加完毕
 
 运行 `apt-get updeta && apt-get upgrade`，现在你应该能从 dotdeb 上获取软件了。
 
 ## 二、软件包
 
-**1. Nginx**
+### 1. Nginx
 
 ```
 $ apt-get install nginx -y
@@ -72,7 +78,7 @@ $ apt-get install nginx -y
 
 打开浏览器，输入你的 IP，能显示 `Welcome to nginx!`，就说明安装成功了。
 
-**2. PHP7**
+### 2. PHP7
 
 ```
 $ apt-get install php7.0 php7.0-cgi php7.0-cli php7.0-fpm php7.0-mysql php7.0-odbc php7.0-opcache -y
@@ -82,7 +88,7 @@ $ apt-get install php7.0 php7.0-cgi php7.0-cli php7.0-fpm php7.0-mysql php7.0-od
 
 安装成功后，运行 `php -v` 可以看到 PHP 的版本信息。
 
-**3. MySQL**
+### 3. MySQL
 
 ```
 $ apt-get install mysql-client mysql-server -y
@@ -116,17 +122,19 @@ $ /etc/init.d/mysql start|stop|restart
 
 跑得动没啥，就是看看这小鸡的承载能力，我这里使用 ab 命令对首页进行压力测试，并且首页也就一篇文章列表，情况如下图：
 
-![压力测试](https://i.loli.net/2018/03/14/5aa817236dbff.png)
+![压力测试](https://pic.zhih.me/blog/posts/lnmp-on-128m-ram-vps/压力测试.jpg)
 
 在做100个并发，访问10000次的测试中，在进行到第7143个请求的时候，小鸡爆了，完全无法访问，过了一会才恢复过来，看来对它的要求不能太高啊😂。
 
+当然，使用WP也要使用静态化插件才能提高承载能力，我就懒得试了
+
 ## 最后
 
-其实这篇文章就是给小鸡跑个 lnmp，给它点压力，我过过手瘾，也证实一下128M的小内存vps是有能力搭建访问量少的WP博客的。
+其实这篇文章就是给小鸡跑个 lnmp，给它点压力，我过过手瘾，也证实一下 128M 的小内存vps是有能力搭建访问量少的 WP 博客的。
 
 但是，既然内存这么小，何不用 hexo 那种静态博客呢。
 
-这篇文章仅作为新手安装 lnmp 教程，照顾那些低价买了低配置vps的同学，祝你们折腾愉快。
+这篇文章仅作为新手安装 lnmp 教程，照顾那些低价买了低配置 vps 的同学，祝你们折腾愉快。
 
 如果你想购买 vps，可以看看 [DigitalOcean](https://m.do.co/c/5ddae9064d7f)
 

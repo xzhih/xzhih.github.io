@@ -1,10 +1,14 @@
 ---
-title: hexo主题casper使用教程
+title: hexo 主题 casper 使用教程
 date: 2017-11-18 13:43:00
-tags: hexo
+tags: 
+- hexo
+- web
 categories: 教程
-cover_img: https://i.loli.net/2018/02/28/5a964280c7ff9.png
-feature_img: https://i.loli.net/2018/02/28/5a964332cd7d9.png
+cover_img: https://pic.zhih.me/blog/posts/hexo-casper-usage/cover.jpg
+feature_img: https://pic.zhih.me/blog/posts/hexo-casper-usage/feature.jpg
+description: 这是本人移植自 Ghost 的一个 hexo 主题，SEO 友好，自适应，多插件
+keywords: hexo, Ghost, theme, web, hexo 主题
 ---
 
 ## 简述
@@ -34,6 +38,7 @@ DEMO [https://xzhih.github.io/hexo-theme-casper/](https://xzhih.github.io/hexo-t
 - 自适应网页设计
 - valine 评论系统
 - Baidu 链接提交、Google Analytics
+- SEO
 
 ## 安装方法
 
@@ -63,11 +68,20 @@ $ git pull
 ```
 cover_img:     # 在文章摘要上显示
 feature_img:   # 在文章详细页面上置顶
+description:   # 文章描述
+keywords:      # 关键字
 ```
 
 #### valine 评论系统
 
 使用方法请到他的[官网](https://valine.js.org)查看，并结合下面的配置文件详细添加appID和appKey
+
+**添加关于页面**
+
+```
+$ hexo new page about
+```
+
 
 ## 自定义配置
 
@@ -75,10 +89,12 @@ feature_img:   # 在文章详细页面上置顶
 
 ```yaml
 # config
-rss:            # 链接
-favicon:        # 链接
-blog_logo:      # 链接
-header_image: //demo.ghost.io/content/images/2017/07/blog-cover.jpg 
+rss:            # link
+favicon: https://i.loli.net/2017/11/26/5a19c0b50432e.png
+blog_logo: 
+header_image: https://i.loli.net/2017/11/26/5a19c56faa29f.jpg
+bio: This is a demo
+post_toc: true
 
 # 菜单
 menu:
@@ -86,15 +102,19 @@ menu:
   Archives: /archives
   # 其他的可以按照上面的模板添加
 
-# 作者头像
+# 作者
 author_image:   # 链接
+author_bio:     # 描述
+author_location: # 地址
 
 # 社交链接
 social:
   facebook: https://www.facebook.com
   twitter: https://www.twitter.com
-  # You only can use that I have added, I will keep adding
-
+  twitter: https://twitter.com
+  facebook: https://facebook
+  telegram:
+  
 # 插件（显示在网站底部）
 widgets:
   recent_posts: true
@@ -118,7 +138,11 @@ valine:
   avatar: mm # gravatar style
   pageSize: 10 # pagination size
 
-chromeNavColor: 3c484e
+# PWA 
+# 你需要在 hexo 目录的 source 文件夹里创建一个 manifest.json 文件
+manifest: false
+
+navColor: '3c484e'
 
 # Baidu 链接提交
 baidu: false
@@ -126,6 +150,14 @@ baidu: false
 # Google Analytics
 googleAnalytics: false
 GA_TRACKING_ID: UA-XXXXXXXXXX-1
+
+# CDN 链接
+# 如果留空，则使用网站目录内的默认文件 
+CDN: 
+  jquery: https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js
+  highlightjs: https://cdn.staticfile.org/highlight.js/9.10.0/highlight.min.js
+  lightgalleryjs: https://cdn.staticfile.org/lightgallery/1.3.9/js/lightgallery.min.js
+  lightgallerycss: https://cdn.staticfile.org/lightgallery/1.3.9/css/lightgallery.min.css
 ```
 
 ## 源主题的版权声明和 License 

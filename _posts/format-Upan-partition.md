@@ -1,17 +1,18 @@
 ---
-title: 如何在路由器上格式化U盘、硬盘
+title: 如何在路由器上格式化 U 盘、硬盘
 date: 2017-08-21 04:35:19
 tags: 
 - shell 
 - 路由器
 categories: 教程
-cover_img:
-feature_img:
+cover_img: https://pic.zhih.me/blog/posts/format-Upan-partition/cover.jpg
+description: 适用于梅林、padavan、LEDE（openwrt）等固件，在路由器上格式化 U 盘、硬盘
+keywords: shell, 路由器, 梅林, padavan, LEDE, openwrt
 ---
 
 本教程适用于梅林、padavan、LEDE（openwrt）等固件
 
-以下具体方法都基于ext4，NTFS相关错误不做回答
+以下具体方法都基于 ext4，NTFS 相关错误不做回答
 
 使用ssh连接路由器，把U盘插到路由器上
 
@@ -19,7 +20,7 @@ feature_img:
 
 ## 安装fdisk
 
-一般梅林、Padavan固件都会自带的，不用安装，如果没有则按照下面给出的命令
+一般梅林、Padavan 固件都会自带的，不用安装，如果没有则按照下面给出的命令
 
 ```shell
 $ opkg update
@@ -40,7 +41,7 @@ Device Boot      Start         End      Blocks  Id System
 /dev/sda1               2       29327    30029824  83 Linux
 ```
 
-上面的信息注意看到和你的存储大小一样的设备，我的是`/dev/sda`，在它里面有个`/dev/sda1`的分区
+上面的信息注意看到和你的存储大小一样的设备，我的是 `/dev/sda`，在它里面有个 `/dev/sda1`的分区
 
 ## 删除分区、新建分区
 
@@ -73,7 +74,7 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-经过以上的操作，你可以用`fdisk -l`命令查看U盘上是否只有一个Linux分区
+经过以上的操作，你可以用 `fdisk -l` 命令查看U盘上是否只有一个 Linux 分区
 
 ```shell
 $ fdisk -l 
@@ -87,7 +88,7 @@ Device Boot      Start         End      Blocks  Id System
 
 ## 格式化分区
 
-分区已经有了，现在开始格式化，其实现在的分区已经是ext4格式的了，不过我们还是对它进行一下格式化，算是熟悉一下命令，以后直接这样格式化吧
+分区已经有了，现在开始格式化，其实现在的分区已经是 ext4 格式的了，不过我们还是对它进行一下格式化，算是熟悉一下命令，以后直接这样格式化吧
 
 ```shell
 $ mkfs.ext4 /dev/sda1 
