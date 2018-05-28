@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/Padavan-entware/</loc>
+        <lastmod>2018-05-28T06:57:47.754Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/onmp-installation/</loc>
         <lastmod>2018-05-27T22:46:07.750Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -49,14 +57,6 @@
     <url>
         <loc>https://zhih.me/pyenv-usage/</loc>
         <lastmod>2018-05-26T01:31:49.500Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/Padavan-entware/</loc>
-        <lastmod>2018-05-26T01:31:49.495Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

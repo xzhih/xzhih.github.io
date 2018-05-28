@@ -58,13 +58,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/entware/</loc>
-        <lastmod>2018-05-26T01:31:49.495Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://zhih.me/tags/Python/</loc>
         <lastmod>2018-05-26T01:31:49.500Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -121,15 +114,22 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/onmp/</loc>
+        <loc>https://zhih.me/tags/shell/</loc>
         <lastmod>2018-05-27T22:46:07.750Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/shell/</loc>
-        <lastmod>2018-05-27T22:46:07.750Z</lastmod>
+        <loc>https://zhih.me/tags/onmp/</loc>
+        <lastmod>2018-05-28T06:57:47.754Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/entware/</loc>
+        <lastmod>2018-05-28T06:57:47.754Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
