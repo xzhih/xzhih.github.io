@@ -79,20 +79,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/Linux/</loc>
-        <lastmod>2018-05-27T22:46:07.733Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/lnmp/</loc>
-        <lastmod>2018-05-27T22:46:07.733Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://zhih.me/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
         <lastmod>2018-05-27T22:46:07.740Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -107,20 +93,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/MacOS/</loc>
-        <lastmod>2018-05-27T22:46:07.745Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/shell/</loc>
-        <lastmod>2018-05-27T22:46:07.750Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://zhih.me/tags/onmp/</loc>
         <lastmod>2018-05-28T09:41:12.703Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -130,6 +102,34 @@
     <url>
         <loc>https://zhih.me/tags/entware/</loc>
         <lastmod>2018-05-28T09:41:12.703Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/Linux/</loc>
+        <lastmod>2018-06-03T06:23:29.979Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/lnmp/</loc>
+        <lastmod>2018-06-03T06:23:29.979Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/MacOS/</loc>
+        <lastmod>2018-06-10T15:59:39.179Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/shell/</loc>
+        <lastmod>2018-06-10T15:59:39.179Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

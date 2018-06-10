@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/one-key-hidpi/</loc>
+        <lastmod>2018-06-10T15:59:39.179Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/lnmp-on-128m-ram-vps/</loc>
+        <lastmod>2018-06-03T06:23:29.979Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/Padavan-entware/</loc>
         <lastmod>2018-05-28T09:41:12.703Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -23,24 +39,8 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/one-key-hidpi/</loc>
-        <lastmod>2018-05-27T22:46:07.745Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/my-weapp-topmov/</loc>
         <lastmod>2018-05-27T22:46:07.740Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/lnmp-on-128m-ram-vps/</loc>
-        <lastmod>2018-05-27T22:46:07.733Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
