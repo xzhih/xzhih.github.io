@@ -8,7 +8,39 @@
 
     <url>
         <loc>https://zhih.me/one-key-hidpi/</loc>
-        <lastmod>2018-06-10T15:59:39.179Z</lastmod>
+        <lastmod>2018-06-12T02:25:11.217Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/LEDE-entware/</loc>
+        <lastmod>2018-06-11T12:50:23.631Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/Merlin-entware/</loc>
+        <lastmod>2018-06-11T12:49:57.388Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/onmp-installation/</loc>
+        <lastmod>2018-06-11T12:46:05.976Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/Padavan-entware/</loc>
+        <lastmod>2018-06-11T12:45:49.825Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,22 +49,6 @@
     <url>
         <loc>https://zhih.me/lnmp-on-128m-ram-vps/</loc>
         <lastmod>2018-06-03T06:23:29.979Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/Padavan-entware/</loc>
-        <lastmod>2018-05-28T09:41:12.703Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/onmp-installation/</loc>
-        <lastmod>2018-05-27T22:46:07.750Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -71,24 +87,8 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/Merlin-entware/</loc>
-        <lastmod>2018-05-26T01:31:49.459Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/make-macos-better/</loc>
         <lastmod>2018-05-26T01:31:49.450Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/LEDE-entware/</loc>
-        <lastmod>2018-05-26T01:31:49.434Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
