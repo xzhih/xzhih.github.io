@@ -66,7 +66,7 @@ $ sudo apt-key add dotdeb.gpg
 
 ### 3. 源添加完毕
 
-运行 `apt-get updeta && apt-get upgrade`，现在你应该能从 dotdeb 上获取软件了。
+运行 `apt-get update && apt-get upgrade`，现在你应该能从 dotdeb 上获取软件了。
 
 ## 二、软件包
 

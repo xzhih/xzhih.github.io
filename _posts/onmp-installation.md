@@ -16,7 +16,7 @@ keywords: ONMP, 路由器搭建网站, 私有云
 
 ## 简述
 
-ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](http://entware.net/about/) 的路由器，目前已经在 Padavan、LEDE（openwrt）、梅林上测试成功。
+ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](https://entware.net/) 的路由器，目前已经在 Padavan、LEDE（openwrt）、梅林上测试成功。
 
 和 LNMP 有什么不同？
 LNMP 代表的是：Linux 系统下 Nginx/MySQL/PHP 这种网站服务器架构，而为了区分路由器环境的不同，使用的 ONMP 这个命名，本质还是 LNMP。
@@ -48,7 +48,7 @@ ONMP内置了以下程序的一键安装：
 
 ### 1. 安装 Entware
 
-Entware-ng 是一个适用于嵌入式系统的软件包库，使用 opkg 包管理系统进行管理，现在在官方的源上已经有超过2000个软件包了，可以说是非常的丰富
+Entware 是一个适用于嵌入式系统的软件包库，使用 opkg 包管理系统进行管理，现在在官方的源上已经有超过2000个软件包了，可以说是非常的丰富
 
 不同的固件，安装方式都不一样，请认准安装方式（自己是什么固件总该懂得吧😂）
 

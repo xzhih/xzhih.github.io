@@ -10,9 +10,9 @@ description: 在安装 ONMP 前，你要学会安装 Entware
 keywords: Padavan, onmp, entware
 ---
 
-Entware-ng 是一个适用于嵌入式系统的软件包库，使用 opkg 包管理系统进行管理，现在在官方的源上已经有超过 2000 个软件包了，可以说是非常的丰富
+Entware 是一个适用于嵌入式系统的软件包库，使用 opkg 包管理系统进行管理，现在在官方的源上已经有超过 2000 个软件包了，可以说是非常的丰富
 
-官方地址：[Entware-ng](http://entware.net/)
+官方地址：[Entware](https://entware.net/)
 
 ## U盘、硬盘格式化（可选）
 
@@ -56,6 +56,6 @@ $ wget -O - http://bin.entware.net/mipselsf-k3.4/installer/generic.sh | /bin/sh
 
 [在梅林上使用 Entware](https://zhih.me/Merlin-entware/)
 
-ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](http://entware.net/about/) 的路由器，目前已经在 Padavan、LEDE（openwrt）、梅林上测试成功。
+ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](https://entware.net/) 的路由器，目前已经在 Padavan、LEDE（openwrt）、梅林上测试成功。
 
-[ONMP 安装教程: ](https://zhih.me/onmp-installation/)
+[ONMP 安装教程](https://zhih.me/onmp-installation/)

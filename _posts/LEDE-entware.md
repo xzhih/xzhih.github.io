@@ -11,9 +11,9 @@ description: 在安装 ONMP 前，你要学会安装 Entware
 keywords: LEDE, onmp, entware
 ---
 
-Entware-ng 是一个适用于嵌入式系统的软件包库，使用 opkg 包管理系统进行管理，现在在官方的源上已经有超过2000个软件包了，可以说是非常的丰富
+Entware 是一个适用于嵌入式系统的软件包库，使用 opkg 包管理系统进行管理，现在在官方的源上已经有超过2000个软件包了，可以说是非常的丰富
 
-官方地址：[Entware-ng](http://entware.net/)
+官方地址：[Entware](https://entware.net/)
 
 ## U盘、硬盘格式化（可选）
 
@@ -63,7 +63,7 @@ $ vi /etc/rc.local # 编辑，vim基本用法和上面一样
 mount -a 
 ```
 
-## 安装和使用 Entware-ng
+## 安装和使用 Entware
 
 ### 1. 挂载opt
 
@@ -81,9 +81,9 @@ $ mount -o bind /mnt/onmp/opt /opt
 # 可以用 mount 或 df -h 命令查看是否挂载成功
 ```
 
-### 2. 运行 Entware-ng 安装命令
+### 2. 运行 Entware 安装命令
 
-不同的 CPU 平台有不同的命令
+不同的 CPU 平台有不同的命令，可以使用 `uname -m` 命令查看平台
 
 - armv5
 
@@ -119,7 +119,7 @@ $ wget -O - http://bin.entware.net/mipselsf-k3.4/installer/generic.sh | /bin/sh
 
 ```
 Info: Congratulations!
-Info: If there are no errors above then Entware-ng was successfully initialized.
+Info: If there are no errors above then Entware was successfully initialized.
 ```
 
 ### 3. 开机启动
@@ -162,7 +162,7 @@ Downloading http://pkg.entware.net/binaries/x86-64/Packages.gz
 Updated list of available packages in /opt/var/opkg-lists/packages # 成功
 ```
 
-经过以上步骤，已经可以从 `Entware-ng` 上进行下载安装包并安装到U盘上
+经过以上步骤，已经可以从 `Entware` 上进行下载安装包并安装到U盘上
 
 这下可以享受丰富的软件包，还不占用内部储存空间，非常适合LEDE软路由
 我的 onmp 一键包也可以在 LEDE 上使用了
@@ -177,12 +177,12 @@ Updated list of available packages in /opt/var/opkg-lists/packages # 成功
 
 [在Padavan上使用entware](https://zhih.me/Padavan-entware/)
 
-ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](http://entware.net/about/) 的路由器，目前已经在 Padavan、LEDE（openwrt）、梅林上测试成功。
+ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](https://entware.net/) 的路由器，目前已经在 Padavan、LEDE（openwrt）、梅林上测试成功。
 
 [ONMP 安装教程: ](https://zhih.me/onmp-installation/)
 
 ## 参考
 
-[Install on Synology NAS](https://github.com/Entware-ng/Entware-ng/wiki/Install-on-Synology-NAS)
+[Install on Synology NAS](https://github.com/Entware/Entware/wiki/Install-on-Synology-NAS)
 
 [How To Configure Routers Asus RT-N56U/RT-N65U For Entware Usage](https://bitbucket.org/padavan/rt-n56u/wiki/EN/HowToConfigureEntware)

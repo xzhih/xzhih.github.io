@@ -11,9 +11,9 @@ description: 在安装 ONMP 前，你要学会安装 Entware
 keywords: 梅林固件, onmp, entware
 ---
 
-Entware-ng 是一个适用于嵌入式系统的软件包库，使用 opkg 包管理系统进行管理，现在在官方的源上已经有超过 2000 个软件包了，可以说是非常的丰富
+Entware 是一个适用于嵌入式系统的软件包库，使用 opkg 包管理系统进行管理，现在在官方的源上已经有超过 2000 个软件包了，可以说是非常的丰富
 
-官方地址：[Entware-ng](http://entware.net/)
+官方地址：[Entware](https://entware.net/)
 
 ## U盘、硬盘格式化（可选）
 
@@ -37,7 +37,7 @@ Filesystem                Size      Used Available Use% Mounted on
 # 可以看到已经挂载
 ```
 
-## 安装和使用 Entware-ng
+## 安装和使用 Entware
 
 梅林内置了一个安装命令很方便
 
@@ -54,7 +54,7 @@ Info:  Looking for available partitions...
 # 跑完之后只要不提示错误，就是安装成功了
 ```
 
-经过以上步骤，已经可以从 Entware-ng 上进行下载安装包并安装到U盘上
+经过以上步骤，已经可以从 Entware 上进行下载安装包并安装到U盘上
 
 这下可以享受丰富的软件包，还不占用内部储存空间
 
@@ -64,6 +64,6 @@ Info:  Looking for available partitions...
 
 [在LEDE上使用Entware](https://zhih.me/LEDE-entware/)
 
-ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](http://entware.net/about/) 的路由器，目前已经在 Padavan、LEDE（openwrt）、梅林上测试成功。
+ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](https://entware.net/) 的路由器，目前已经在 Padavan、LEDE（openwrt）、梅林上测试成功。
 
 [ONMP 安装教程: ](https://zhih.me/onmp-installation/)
