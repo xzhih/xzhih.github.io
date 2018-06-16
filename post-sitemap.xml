@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/how-the-web-works/</loc>
+        <lastmod>2018-06-16T06:03:13.188Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/syncthing-the-best/</loc>
         <lastmod>2018-06-16T05:58:37.038Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -49,14 +57,6 @@
     <url>
         <loc>https://zhih.me/lnmp-on-128m-ram-vps/</loc>
         <lastmod>2018-06-16T05:49:52.864Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/how-the-web-works/</loc>
-        <lastmod>2018-06-16T05:49:52.859Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
