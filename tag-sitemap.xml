@@ -16,13 +16,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/hackintosh/</loc>
-        <lastmod>2018-06-14T06:19:31.118Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://zhih.me/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/</loc>
         <lastmod>2018-06-14T06:20:44.676Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -44,14 +37,14 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/entware/</loc>
+        <loc>https://zhih.me/tags/LEDE/</loc>
         <lastmod>2018-06-15T08:27:43.292Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/LEDE/</loc>
+        <loc>https://zhih.me/tags/entware/</loc>
         <lastmod>2018-06-15T08:27:43.292Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -60,13 +53,6 @@
     <url>
         <loc>https://zhih.me/tags/onmp/</loc>
         <lastmod>2018-06-16T05:49:50.110Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/shell/</loc>
-        <lastmod>2018-06-16T05:49:52.850Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -107,29 +93,43 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/tags/Python/</loc>
-        <lastmod>2018-06-16T05:50:31.800Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/macOS/</loc>
-        <lastmod>2018-06-16T05:58:37.038Z</lastmod>
+        <loc>https://zhih.me/tags/hackintosh/</loc>
+        <lastmod>2018-06-16T06:10:25.787Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://zhih.me/tags/web/</loc>
-        <lastmod>2018-06-16T06:03:13.188Z</lastmod>
+        <lastmod>2018-06-16T06:10:25.791Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://zhih.me/tags/web-%E4%BC%98%E5%8C%96/</loc>
-        <lastmod>2018-06-16T06:03:13.188Z</lastmod>
+        <lastmod>2018-06-16T06:10:25.791Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/shell/</loc>
+        <lastmod>2018-06-16T06:10:25.802Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/MacOS/</loc>
+        <lastmod>2018-06-16T06:10:25.808Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://zhih.me/tags/Python/</loc>
+        <lastmod>2018-06-16T06:10:25.808Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

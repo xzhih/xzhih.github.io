@@ -7,8 +7,56 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/pyenv-usage/</loc>
+        <lastmod>2018-06-16T06:10:25.808Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/one-key-hidpi/</loc>
+        <lastmod>2018-06-16T06:10:25.802Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/make-macos-better/</loc>
+        <lastmod>2018-06-16T06:10:25.799Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/macos-mount-ntfs-ext/</loc>
+        <lastmod>2018-06-16T06:10:25.796Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/how-the-web-works/</loc>
-        <lastmod>2018-06-16T06:03:13.188Z</lastmod>
+        <lastmod>2018-06-16T06:10:25.791Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/hackintosh-install-guide/</loc>
+        <lastmod>2018-06-16T06:10:25.787Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/dell-7460-7560-hackintosh/</loc>
+        <lastmod>2018-06-16T06:10:25.783Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -16,15 +64,7 @@
 
     <url>
         <loc>https://zhih.me/syncthing-the-best/</loc>
-        <lastmod>2018-06-16T05:58:37.038Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/pyenv-usage/</loc>
-        <lastmod>2018-06-16T05:50:31.800Z</lastmod>
+        <lastmod>2018-06-16T06:10:25.774Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -39,32 +79,8 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/make-macos-better/</loc>
-        <lastmod>2018-06-16T05:49:52.870Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/macos-mount-ntfs-ext/</loc>
-        <lastmod>2018-06-16T05:49:52.867Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/lnmp-on-128m-ram-vps/</loc>
         <lastmod>2018-06-16T05:49:52.864Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/one-key-hidpi/</loc>
-        <lastmod>2018-06-16T05:49:52.850Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -111,24 +127,8 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/dell-7460-7560-hackintosh/</loc>
-        <lastmod>2018-06-14T06:19:31.118Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/hexo-casper-usage/</loc>
         <lastmod>2018-06-14T06:18:39.205Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/hackintosh-install-guide/</loc>
-        <lastmod>2018-06-12T22:11:55.340Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
