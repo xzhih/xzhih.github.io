@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/syncthing-the-best/</loc>
+        <lastmod>2018-06-16T06:35:16.301Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/my-weapp-topmov/</loc>
+        <lastmod>2018-06-16T06:16:47.875Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/pyenv-usage/</loc>
         <lastmod>2018-06-16T06:10:25.808Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -63,14 +79,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/syncthing-the-best/</loc>
-        <lastmod>2018-06-16T06:10:25.774Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/nginx-http2-https/</loc>
         <lastmod>2018-06-16T05:49:52.875Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -105,14 +113,6 @@
     <url>
         <loc>https://zhih.me/Padavan-entware/</loc>
         <lastmod>2018-06-14T06:32:07.109Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/my-weapp-topmov/</loc>
-        <lastmod>2018-06-14T06:30:58.904Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
