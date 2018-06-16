@@ -7,8 +7,96 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/pyenv-usage/</loc>
+        <lastmod>2018-06-16T05:50:31.800Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/nginx-http2-https/</loc>
+        <lastmod>2018-06-16T05:49:52.875Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/make-macos-better/</loc>
+        <lastmod>2018-06-16T05:49:52.870Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/macos-mount-ntfs-ext/</loc>
-        <lastmod>2018-06-13T05:13:35.404Z</lastmod>
+        <lastmod>2018-06-16T05:49:52.867Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/lnmp-on-128m-ram-vps/</loc>
+        <lastmod>2018-06-16T05:49:52.864Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/how-the-web-works/</loc>
+        <lastmod>2018-06-16T05:49:52.859Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/one-key-hidpi/</loc>
+        <lastmod>2018-06-16T05:49:52.850Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/onmp-installation/</loc>
+        <lastmod>2018-06-16T05:49:50.110Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/syncthing-the-best/</loc>
+        <lastmod>2018-06-16T05:42:15.342Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/LEDE-entware/</loc>
+        <lastmod>2018-06-15T08:27:43.292Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/Padavan-entware/</loc>
+        <lastmod>2018-06-14T06:32:07.109Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/my-weapp-topmov/</loc>
+        <lastmod>2018-06-14T06:30:58.904Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -16,7 +104,7 @@
 
     <url>
         <loc>https://zhih.me/format-Upan-partition/</loc>
-        <lastmod>2018-06-12T22:16:25.623Z</lastmod>
+        <lastmod>2018-06-14T06:20:44.676Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -24,7 +112,15 @@
 
     <url>
         <loc>https://zhih.me/dell-7460-7560-hackintosh/</loc>
-        <lastmod>2018-06-12T22:12:03.525Z</lastmod>
+        <lastmod>2018-06-14T06:19:31.118Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/hexo-casper-usage/</loc>
+        <lastmod>2018-06-14T06:18:39.205Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -39,96 +135,8 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/make-macos-better/</loc>
-        <lastmod>2018-06-12T22:11:53.977Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/pyenv-usage/</loc>
-        <lastmod>2018-06-12T22:11:47.110Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/one-key-hidpi/</loc>
-        <lastmod>2018-06-12T22:11:43.354Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/LEDE-entware/</loc>
-        <lastmod>2018-06-11T12:50:23.631Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/Merlin-entware/</loc>
         <lastmod>2018-06-11T12:49:57.388Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/onmp-installation/</loc>
-        <lastmod>2018-06-11T12:46:05.976Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/Padavan-entware/</loc>
-        <lastmod>2018-06-11T12:45:49.825Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/lnmp-on-128m-ram-vps/</loc>
-        <lastmod>2018-06-03T06:23:29.979Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/my-weapp-topmov/</loc>
-        <lastmod>2018-05-27T22:46:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/how-the-web-works/</loc>
-        <lastmod>2018-05-27T22:43:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/hexo-casper-usage/</loc>
-        <lastmod>2018-05-26T01:31:49.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/nginx-http2-https/</loc>
-        <lastmod>2018-05-26T01:31:49.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
