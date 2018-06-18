@@ -7,6 +7,38 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/nginx-http2-https/</loc>
+        <lastmod>2018-06-18T21:36:05.899Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/syncthing-the-best/</loc>
+        <lastmod>2018-06-18T21:30:03.235Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/pyenv-usage/</loc>
+        <lastmod>2018-06-18T21:29:51.253Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/how-the-web-works/</loc>
+        <lastmod>2018-06-18T21:29:15.209Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/LEDE-entware/</loc>
         <lastmod>2018-06-18T08:49:44.342Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -15,32 +47,8 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/nginx-http2-https/</loc>
-        <lastmod>2018-06-17T19:30:50.257Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/syncthing-the-best/</loc>
-        <lastmod>2018-06-16T06:35:16.301Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/my-weapp-topmov/</loc>
         <lastmod>2018-06-16T06:16:47.875Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/pyenv-usage/</loc>
-        <lastmod>2018-06-16T06:10:25.808Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -65,14 +73,6 @@
     <url>
         <loc>https://zhih.me/macos-mount-ntfs-ext/</loc>
         <lastmod>2018-06-16T06:10:25.796Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/how-the-web-works/</loc>
-        <lastmod>2018-06-16T06:10:25.791Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
