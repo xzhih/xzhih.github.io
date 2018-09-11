@@ -8,7 +8,47 @@
 
     <url>
         <loc>https://zhih.me/make-your-website-support-tls1-3/</loc>
-        <lastmod>2018-06-18T21:40:51.796Z</lastmod>
+        <lastmod>2018-07-06T12:18:56.944Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/hackintosh-install-guide/</loc>
+        <lastmod>2018-07-02T14:17:23.789Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/Padavan-entware/</loc>
+        <lastmod>2018-06-23T14:13:37.484Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/LEDE-entware/</loc>
+        <lastmod>2018-06-20T17:13:11.703Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/Merlin-entware/</loc>
+        <lastmod>2018-06-20T17:13:10.048Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/syncthing-the-best/</loc>
+        <lastmod>2018-06-20T10:16:04.800Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,14 +57,6 @@
     <url>
         <loc>https://zhih.me/nginx-http2-https/</loc>
         <lastmod>2018-06-18T21:36:05.899Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/syncthing-the-best/</loc>
-        <lastmod>2018-06-18T21:30:03.235Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -41,14 +73,6 @@
     <url>
         <loc>https://zhih.me/how-the-web-works/</loc>
         <lastmod>2018-06-18T21:29:15.209Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/LEDE-entware/</loc>
-        <lastmod>2018-06-18T08:49:44.342Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -87,14 +111,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/hackintosh-install-guide/</loc>
-        <lastmod>2018-06-16T06:10:25.787Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/dell-7460-7560-hackintosh/</loc>
         <lastmod>2018-06-16T06:10:25.783Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -119,14 +135,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/Padavan-entware/</loc>
-        <lastmod>2018-06-14T06:32:07.109Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/format-Upan-partition/</loc>
         <lastmod>2018-06-14T06:20:44.676Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -137,14 +145,6 @@
     <url>
         <loc>https://zhih.me/hexo-casper-usage/</loc>
         <lastmod>2018-06-14T06:18:39.205Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/Merlin-entware/</loc>
-        <lastmod>2018-06-11T12:49:57.388Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
