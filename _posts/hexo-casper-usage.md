@@ -42,17 +42,17 @@ DEMO [https://xzhih.github.io/hexo-theme-casper/](https://xzhih.github.io/hexo-t
 
 ## 安装方法
 
-#### 下载
+### 下载
 
 ```shell
 $ git clone https://github.com/xzhih/hexo-theme-casper.git themes/hexo-casper
 ```
 
-#### 激活
+### 激活
 
 把hexo配置文件 `_config.yml` 里的 `theme` 字段内容改为 `hexo-casper` 。
 
-#### 升级
+### 升级
 
 建议先备份一下在执行下面的操作。
 
@@ -61,24 +61,24 @@ $ cd themes/casper
 $ git pull
 ```
 
-#### 添加统一的文章模板参数
+### 添加统一的文章模板参数
 
 把下面的内容加入到 `scaffolds/post.md`, 
 
-```
+```yaml
 cover_img:     # 在文章摘要上显示
 feature_img:   # 在文章详细页面上置顶
 description:   # 文章描述
 keywords:      # 关键字
 ```
 
-#### valine 评论系统
+### valine 评论系统
 
 使用方法请到他的[官网](https://valine.js.org)查看，并结合下面的配置文件详细添加appID和appKey
 
 **添加关于页面**
 
-```
+```shell
 $ hexo new page about
 ```
 

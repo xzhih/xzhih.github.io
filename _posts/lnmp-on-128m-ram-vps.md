@@ -33,7 +33,7 @@ CPU：Intel(R) Xeon(R) CPU X5560 @ 2.80GHz 单核
 
 在执行以下操作前，建议先运行一下命令，更新和安装一些包，以防出错
 
-```
+```shell
 $ apt-get update && apt-get upgrade
 $ apt-get install curl wget
 ```
@@ -42,13 +42,14 @@ $ apt-get install curl wget
 
 系统是 debian8，自带源内没有 PHP7，所以添加一个 [dotdeb](http://www.dotdeb.org) 源，它里面有 debian7、debian8 的各种软件包，同时他们也提供世界各地的[镜像](https://www.dotdeb.org/mirrors/)。
 
-```
+```shell
 $ vi /etc/apt/sources.list
 # 在 sources.list 里添加两行 (deb 和 deb-src)
 ```
 
+我的 vps 在美帝，所以添加了他们的美国镜像
+
 ```
-# 我的 vps 在美帝，所以添加了他们的美国镜像
 deb http://mirrors.asnet.am/dotdeb/ jessie all
 deb-src http://mirrors.asnet.am/dotdeb/ jessie all
 ```
@@ -59,7 +60,7 @@ deb-src http://mirrors.asnet.am/dotdeb/ jessie all
 
 GPG主要是实现官方发布的包的签名。
 
-```
+```shell
 $ wget https://www.dotdeb.org/dotdeb.gpg
 $ sudo apt-key add dotdeb.gpg
 ```
@@ -72,7 +73,7 @@ $ sudo apt-key add dotdeb.gpg
 
 ### 1. Nginx
 
-```
+```shell
 $ apt-get install nginx -y
 ```
 
@@ -80,7 +81,7 @@ $ apt-get install nginx -y
 
 ### 2. PHP7
 
-```
+```shell
 $ apt-get install php7.0 php7.0-cgi php7.0-cli php7.0-fpm php7.0-mysql php7.0-odbc php7.0-opcache -y
 ```
 
@@ -90,7 +91,7 @@ $ apt-get install php7.0 php7.0-cgi php7.0-cli php7.0-fpm php7.0-mysql php7.0-od
 
 ### 3. MySQL
 
-```
+```shell
 $ apt-get install mysql-client mysql-server -y
 ```
 
@@ -102,7 +103,7 @@ $ apt-get install mysql-client mysql-server -y
 
 至此 lnmp 已经安装完毕了，我们先看看相关的管理命令再安装 WordPress。
 
-```
+```shell
 # 启动|停止|重启
 $ /etc/init.d/nginx start|stop|restart
 $ /etc/init.d/php7.0-fpm start|stop|restart

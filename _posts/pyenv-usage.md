@@ -3,14 +3,16 @@ title: 使用 Pyenv 管理 PY 的版本
 date: 2018-04-05 22:34:12
 tags: 
 - Python
-- MacOS
+- macOS
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/pyenv-usage/cover.jpg
-description: 教你如何使用 Pyenv 管理 MacOS 上的 Python 版本
-keywords: Python, MacOS, Pyenv
+description: 教你如何使用 Pyenv 管理 macOS 上的 Python 版本
+keywords: Python, macOS, Pyenv
 ---
 
-前几天使用 pip 安装腾讯云 COS 的命令行工具 [coscmd](https://github.com/tencentyun/coscmd) 的时候，MacOS 自带的 Python 和 pip 让我觉得不爽。
+## 前言
+
+前几天使用 pip 安装腾讯云 COS 的命令行工具 [coscmd](https://github.com/tencentyun/coscmd) 的时候，macOS 自带的 Python 和 pip 让我觉得不爽。
 
 顺便装一下逼，上面提到的 [coscmd](https://github.com/tencentyun/coscmd) 我提交了几行代码，得到了 merge ，😏😏**我特么也是给腾讯提交过代码的人**😏😏。
 
@@ -30,13 +32,13 @@ keywords: Python, MacOS, Pyenv
 
 还是使用 homebrew 安装，关于 homebrew ，去我 [上一篇文章](https://zhih.me/make-macos-better/) 看看。
 
-```
+```shell
 $ brew install pyenv
 ```
 
 安装好之后，我们还需要在打开 shell 的时候自动执行 pyenv 的初始化
 
-```
+```shell
 $ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
 
@@ -50,7 +52,7 @@ $ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 
 首先是找到需要装的 Python 版本号
 
-```
+```shell
 $ pyenv install --list
 ```
 
@@ -58,7 +60,7 @@ $ pyenv install --list
 
 比如说我这里要装个 2.7.14 和 3.6.5
 
-```
+```shell
 $ pyenv install 2.7.14
 $ pyenv install 3.6.5
 ```
@@ -73,7 +75,7 @@ $ pyenv install 3.6.5
 
 #### 全局
 
-```
+```shell
 $ pyenv global 3.6.5
 $ pyenv rehash
 ```
@@ -86,7 +88,7 @@ $ pyenv rehash
 
 例如我要给当前目录设置为 miniconda3-4.3.30
 
-```
+```shell
 $ pyenv local miniconda3-4.3.30
 $ pyenv rehash
 ```
@@ -95,7 +97,7 @@ $ pyenv rehash
 
 #### 查看环境设置
 
-```
+```shell
 $ pyenv versions
 ```
 

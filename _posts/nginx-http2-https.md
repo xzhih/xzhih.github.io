@@ -8,7 +8,7 @@ tags:
 categories: 教程 
 cover_img: https://pic.zhih.me/blog/posts/nginx-http2-https/cover.jpg
 description: nginx 配置 HTTPS 教程，教你如何开启 http2 和服务器推送，加速你的网站
-keywords: web 性能优化, http2, http push, nginx 服务器推送
+keywords: web性能优化, http2, http push, nginx服务器推送
 ---
 
 我的小博客在SSL Labs 的 [SSL Server Test](https://www.ssllabs.com/ssltest/index.html) 中得到了 A+ 的好成绩
@@ -19,9 +19,9 @@ keywords: web 性能优化, http2, http push, nginx 服务器推送
 
 虽然没搭建过什么大站，但是这几年也积累了不少经验，今天就说说在 Nginx 上配置 HTTPS、HTTP/2，并开启服务器推送。
 
->很多人说做产品要追求用户体验，作为一个用户，我认为一个网站最重要的就是打开的速度。所以在自己搭网站的时候，一直痴心于提高网站的速度。
+很多人说做产品要追求用户体验，作为一个用户，我认为一个网站最重要的就是打开的速度。所以在自己搭网站的时候，一直痴心于提高网站的速度。
 
->以我这个博客为例，自己移植并改写了主题，资源都进行了压缩，公共静态资源都用了公共 CDN，因为 VPS 的带宽只有可怜的 1M，所以图片资源都进行了压缩并存到了腾讯云 COS，使用 CDN 进行加速。这样的一堆加成之后，即使 VPS 每秒只能跑 128kb 的资源，也能快速的打开网站。
+以我这个博客为例，自己移植并改写了主题，资源都进行了压缩，公共静态资源都用了公共 CDN，因为 VPS 的带宽只有可怜的 1M，所以图片资源都进行了压缩并存到了腾讯云 COS，使用 CDN 进行加速。这样的一堆加成之后，即使 VPS 每秒只能跑 128kb 的资源，也能快速的打开网站。
 
 ## 优化什么
 
@@ -82,6 +82,10 @@ web 性能优化的门路很多，有空我再另开一篇我对优化的见解�
 是不是美滋滋
 
 ## 配置 HTTPS
+
+我的新文章，更详细的 HTTPS 配置，可以到这里查看
+
+https://zhih.me/make-your-website-support-tls1-3/
 
 本来这篇文章就是要写写，如何配置 HTTPS 的，想不到扯出这么多
 
@@ -144,6 +148,9 @@ server {
     ssl_certificate_key   /ssl/zhih.me.key;
     ssl_session_cache shared:SSL:50m;
     ssl_session_timeout 1d;
+    ssl_session_tickets on;
+    ssl_stapling on;
+    ssl_stapling_verify on;
     add_header Strict-Transport-Security max-age=15768000;
     location / {
         index  index.html;
@@ -205,7 +212,7 @@ location / {
 
 保存配置，重启 Nginx 生效
 
-```
+```shell
 $ nginx -s reload
 ```
 
@@ -215,7 +222,7 @@ HTTPS 生效结果查看很简单，直接打开你的网站，看到浏览器�
 
 我们主要看 HTTP2 是否生效，使用 curl 命令，curl 需要支持 HTTPS HTTP2
 
-```
+```shell
 $ curl --http2 -I https://zhih.me
 ```
 

@@ -3,11 +3,11 @@ title: 黑苹果安装教程
 date: 2018-03-31 19:42:54
 tags: 
 - hackintosh
-- MacOS
+- macOS
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/hackintosh-install-guide/cover.jpg
 description: 详细的黑苹果安装教程，与燃7000相同或相近的机器都能按照这个教程安装
-keywords: hackintosh, MacOS, 黑苹果, dell, 燃7000
+keywords: hackintosh, macOS, 黑苹果, dell, 燃7000
 ---
 
 在燃7000 的群里发现还有很多小伙伴进群，挺震惊的，毕竟这本子这么久了还能保持一定的热度，但是群里的教程比较老旧，很多内容已经不适合现在的新系统，于是就有了这个教程。
@@ -28,7 +28,7 @@ YouTube：https://youtu.be/IZCF3E_oQB8
 
 分区精灵 [http://www.diskgenius.cn](http://www.diskgenius.cn)
 
-黑果小兵的 MacOS 镜像 [https://blog.daliansky.net](https://blog.daliansky.net/macOS-High-Sierra-10.13.4-17E199-Release-Version-and-Clover-4418-Original-Image.html)
+黑果小兵的 macOS 镜像 [https://blog.daliansky.net](https://blog.daliansky.net/macOS-High-Sierra-10.13.5-(17F77)-Release-Version-with-Clover-4512-original-mirror.html)
 
 transmac 链接: https://pan.baidu.com/s/15QmZZLtRU1ZwMi7uCYKC-g 密码: 8dpe
 
@@ -38,7 +38,7 @@ transmac 链接: https://pan.baidu.com/s/15QmZZLtRU1ZwMi7uCYKC-g 密码: 8dpe
 
 ![ESP分区](https://pic.zhih.me/blog/posts/hackintosh-install-guide/ESP分区.jpg)
 
-分出你想要装 MacOS 的分区，大小你自己定，格式随便，因为安装时要抹盘
+分出你想要装 macOS 的分区，大小你自己定，格式随便，因为安装时要抹盘
 
 ## 3. 写入镜像
 
@@ -84,23 +84,23 @@ transmac 链接: https://pan.baidu.com/s/15QmZZLtRU1ZwMi7uCYKC-g 密码: 8dpe
 
 ![clover启动设置](https://pic.zhih.me/blog/posts/hackintosh-install-guide/clover启动设置.jpg)
 
-返回选择 MacOS 安装引导项
+返回选择 macOS 安装引导项
 
 ### 抹盘
 
-以上不出意外，就能看到 MacOS 的恢复模式了
+以上不出意外，就能看到 macOS 的恢复模式了
 
 进入磁盘工具
 
-选择你要安装到的分区，点击抹掉，选择格式为 `MacOS扩展（日志式）`，抹掉
+选择你要安装到的分区，点击抹掉，选择格式为 `macOS扩展（日志式）`，抹掉
 
 ![抹盘](https://pic.zhih.me/blog/posts/hackintosh-install-guide/抹盘.jpg)
 
 抹盘出现错误的，一般是分区所在硬盘的 ESP 分区不足 200M 导致的
 
-### 安装 MacOS
+### 安装 macOS
 
-退出磁盘工具，选择安装 MacOS
+退出磁盘工具，选择安装 macOS
 
 之后就能正常安装了，具体的我就不上图了，想看过程就去看视频版的吧
 

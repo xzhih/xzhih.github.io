@@ -2,16 +2,15 @@
 title: WEB 是如何工作的
 date: 2018-04-28T00:34:17.000Z
 tags:
-  - web
-  - web 优化
-categories:
-  - WEB
+- web
+- web 优化
+categories: WEB
 cover_img: 'https://pic.zhih.me/blog/posts/how-the-web-works/cover.jpg'
 description: web 是如何工作的，按下回车，浏览器干了啥，电脑干了啥，一切看似简单，实则涉及了很多知识
 keywords: 'web, web工作原理, 当按下回车, HTTP原理, DNS原理, 域名的结构'
 ---
 
-本来很犹豫是否要写一下这篇文章的，毕竟自己才疏学浅，说些浅的知识还行，一旦深入，就会漏了马脚。但是，另一方面想，既然知道自己懂的不够，就更应该把知道的给梳理出来，也好进行下一步的学习。所以这篇文章也算是对当前所学所知进行一个总结吧，遛😂。
+本来很犹豫是否要写一下这篇文章的，毕竟自己知之甚少，说些浅的知识还行，一旦深入，就会漏了马脚。但是，另一方面想，既然知道自己懂的不够，就更应该把知道的给梳理出来，也好进行下一步的学习。所以这篇文章也算是对当前所学所知进行一个总结吧，遛😂。
 
 # 简解
 
@@ -129,7 +128,7 @@ URL 的标准格式如下：
 
 这个过程可以使用 dig 命令查看
 
-```
+```shell
 $ dig www.zhih.me +trace
 ```
 
@@ -178,7 +177,7 @@ https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 
 以最常用的 get 请求为例：
 
-```
+```shell
 $ curl -v https://mov.zhih.me/weapp/list/1/2
 ```
 
@@ -302,7 +301,7 @@ content-length: 589
 
 在上面的 HTML 中，`<head>` 里有个外部样式表 `style.css`，HTML 解析到这里时会向服务器请求资源，得到这样的资源：
 
-```
+```css
 body { 
 	font-size: 16px
 }
@@ -359,7 +358,7 @@ img {
 
 除非将 JavaScript 显式声明为异步，否则它会阻止构建 DOM，因为默认情况下，浏览器遇到 `<script>` 标签时会直接执行
 
-所以，我们需要尽量把 CSS 放在网页头部，避免太晚才构建 CSSOM，影响渲染；尽量把 JavaScript 放在网页底部，并且设置 async、defer 属性，避免阻塞 DOM 的构建。
+所以，我们需要尽量把 CSS 放在网页头部，避免太晚才构建 CSSOM，影响渲染；尽量把 JavaScript 放在网页底部，并且设置 async、defer 属性，避免阻塞 DOM 的构建。defer 是“渲染完再执行”，async 是“下载完就执行”，defer 如果有多个脚本，会按照在页面中出现的顺序加载，多个async 脚本不能保证加载顺序。
 
 ## 参考
 

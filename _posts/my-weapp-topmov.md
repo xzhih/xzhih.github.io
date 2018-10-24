@@ -1,5 +1,5 @@
 ---
-title: 做了个小程序
+title: 做了个电影排行列表小程序
 date: 2018-04-26 00:24:24
 tags: 
 - 小程序
@@ -74,6 +74,15 @@ keywords: 微信小程序, TOP 电影看不完, 豆瓣电影, 电影排名
 后端目录结构
 
 ![后端目录结构](https://pic.zhih.me/blog/posts/my-weapp-topmov/server.jpg)
+
+### 技术栈
+
+HTML
+CSS
+JavaScript
+Node.js
+MySQL
+Nginx
 
 ## 动手做
 

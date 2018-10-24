@@ -66,4 +66,4 @@ Info:  Looking for available partitions...
 
 ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](https://entware.net/) 的路由器，目前已经在 Padavan、LEDE（openwrt）、梅林上测试成功。
 
-[ONMP 安装教程: ](https://zhih.me/onmp-installation/)
+[ONMP 安装教程](https://zhih.me/onmp-installation/)

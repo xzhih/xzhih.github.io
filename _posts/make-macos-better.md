@@ -1,14 +1,14 @@
 ---
-title: MacOS 这样更好用
+title: macOS 这样更好用
 date: 2018-04-04 02:35:34
-tags: MacOS
+tags: macOS
 categories: 心得
 cover_img: https://pic.zhih.me/blog/posts/make-macos-better/cover.jpg
-description: 工欲善其事，必先利其器，教你如何配置 MacOS，让它更好用
-keywords: MacOS, Xcode, Homebrew, Oh My Zsh, GitHub
+description: 工欲善其事，必先利其器，教你如何配置 macOS，让它更好用
+keywords: macOS, Xcode, Homebrew, Oh My Zsh, GitHub
 ---
 
-我之所以选择使用 MacOS，是因为它是简洁高效的类 Unix 系统，对各种开发环境友好，并且近年来随着国内 Mac 的普及，各种应用软件也在 MacOS 上适配了，软件丰富度方面完全不用担心，并且 MacOS 下的软件更加的纯净简洁，不会像 Windows 下那样出现 “全家桶” 效应。
+我之所以选择使用 macOS，是因为它是简洁高效的类 Unix 系统，对各种开发环境友好，并且近年来随着国内 Mac 的普及，各种应用软件也在 macOS 上适配了，软件丰富度方面完全不用担心，并且 macOS 下的软件更加的纯净简洁，不会像 Windows 下那样出现 “全家桶” 效应。
 
 俗话说得好：工欲善其事，必先利其器
 
@@ -48,13 +48,13 @@ finder 作为一个文件资源管理中心，一些小设置可以让你用的�
 
 ## 2. Xcode
 
-Xcode 是 MacOS 下重要的 IDE，你要是开发苹果系的原生 App，需要它，而我们更多是需要他的命令行工具
+Xcode 是 macOS 下重要的 IDE，你要是开发苹果系的原生 App，需要它，而我们更多是需要他的命令行工具
 
 首先，在[App Store](https://itunes.apple.com/cn/app/xcode/id497799835?mt=12)安装Xcode。
 
 Xcode 提供了编译软件必备的 `Xcode Command Line Tools`，它包含了 GCC 编译器，在装完 Xcode 之后我们需要执行一下命令安装它
 
-```
+```shell
 $ xcode-select --install
 ```
 
@@ -62,7 +62,7 @@ $ xcode-select --install
 
 ## 3. Homebrew
 
-用过 Linux 的都知道包管理器，Debian 系用的 dpkg、红帽系用的 rpm，而 MacOS 下最受追捧的就是 [Homebrew](https://brew.sh/) 了，它可以让我们安装和更新应用程序或库，是个大杀器。
+用过 Linux 的都知道包管理器，Debian 系用的 dpkg、红帽系用的 rpm，而 macOS 下最受追捧的就是 [Homebrew](https://brew.sh/) 了，它可以让我们安装和更新应用程序或库，是个大杀器。
 
 ### 安装
 
@@ -70,13 +70,13 @@ $ xcode-select --install
 
 在终端输入命令以下回车就能进行安装了
 
-```
+```shell
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 在安装完成后执行以下命令，诊断一下有没有什么错误，或者 Homebrew 需要你做什么样的设置
 
-```
+```shell
 $ brew doctor
 ```
 
@@ -88,7 +88,7 @@ Homebrew 默认的源服务器在国外，这样我们在国内使用的时候�
 
 注意，以下命令为Zsh终端的配置，所以要执行 `brew install zsh` 安装zsh。
 
-```
+```shell
 # 替换brew.git:
 cd "$(brew --repo)"
 git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git
@@ -109,7 +109,7 @@ source ~/.zshrc
 
 homebrew 的用法和其它包管理器一样，如果你使用过，那么这步你可以不看
 
-```
+```shell
 # 安装软件包
 $ brew insatll 包名
 
@@ -131,19 +131,19 @@ $ brew upgrade
 
 ## 4. 快速查看
 
-QuickLook 是 MacOS 中相当高效的功能，按一下空格键就可以预览文件，不比打开文件浏览，很方便快捷，它自带的功能可能没有很全，有些文件无法预览，那么就需要给它装上插件。
+QuickLook 是 macOS 中相当高效的功能，按一下空格键就可以预览文件，不比打开文件浏览，很方便快捷，它自带的功能可能没有很全，有些文件无法预览，那么就需要给它装上插件。
 
 这里是一些常用的插件： https://github.com/sindresorhus/quick-look-plugins#manually
 
 可以直接使用 homebrew 进行安装
 
-```
+```shell
 $ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 ```
 
 ## 5. 终端
 
-终端绝对是 MacOS 秒杀 Windows 的第一大杀器了，当然，有很多人会推荐使用 iTerm2 之类的第三方终端，就我个人而言，系统自带的就足够，不用再去装那些功能丰富的终端，适合自己的才是第一生产力，学习怎么去用的时间，可以写一个 [onmp](https://zhih.me/onmp-installation/) 了。
+终端绝对是 macOS 秒杀 Windows 的第一大杀器了，当然，有很多人会推荐使用 iTerm2 之类的第三方终端，就我个人而言，系统自带的就足够，不用再去装那些功能丰富的终端，适合自己的才是第一生产力，学习怎么去用的时间，可以写一个 [onmp](https://zhih.me/onmp-installation/) 了。
 
 ### 字体
 
@@ -155,7 +155,7 @@ $ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize 
 
 使用 homebrew 安装
 
-```
+```shell
 $ brew install zsh
 ```
 
@@ -165,7 +165,7 @@ $ brew install zsh
 
 所以现在还要设置打开终端自动进入 `home` 目录
 
-```
+```shell
 $ vi ~/.zshrc
 ```
 
@@ -177,7 +177,7 @@ $ vi ~/.zshrc
 
 #### 安装
 
-```
+```shell
 $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
@@ -197,7 +197,7 @@ plugins=(git autojump colored-man-pages colorize pip python osx brew zsh-autosug
 
 ### 安装
 
-```
+```shell
 $ brew install git
 ```
 
@@ -211,7 +211,7 @@ $ brew install git
 
 github 可以通过 https 和 ssh 连接，我这里推荐使用 https 连接，原因是设置简单、不易被防火墙挡
 
-```
+```shell
 $ git config --global user.name "github用户名"
 $ git config --global user.email "github注册邮箱"
 ```
@@ -220,7 +220,7 @@ $ git config --global user.email "github注册邮箱"
 
 只是这样设置，每次使用都会提示输入密码，所以要告诉 Git 使用 osxkeychain helper 全局 credential.helper 配置
 
-```
+```shell
 $ git config --global credential.helper osxkeychain 
 ```
 
@@ -230,7 +230,7 @@ $ git config --global credential.helper osxkeychain
 
 ## 7. 后话
 
-MacOS 作为一个对开发者友好的系统，还有很对技巧等着大家发掘，并且每个人的习惯都是不同的，而 MacOS 也容纳了大家的不同，提供了大家个性化设置的基础，相信在你的调教下，它会成为你手中的大杀器。
+macOS 作为一个对开发者友好的系统，还有很对技巧等着大家发掘，并且每个人的习惯都是不同的，而 macOS 也容纳了大家的不同，提供了大家个性化设置的基础，相信在你的调教下，它会成为你手中的大杀器。
 
 
 

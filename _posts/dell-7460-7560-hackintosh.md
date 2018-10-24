@@ -3,11 +3,11 @@ title: 戴尔燃 7000 黑苹果 EFI
 date: 2017-12-03 19:42:54
 tags: 
 - hackintosh
-- MacOS
+- macOS
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/dell-7460-7560-hackintosh/cover.jpg
 description: 适用于戴尔燃7000系列第一第二代型号为7460/7560/7472/7572的笔记本电脑，EFI可直接用于安装和日常使用
-keywords: hackintosh, MacOS, 黑苹果, dell, 燃7000
+keywords: hackintosh, macOS, 黑苹果, dell, 燃7000
 ---
 
 简单说下我的电脑配置：
@@ -48,7 +48,7 @@ SSDT hotpatch 来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Co
 
 具体安装教程请看[我的教程](https://zhih.me/hackintosh-install-guide/)
 
-日常使用：安装好系统后，使用 `clover configurator` 挂载 MacOS 所在硬盘的 ESP 分区，把 EFI 拷贝进去，重启按 <kbd>F2</kbd> 进入 BIOS 设置此引导为首选，保存重启即可
+日常使用：安装好系统后，使用 `clover configurator` 挂载 macOS 所在硬盘的 ESP 分区，把 EFI 拷贝进去，重启按 <kbd>F2</kbd> 进入 BIOS 设置此引导为首选，保存重启即可
 
 ### 2. 声卡、耳机
 
@@ -70,9 +70,7 @@ SSDT hotpatch 来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Co
 
 文件夹内有两个网卡的驱动，自行将里面的驱动拷贝到 `EFI/clover/kext/other` 中
 
-## 其他说明
-
-### 触摸板手势
+### 5. 触摸板手势
 
 #### 1. 先在设置->键盘->修饰键里设置恢复到默认
 

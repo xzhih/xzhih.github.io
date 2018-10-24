@@ -6,7 +6,7 @@ tags:
 - 路由器
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/format-Upan-partition/cover.jpg
-description: 适用于梅林、padavan、LEDE（openwrt）等固件，在路由器上格式化 U 盘、硬盘
+description: 在梅林、padavan、LEDE（openwrt）等固件上格式化 U 盘、硬盘
 keywords: shell, 路由器, 梅林, padavan, LEDE, openwrt
 ---
 
@@ -45,6 +45,18 @@ Device Boot      Start         End      Blocks  Id System
 
 ## 删除分区、新建分区
 
+先卸载 U 盘，如果提示 `No such file or directory` 没关系，说明本来就没挂载上
+
+```shell
+# padavan、梅林可以执行以下这个推出 usb
+$ ejusb
+
+# 其他固件，或者梅林使用以上命令无效，则可以使用这个命令卸载分区
+$ umount /dev/sda1 
+```
+
+然后分区
+
 ```
 $ fdisk /dev/sda # 这是你的设备別打成分区
 
@@ -63,12 +75,12 @@ p   primary (0 primary, 0 extended, 4 free)
 e   extended (container for logical partitions)
 
 Select (default p): p # 选择p
-Partition number (1-4, default 1): # 回车
-First sector (2048-2065023, default 2048): #回车
+Partition number (1-4, default 1): # 输入 1 回车
+First sector (2048-2065023, default 2048): # 回车
 Last sector, +sectors or +size{K,M,G,T,P} (2048-2065023, default 2065023): # 回车
 Created a new partition 1 of type 'Linux' and of size 1007.3 MiB.
 
-Command (m for help): w # 输入w回车，保存并退出
+Command (m for help): w # 输入 w 回车，保存并退出
 The partition table has been altered.
 Calling ioctl() to re-read partition table.
 Syncing disks.
@@ -88,17 +100,44 @@ Device Boot      Start         End      Blocks  Id System
 
 ## 格式化分区
 
-分区已经有了，现在开始格式化，其实现在的分区已经是 ext4 格式的了，不过我们还是对它进行一下格式化，算是熟悉一下命令，以后直接这样格式化吧
+分区已经有了，现在开始格式化
 
-```shell
-$ mkfs.ext4 /dev/sda1 
-# 如果你的硬盘比较大，256G以上的话，是这个命令：mkfs.ext4 -T largefile /dev/sda1
-mke2fs 1.43.3 (04-Sep-2016)
-/dev/sda1 contains a ext4 file system labelled 'ONMP'
-last mounted on Sun Nov 12 09:21:22 2017
-Proceed anyway? (y,n) y # 输入y回车
+用 `mkfs.ext4` 命令格式化，并且设置卷标为 onmp
 
-$ umount /dev/sda1 # 如果出错，可能是因为已经被挂载了，先执行这个卸载
+**注意**，如果下面的命令提示 `/dev/sda1 is mounted`，则需要先卸载 U 盘，和分区前卸载的方法一样
+
+```
+$ mkfs.ext4 -m 0 -L onmp /dev/sda1 
+# 如果你的硬盘比较大，256G以上的话，是下面这个命令：
+# mkfs.ext4 -m 0 -L ONMP -T largefile /dev/sda1
+
+mke2fs 1.42.8 (20-Jun-2013)
+Filesystem label=onmp
+OS type: Linux
+Block size=4096 (log=2)
+Fragment size=4096 (log=2)
+Stride=0 blocks, Stripe width=0 blocks
+1880480 inodes, 7507456 blocks
+0 blocks (0.00%) reserved for the super user
+First data block=0
+Maximum filesystem blocks=0
+230 block groups
+32768 blocks per group, 32768 fragments per group
+8176 inodes per group
+Superblock backups stored on blocks:
+        32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
+        4096000
+
+Allocating group tables: done
+Writing inode tables: done
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information: done
+
 ```
 
-这样，U盘就被格式化完了
+这样，U盘就被格式化完了，拔插 U 盘可以重新挂载，或者你想用以下命令挂载也行
+
+```shell
+$ mkdir /mnt/onmp
+$ mount -t ext4 /dev/sda1 /mnt/onmp
+```
