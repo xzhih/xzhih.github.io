@@ -644,7 +644,6 @@ body {
 	bottom: auto;
 
 	height: 80px;
-
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .1)), to(transparent));
 	background: linear-gradient(rgba(0, 0, 0, .1), transparent);
 }
@@ -742,7 +741,6 @@ body {
 	overflow-x: auto;
 
 	margin-right: 10px;
-	padding-bottom: 80px;
 
 	white-space: nowrap;
 	letter-spacing: .4px;
@@ -820,12 +818,14 @@ body {
 	opacity: 1;
 }
 
-.site-nav-right {
+.site-nav-right,
+.search-button {
 	height: 40px;
 }
 
 .site-nav-right,
-.social-links {
+.social-links,
+.search-button {
 	display: -ms-flexbox;
 	display: -webkit-box;
 	display: flex;
@@ -834,7 +834,7 @@ body {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	-ms-flex-negative: 0;
-	flex-shrink: 0;;
+	flex-shrink: 0;
 }
 
 .social-links a:last-of-type {

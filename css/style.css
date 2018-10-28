@@ -7,18 +7,8 @@ body,
 	word-break: break-all;
 }
 
-@media (max-width: 800px) {
-	.floating-header-divider,
-	.floating-header-title {
-		visibility: inherit!important;
-	}
-	.floating-header-logo {
-		margin-left: 10px;
-		padding-right: 5px;
-	}
-	.floating-header-divider {
-		margin-left: 0px;
-	}
+img {
+	image-rendering: -webkit-optimize-contrast;
 }
 
 .post-full-content h5 {
@@ -47,11 +37,127 @@ body,
 	text-align: center;
 }
 
+@media (max-width: 800px) {
+	.floating-header-divider,
+	.floating-header-title {
+		visibility: inherit!important;
+	}
+	.floating-header-logo {
+		margin-left: 10px;
+		padding-right: 5px;
+	}
+	.floating-header-divider {
+		margin-left: 0px;
+	}
+}
+
+.search-button {
+	margin: 0 10px;
+}
+
+@media (min-width: 701px) {
+	.search-button {
+		display: none;
+	}
+	#local-search-result {
+		width: 80%!important;
+		padding: 2rem 1rem!important;
+		margin: 6rem 0 1rem!important;
+		border-radius: 4px;
+	}
+}
+
+.search-form {
+	height: 5rem;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: hsla(0,0%,100%,.95)
+}
+
+.search-overlay {
+	-webkit-box-align: unset!important;
+	-ms-flex-align: unset!important;
+	align-items: unset!important;
+}
+
+.search-overlay-logo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 5rem;
+	padding: 1.25rem 2rem
+}
+
+.search-input {
+	background: rgba(0,0,0,0.04);
+	border: none;
+	border-radius: 4px;
+	height: 3.5rem;
+	margin: .75rem;
+	padding: 0 2rem;
+	width: 600px;
+	max-width: 40%;
+}
+
+.search-overlay-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 5rem;
+	width: 5rem;
+}
+
+.search-overlay-close:before {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.search-overlay-close:after {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.search-overlay-close:before,
+.search-overlay-close:after {
+	position: absolute;
+	top: 2.4rem;
+	right: 1.8rem;
+	width: 2rem;
+	height: 2px;
+
+	content: "";
+	background: rgba(0, 25, 40, .97);
+}
+
+
+#local-search-result {
+	padding-top: 1rem;
+	margin: 5rem 0 0;
+	background: rgba(255, 255, 255, .95);
+	width: 100%;
+	overflow: auto;
+	border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+#local-search-result > ul, li {
+	list-style: none;
+}
+
+.search-result-title {
+	font-size: 1.8rem;
+}
+
+.search-keyword {
+	color: red
+}
+
 .site-footer-nav {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 
@@ -62,8 +168,7 @@ body,
 
 	width: 80%;
 	max-width: 710px;
-	margin: 6rem auto;
-	margin-bottom: 2rem;
+	margin: 2rem auto;
 
 	text-align: center;
 
@@ -72,7 +177,7 @@ body,
 
 .pagination a {
 	-webkit-transition: all .2s ease;
-	        transition: all .2s ease;
+	transition: all .2s ease;
 
 	color: #68757D;
 }
@@ -114,7 +219,7 @@ body,
 	padding: 8px 16px;
 
 	-webkit-transition: border .3s ease;
-	        transition: border .3s ease;
+	transition: border .3s ease;
 	text-decoration: none;
 
 	border: #BFC8CD 1px solid;
@@ -154,14 +259,13 @@ body,
 	}
 	.pagination {
 		width: 100%;
-		margin: 40px 0 20px;
 	}
 	.t-g-control {
 		top: unset!important;
 		right: unset!important;
 		bottom: 0!important;
 
-		    flex-direction: row!important;
+		flex-direction: row!important;
 
 		width: 100%;
 
@@ -221,7 +325,7 @@ body,
 	flex-grow: 1;
 	-ms-flex-positive: 1;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .read-next-card-content-ext a {
@@ -239,7 +343,7 @@ body,
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	    flex-direction: column;
+	flex-direction: column;
 
 	-webkit-box-direction: normal;
 	-webkit-box-orient: vertical;
@@ -257,7 +361,7 @@ body,
 	border-radius: 4px;
 	background: #F6F8FA;
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
-	        box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
 }
 
 .gotop:hover,
@@ -265,7 +369,6 @@ body,
 .toc-control:hover {
 	background: #F0F4F7;
 }
-
 
 .toc-main {
 	position: fixed;
@@ -387,7 +490,7 @@ body,
 	border-radius: 3px;
 	background-color: #FAFBFC;
 	-webkit-box-shadow: inset 0 -1px 0 #959DA5;
-	        box-shadow: inset 0 -1px 0 #959DA5;
+	box-shadow: inset 0 -1px 0 #959DA5;
 }
 
 .markdown-body h1,
@@ -561,7 +664,7 @@ body,
 
 .markdown-body img {
 	-webkit-box-sizing: content-box;
-	        box-sizing: content-box;
+	box-sizing: content-box;
 	max-width: 100%;
 
 	background-color: #FFFFFF;
