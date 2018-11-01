@@ -13,7 +13,7 @@ img {
 
 .post-img {
 	width: 100%;
-	min-height: 100px;
+	min-height: 5rem;
 	background: #C5D2D9 no-repeat 50%!important;
 	background-size: cover;
 	border-radius: 4px;
