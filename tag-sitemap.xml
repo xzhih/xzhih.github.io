@@ -58,6 +58,13 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/tags/LEDE/</loc>
+        <lastmod>2018-11-03T08:01:42.338Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://zhih.me/tags/onmp/</loc>
         <lastmod>2018-11-03T08:01:42.338Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -66,13 +73,6 @@
 
     <url>
         <loc>https://zhih.me/tags/entware/</loc>
-        <lastmod>2018-11-03T08:01:42.338Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://zhih.me/tags/LEDE/</loc>
         <lastmod>2018-11-03T08:01:42.338Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

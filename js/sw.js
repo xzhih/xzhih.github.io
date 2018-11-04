@@ -1,1 +1,73 @@
-var CACHE_NAME="site-cache",urlsToCache=["/","/css/allinone.min.css","/js/local-search.js"];self.addEventListener("install",function(e){e.waitUntil(caches.open(CACHE_NAME).then(function(e){return console.log("Opened cache"),e.addAll(urlsToCache)}))}),self.addEventListener("activate",function(e){e.waitUntil(caches.keys().then(function(e){return Promise.all(e.map(function(e){if(e!==CACHE_NAME)return caches.delete(e)}))}))}),self.addEventListener("fetch",function(e){e.respondWith(caches.match(e.request).then(function(n){if(n)return n;var t=e.request.clone();return fetch(t).then(function(n){if(!n||200!==n.status||"basic"!==n.type)return n;var t=n.clone();return caches.open(CACHE_NAME).then(function(n){n.put(e.request,t)}),n})}))});
+/*
+* @Author: xzhih
+* @Date:   2018-11-05 00:13:37
+* @Last Modified by:   xzhih
+* @Last Modified time: 2018-11-05 05:15:23
+*/
+
+var CACHE_NAME = "site-cache";
+var urlsToCache = [
+'/',
+'/css/allinone.min.css',
+'/js/lazyload.js',
+'/js/sw-local-search.js',
+'/js/post.min.js',
+'/searchData.json',
+'/images/favicon.png'
+];
+
+// 缓存
+self.addEventListener('install', function(event) {
+	event.waitUntil(
+		caches.open(CACHE_NAME)
+		.then(function(cache) {
+			return cache.addAll(urlsToCache);
+		})
+		);
+});
+
+// 缓存更新
+self.addEventListener('activate', function(event) {
+	event.waitUntil(
+		caches.keys().then(function(cacheNames) {
+			return Promise.all(
+				cacheNames.map(function(cacheName) {
+					if (cacheName !== "site-cache") {
+						return caches.delete(cacheName);
+					}
+				})
+				);
+		})
+		);
+});
+
+// 捕获请求并返回缓存数据
+self.addEventListener('fetch', function(event) {
+	event.respondWith(
+		caches.match(event.request).then(function(response) {
+			
+			if (response) {
+				return response;
+			}
+
+			var fetchRequest = event.request.clone();
+
+			return fetch(fetchRequest).then(
+				function(response) {
+					if(!response || response.status !== 200 || response.type !== 'basic') {
+						return response;
+					}
+
+					var responseToCache = response.clone();
+					caches.open(CACHE_NAME)
+					.then(function(cache) {
+						cache.put(event.request, responseToCache);
+					});
+
+					return response;
+				}
+				);
+
+		})
+		);
+});
