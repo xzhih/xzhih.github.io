@@ -2,18 +2,17 @@
 * @Author: xzhih
 * @Date:   2018-11-05 00:13:37
 * @Last Modified by:   xzhih
-* @Last Modified time: 2018-11-05 05:15:23
+* @Last Modified time: 2018-11-06 02:52:34
 */
 
-var CACHE_NAME = "site-cache";
+var CACHE_NAME = "'+(+new Date())+'";
 var urlsToCache = [
 '/',
 '/css/allinone.min.css',
 '/js/lazyload.js',
-'/js/sw-local-search.js',
+'/js/sw-local-search.min.js',
 '/js/post.min.js',
-'/searchData.json',
-'/images/favicon.png'
+'/searchData.json'
 ];
 
 // 缓存
@@ -32,7 +31,7 @@ self.addEventListener('activate', function(event) {
 		caches.keys().then(function(cacheNames) {
 			return Promise.all(
 				cacheNames.map(function(cacheName) {
-					if (cacheName !== "site-cache") {
+					if (cacheName !== CACHE_NAME) {
 						return caches.delete(cacheName);
 					}
 				})
@@ -43,31 +42,33 @@ self.addEventListener('activate', function(event) {
 
 // 捕获请求并返回缓存数据
 self.addEventListener('fetch', function(event) {
-	event.respondWith(
-		caches.match(event.request).then(function(response) {
-			
-			if (response) {
-				return response;
-			}
+  event.respondWith(
+    caches.match(event.request)
+      .then(function(response) {
+        // Cache hit - return response
+        if (response) {
+          return response;
+        }
 
-			var fetchRequest = event.request.clone();
+        var fetchRequest = event.request.clone();
 
-			return fetch(fetchRequest).then(
-				function(response) {
-					if(!response || response.status !== 200 || response.type !== 'basic') {
-						return response;
-					}
+        return fetch(fetchRequest).then(
+          function(response) {
+            // Check if we received a valid response
+            if(!response || response.status !== 200 || response.type !== 'basic') {
+              return response;
+            }
 
-					var responseToCache = response.clone();
-					caches.open(CACHE_NAME)
-					.then(function(cache) {
-						cache.put(event.request, responseToCache);
-					});
+            var responseToCache = response.clone();
 
-					return response;
-				}
-				);
+            caches.open(CACHE_NAME)
+              .then(function(cache) {
+                cache.put(event.request, responseToCache);
+              });
 
-		})
-		);
+            return response;
+          }
+        );
+      })
+    );
 });
