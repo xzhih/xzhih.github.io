@@ -20,8 +20,8 @@ img {
 }
 
 .b-lazy {
-	-webkit-transition: opacity 500ms ease-in-out;
-	transition: opacity 500ms ease-in-out;
+	-webkit-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
 	opacity: .5;
 }
 
@@ -159,7 +159,7 @@ img {
 	border-top: 1px solid rgba(0,0,0,0.05);
 }
 
-#local-search-result > ul, li {
+#local-search-result ul {
 	list-style: none;
 }
 
@@ -305,28 +305,12 @@ img {
 	}
 }
 
-.v .vinput,
-.v .vbtn,
-.v .vwrap .vcontrol .col,
-.v .vlist .vcard .vhead .vname,
-.v .vlist .vcard .vcontent {
+.v * {
 	font-size: unset!important;
 }
 
-.v .vbtn,
-.v .vwrap .vcontrol .col,
-.v .vlist .vcard .vcontent a {
-	font-size: 1.3rem!important;
-}
-
-.v .vinfo .col,
-.v .vinfo .vcount .vnum {
-	font-size: 1.5rem!important;
-}
-
-.v .vlist .vcard section .vfooter .vtime,
-.v .vlist .vcard section .vfooter .vat {
-	font-size: 1.2rem!important;
+.v .vlist .vcard .vhead .vsys {
+    font-size: .75rem!important;
 }
 
 .read-next-card-content-ext {
@@ -443,29 +427,17 @@ img {
 	content: "";
 }
 
-.markdown-body> *:first-child {
-	margin-top: 0 !important;
+@media (max-width: 500px){
+	.markdown-body> *:first-child {
+		margin-top: 0 !important;
+	}
 }
 
-.markdown-body> *:last-child {
-	margin-bottom: 0 !important;
-}
 
 .markdown-body a:not([href]) {
 	text-decoration: none;
 
 	color: inherit;;
-}
-
-.markdown-body p,
-.markdown-body blockquote,
-.markdown-body ul,
-.markdown-body ol,
-.markdown-body dl,
-.markdown-body table,
-.markdown-body pre {
-	margin-top: 0;
-	margin-bottom: 16px;
 }
 
 .markdown-body hr {
@@ -542,8 +514,7 @@ img {
 }
 
 .markdown-body h1 {
-	font-size: 1.9em;
-	line-height: 1.2;
+	font-size: 2em;
 
 	padding-bottom: .3em;
 
@@ -556,7 +527,6 @@ img {
 
 .markdown-body h2 {
 	font-size: 1.7em;
-	line-height: 1.225;
 
 	padding-bottom: .3em;
 
@@ -569,7 +539,6 @@ img {
 
 .markdown-body h3 {
 	font-size: 1.5em;
-	line-height: 1.43;
 }
 
 .markdown-body h3 .anchor {
@@ -577,7 +546,7 @@ img {
 }
 
 .markdown-body h4 {
-	font-size: 1.25em;
+	font-size: 1.35em;
 }
 
 .markdown-body h4 .anchor {
@@ -585,7 +554,7 @@ img {
 }
 
 .markdown-body h5 {
-	font-size: 1em;
+	font-size: 1.25em;
 }
 
 .markdown-body h5 .anchor {
@@ -593,7 +562,7 @@ img {
 }
 
 .markdown-body h6 {
-	font-size: 1em;
+	font-size: 1.15em;
 
 	color: #6A737D;
 }
@@ -812,7 +781,7 @@ img {
 	padding: .2em .4em;
 
 	border-radius: 3px;
-	background-color: rgba(27, 31, 35, .05);;
+	/*background-color: rgba(27, 31, 35, .05);;*/
 }
 
 .markdown-body code br,
