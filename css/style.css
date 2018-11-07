@@ -74,6 +74,7 @@ img {
 }
 
 .search-button {
+	height: 40px;
 	margin: 0 10px;
     display: -ms-flexbox;
     display: -webkit-box;
