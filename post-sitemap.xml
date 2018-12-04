@@ -7,8 +7,16 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/hexo-casper-usage/</loc>
+        <lastmod>2018-12-04T17:23:08.114Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/hackintosh-install-guide/</loc>
-        <lastmod>2018-12-03T10:39:59.644Z</lastmod>
+        <lastmod>2018-12-04T16:59:58.226Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -121,14 +129,6 @@
     <url>
         <loc>https://zhih.me/onmp-installation/</loc>
         <lastmod>2018-12-02T17:59:39.611Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/hexo-casper-usage/</loc>
-        <lastmod>2018-12-02T17:50:54.031Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
