@@ -1,20 +1,21 @@
 ---
-title: 我是如何在 128M 内存的 vps 上安装 lnmp 的
+title: 我是如何在128M内存的vps上安装lnmp的
 date: 2018-03-13 22:07:59
 tags: 
 - Linux
 - lnmp
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/lnmp-on-128m-ram-vps/cover.jpg
-description: 作为一个整天折腾 VPS 的博主，手里少不了各种便宜的低配小鸡，今天我要祭出我那经常被 BAN 😒的 128M 内存小鸡，为大家写一篇小内存 VPS 安装 lnmp 的教程，并且，我要让它把 WordPress 跑起来
+description: 作为一个整天折腾VPS的博主，手里少不了各种便宜的低配小鸡，今天我要祭出我那经常被BAN😒的128M内存小鸡，为大家写一篇小内存VPS安装lnmp的教程，并且，我要让它把WordPress跑起来，由于配置太低 ...
 keywords: OVZ, VPS, lnmp, Linux
+ld_json_img: https://pic.zhih.me/blog/posts/lnmp-on-128m-ram-vps/压力测试.jpg
 ---
+
+## 引言
 
 封面那张图和这篇文章无关😂，那是之前在学校的时候拍的，一台 64M 古董大脑壳装 win me，然后玩三维弹球🤪 2333
 
 ![三维弹球](https://pic.zhih.me/blog/posts/lnmp-on-128m-ram-vps/winme.jpg)
-
-## 前言
 
 作为一个整天折腾 VPS 的博主，手里少不了各种便宜的低配小鸡，今天我要祭出我那经常被 BAN 😒的 128M 内存小鸡，为大家写一篇小内存 VPS 安装 lnmp 的教程，并且，我要让它把 WordPress 跑起来。
 
@@ -33,17 +34,17 @@ CPU：Intel(R) Xeon(R) CPU X5560 @ 2.80GHz 单核
 
 在执行以下操作前，建议先运行一下命令，更新和安装一些包，以防出错
 
-```shell
-$ apt-get update && apt-get upgrade
-$ apt-get install curl wget
+```bash
+apt-get update && apt-get upgrade
+apt-get install curl wget
 ```
 
 ### 1. 添加软件源
 
 系统是 debian8，自带源内没有 PHP7，所以添加一个 [dotdeb](http://www.dotdeb.org) 源，它里面有 debian7、debian8 的各种软件包，同时他们也提供世界各地的[镜像](https://www.dotdeb.org/mirrors/)。
 
-```shell
-$ vi /etc/apt/sources.list
+```bash
+vi /etc/apt/sources.list
 # 在 sources.list 里添加两行 (deb 和 deb-src)
 ```
 
@@ -60,9 +61,9 @@ deb-src http://mirrors.asnet.am/dotdeb/ jessie all
 
 GPG主要是实现官方发布的包的签名。
 
-```shell
-$ wget https://www.dotdeb.org/dotdeb.gpg
-$ sudo apt-key add dotdeb.gpg
+```bash
+wget https://www.dotdeb.org/dotdeb.gpg
+sudo apt-key add dotdeb.gpg
 ```
 
 ### 3. 源添加完毕
@@ -73,16 +74,16 @@ $ sudo apt-key add dotdeb.gpg
 
 ### 1. Nginx
 
-```shell
-$ apt-get install nginx -y
+```bash
+apt-get install nginx -y
 ```
 
 打开浏览器，输入你的 IP，能显示 `Welcome to nginx!`，就说明安装成功了。
 
 ### 2. PHP7
 
-```shell
-$ apt-get install php7.0 php7.0-cgi php7.0-cli php7.0-fpm php7.0-mysql php7.0-odbc php7.0-opcache -y
+```bash
+apt-get install php7.0 php7.0-cgi php7.0-cli php7.0-fpm php7.0-mysql php7.0-odbc php7.0-opcache -y
 ```
 
 以上我只安装了几个 module，如有需要，自己安装其他的。
@@ -91,8 +92,8 @@ $ apt-get install php7.0 php7.0-cgi php7.0-cli php7.0-fpm php7.0-mysql php7.0-od
 
 ### 3. MySQL
 
-```shell
-$ apt-get install mysql-client mysql-server -y
+```bash
+apt-get install mysql-client mysql-server -y
 ```
 
 输入命令后，会进行安装，过程中会有输入密码的提示框，按提示操作即可。
@@ -103,11 +104,11 @@ $ apt-get install mysql-client mysql-server -y
 
 至此 lnmp 已经安装完毕了，我们先看看相关的管理命令再安装 WordPress。
 
-```shell
+```bash
 # 启动|停止|重启
-$ /etc/init.d/nginx start|stop|restart
-$ /etc/init.d/php7.0-fpm start|stop|restart
-$ /etc/init.d/mysql start|stop|restart
+/etc/init.d/nginx start|stop|restart
+/etc/init.d/php7.0-fpm start|stop|restart
+/etc/init.d/mysql start|stop|restart
 ```
 
 好了，咱们开始安装 WordPress 
@@ -140,3 +141,6 @@ $ /etc/init.d/mysql start|stop|restart
 如果你想购买 vps，可以看看 [DigitalOcean](https://m.do.co/c/5ddae9064d7f)
 
 这里是我的优惠链接：[https://m.do.co/c/5ddae9064d7f](https://m.do.co/c/5ddae9064d7f)，通过这个链接注册，你可以得到10美元用来购买vps。
+
+>本文章发表于底噪博客 https://zhih.me , 转载请注明
+

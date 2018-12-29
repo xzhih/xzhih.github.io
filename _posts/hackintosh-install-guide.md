@@ -3,34 +3,40 @@ title: 黑苹果安装教程
 date: 2018-03-31 19:42:54
 tags: 
 - hackintosh
-- macOS
+- MacOS
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/hackintosh-install-guide/cover.jpg
-description: 详细的黑苹果安装教程，与燃7000相同或相近的机器都能按照这个教程安装
-keywords: hackintosh, macOS, 黑苹果, dell, 燃7000
+description: 详细的黑苹果安装教程(视频加文字教程)，提供所有工具。黑果安装的教程大同小异，就是各个机型的配置不一样，从而导致EFI不一样，理论上讲，配置和燃7000相同或相近的机器都能按照这个教程安装好，其他机型也可以在使用我收集的EFI ...
+keywords: hackintosh, MacOS, 黑苹果, dell, 燃7000
+ld_json_img: https://pic.zhih.me/blog/posts/hackintosh-install-guide/抹盘.jpg
 ---
+
+## 引言
 
 在燃7000 的群里发现还有很多小伙伴进群，挺震惊的，毕竟这本子这么久了还能保持一定的热度，但是群里的教程比较老旧，很多内容已经不适合现在的新系统，于是就有了这个教程。
 
 黑果安装的教程大同小异，就是各个机型的配置不一样，从而导致EFI不一样，理论上讲，配置和燃7000相同或相近的机器都能按照这个教程安装好。
 
-# 视频版
+>其他机型的小伙伴可以到我的黑苹果合集里找找，可能会有合适你的 EFI 
+>https://zhih.me/hackintosh/
+
+## 视频版
 
 B站：https://www.bilibili.com/video/av21503652
 
 YouTube：https://youtu.be/IZCF3E_oQB8
 
-# 图文版
-
 ## 1. 准备
 
-1 个至少 8G 容量的U盘
+至少 8G 容量的U盘
 
-分区精灵 [http://www.diskgenius.cn](http://www.diskgenius.cn)
+分区精灵 http://www.diskgenius.cn
 
-黑果小兵的 macOS 镜像 [https://blog.daliansky.net](https://blog.daliansky.net/macOS-High-Sierra-10.13.5-(17F77)-Release-Version-with-Clover-4512-original-mirror.html)
+黑果小兵的 [MacOS 镜像](https://zhih.me/hackintosh/#/OS-images)
 
-transmac 链接: https://pan.baidu.com/s/15QmZZLtRU1ZwMi7uCYKC-g 密码: 8dpe
+镜像写入工具：[Etcher](https://www.balena.io/etcher/)
+
+~~transmac 链接: https://pan.baidu.com/s/15QmZZLtRU1ZwMi7uCYKC-g 密码: 8dpe~~
 
 ## 2. 分配硬盘ESP分区
 
@@ -38,17 +44,30 @@ transmac 链接: https://pan.baidu.com/s/15QmZZLtRU1ZwMi7uCYKC-g 密码: 8dpe
 
 ![ESP分区](https://pic.zhih.me/blog/posts/hackintosh-install-guide/ESP分区.jpg)
 
-分出你想要装 macOS 的分区，大小你自己定，格式随便，因为安装时要抹盘
+分出你想要装 MacOS 的分区，大小你自己定，格式随便，因为安装时要抹盘
 
 ## 3. 写入镜像
 
-### 格式化
+写入镜像现在可以使用更好的工具 [Etcher](https://www.balena.io/etcher/)，当然 transmac 也是可以用的
+
+### 第一种方法 Etcher
+
+1. 安装后打开 Etcher
+2. 选择镜像
+3. 选择 U 盘
+4. 等待写入完成
+
+**这样就可以了**，是不是很简单
+
+### 第二种方法 transmac 
+
+**格式化**
 
 以管理员身份运行 transmac，<kbd>右键</kbd>点击你的U盘，选择 `Format Disk for Mac`，全选择确认然后等它格式化完，win10 可能会提示要想使用U盘必须对其格式化，点取消。
 
 ![格式化](https://pic.zhih.me/blog/posts/hackintosh-install-guide/格式化.jpg)
 
-### 写入
+**写入**
 
 再次<kbd>右键</kbd>点击 U 盘，选择 `Restore with Disk Image`，选择镜像点击 OK，静静等待写入完成
 
@@ -84,23 +103,23 @@ transmac 链接: https://pan.baidu.com/s/15QmZZLtRU1ZwMi7uCYKC-g 密码: 8dpe
 
 ![clover启动设置](https://pic.zhih.me/blog/posts/hackintosh-install-guide/clover启动设置.jpg)
 
-返回选择 macOS 安装引导项
+返回选择 MacOS 安装引导项
 
 ### 抹盘
 
-以上不出意外，就能看到 macOS 的恢复模式了
+以上不出意外，就能看到 MacOS 的恢复模式了
 
 进入磁盘工具
 
-选择你要安装到的分区，点击抹掉，选择格式为 `macOS扩展（日志式）`，抹掉
+选择你要安装到的分区，点击抹掉，选择格式为 `MacOS扩展（日志式）`，抹掉
 
 ![抹盘](https://pic.zhih.me/blog/posts/hackintosh-install-guide/抹盘.jpg)
 
 抹盘出现错误的，一般是分区所在硬盘的 ESP 分区不足 200M 导致的
 
-### 安装 macOS
+### 安装 MacOS
 
-退出磁盘工具，选择安装 macOS
+退出磁盘工具，选择安装 MacOS
 
 之后就能正常安装了，具体的我就不上图了，想看过程就去看视频版的吧
 
@@ -144,4 +163,4 @@ transmac 链接: https://pan.baidu.com/s/15QmZZLtRU1ZwMi7uCYKC-g 密码: 8dpe
 
 字体太小？可以使用我的 HIDPI 脚本开启缩放
 
-
+>本文章发表于底噪博客 https://zhih.me , 转载请注明

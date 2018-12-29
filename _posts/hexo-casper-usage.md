@@ -1,5 +1,5 @@
 ---
-title: hexo 主题 casper 使用教程
+title: hexo主题casper使用教程
 date: 2017-11-18 13:43:00
 tags: 
 - hexo
@@ -7,8 +7,9 @@ tags:
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/hexo-casper-usage/cover.jpg
 feature_img: https://pic.zhih.me/blog/posts/hexo-casper-usage/feature.jpg
-description: 这是本人移植自 Ghost 的一个 hexo 主题，SEO 友好，自适应，多插件
+description: 这是本人移植自 Ghost 的一个 hexo 主题，SEO 友好，自适应，多插件，经过几次的修改更新，现在已经比较完善了，大多功能都是主题集成的，不需要再安装插件 ...
 keywords: hexo, Ghost, theme, web, hexo 主题
+ld_json_img: https://pic.zhih.me/blog/posts/hexo-casper-usage/feature.jpg
 ---
 
 ## 简述
@@ -23,6 +24,8 @@ DEMO [https://xzhih.github.io/hexo-theme-casper/](https://xzhih.github.io/hexo-t
 
 最近搞了个博客，用的是 [Hexo](https://hexo.io) ，发现了很多不错的主题，在寻找主题的过程中发现了另一个博客程序 [Ghost](https://ghost.org) 。它的新版默认主题很和我的胃口，但是在github上搜索一通后，发现只有老版本的被移植到了 hexo，于是想自己动手把它移植过来，看了官方文档后发现hexo的主题还是相当好制作的，用了几天弄好了。当然，功能还不是很完善。
 
+经过几次的修改更新，现在已经比较完善了，大多功能都是主题集成的，不需要再安装插件
+
 下面我就说一下主题的使用方法。
 
 ## 特性
@@ -31,21 +34,23 @@ DEMO [https://xzhih.github.io/hexo-theme-casper/](https://xzhih.github.io/hexo-t
 - 文章特色图（在文章详细页面上置顶）
 - 自定义菜单 
 - 自定义 favicon, logo, 头部背景, 作者头像
-- 社交链接 ( 现在支持微博、推特、脸书 ) 
+- 社交链接 ( 现在支持 github、哔哩哔哩、YouTube、微博、推特、脸书 ) 
 - 共三个插件（最新文章、分类、标签云）
 - 内容目录
-- 代码高亮 ( 使用 [highlight.js](https://highlightjs.org) 的 github 风格 )
-- 自适应网页设计
-- valine 评论系统
+- 代码高亮
+- 响应式网页设计
+- 懒加载
+- 主题集成本地搜索
+- Valine 评论系统
 - Baidu 链接提交、Google Analytics
-- SEO
+- Service Worker
 
 ## 安装方法
 
 ### 下载
 
-```shell
-$ git clone https://github.com/xzhih/hexo-theme-casper.git themes/hexo-casper
+```bash
+git clone https://github.com/xzhih/hexo-theme-casper.git themes/hexo-casper
 ```
 
 ### 激活
@@ -56,9 +61,9 @@ $ git clone https://github.com/xzhih/hexo-theme-casper.git themes/hexo-casper
 
 建议先备份一下在执行下面的操作。
 
-```shell
-$ cd themes/casper 
-$ git pull
+```bash
+cd themes/casper 
+git pull
 ```
 
 ### 添加统一的文章模板参数
@@ -78,17 +83,16 @@ keywords:      # 关键字
 
 **添加关于页面**
 
-```shell
-$ hexo new page about
+```bash
+hexo new page about
 ```
-
 
 ## 自定义配置
 
 编辑 `themes/hexo-casper/_config.yml` 设置你想显示出来的特性
 
 ```yaml
-# config
+# Config
 rss:            # link
 favicon: https://i.loli.net/2017/11/26/5a19c0b50432e.png
 blog_logo: 
@@ -114,6 +118,8 @@ social:
   twitter: https://twitter.com
   facebook: https://facebook
   telegram:
+  bilibili:
+  youtube:
   
 # 插件（显示在网站底部）
 widgets:
@@ -126,7 +132,15 @@ widgets:
 # https://github.com/sachinchoolur/lightgallery.js
 lightgallery: true
 
-# valine 评论系统
+# 懒加载
+# 首页已经默认开启，其他页面在此开启
+# https://github.com/dinbror/blazy
+lazyload: true
+
+# 搜索功能
+local_search: true
+
+# Valine 评论系统
 # https://valine.js.org
 comment: false
 valine:
@@ -141,6 +155,7 @@ valine:
 # PWA 
 # 你需要在 hexo 目录的 source 文件夹里创建一个 manifest.json 文件
 manifest: false
+service_workers: false
 
 navColor: '3c484e'
 
@@ -151,16 +166,15 @@ baidu: false
 googleAnalytics: false
 GA_TRACKING_ID: UA-XXXXXXXXXX-1
 
-# CDN 链接
-# 如果留空，则使用网站目录内的默认文件 
-CDN: 
-  jquery: https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js
-  highlightjs: https://cdn.staticfile.org/highlight.js/9.10.0/highlight.min.js
-  lightgalleryjs: https://cdn.staticfile.org/lightgallery/1.3.9/js/lightgallery.min.js
-  lightgallerycss: https://cdn.staticfile.org/lightgallery/1.3.9/css/lightgallery.min.css
 ```
+
+## 本地搜索功能参考
+
+https://github.com/wzpan/hexo-generator-search 
+https://github.com/SuperKieran/hexo-generator-search-zip
 
 ## 源主题的版权声明和 License 
 
 [https://github.com/TryGhost/Casper/blob/master/LICENSE](https://github.com/TryGhost/Casper/blob/master/LICENSE)
 
+>本文章发表于底噪博客 https://zhih.me , 转载请注明

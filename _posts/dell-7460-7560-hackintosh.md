@@ -1,14 +1,17 @@
 ---
-title: 戴尔燃 7000 黑苹果 EFI
+title: 戴尔燃7000黑苹果EFI
 date: 2017-12-03 19:42:54
 tags: 
 - hackintosh
-- macOS
+- MacOS
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/dell-7460-7560-hackintosh/cover.jpg
-description: 适用于戴尔燃7000系列第一第二代型号为7460/7560/7472/7572的笔记本电脑，EFI可直接用于安装和日常使用
-keywords: hackintosh, macOS, 黑苹果, dell, 燃7000
+description: 适用于戴尔燃7000系列第一第二代型号为7460/7560/7472/7572的笔记本电脑，EFI可直接用于安装和日常使用，经过一年多的持续更新，已经趋于完美，当做主力系统一点问题都没有 ...
+keywords: hackintosh, MacOS, 黑苹果, dell, 燃7000
+ld_json_img: https://pic.zhih.me/blog/posts/one-key-hidpi/hidpi-setting.jpg
 ---
+
+## 引言
 
 简单说下我的电脑配置：
 CPU: i5-7200u
@@ -23,6 +26,9 @@ RAM: 2x4G DDR4 2400MHz (但是这个U只支持2133MHz，不过也是可以了)
 这是我第一次动手装黑果，所以首先大量的看帖，各种逛[远景论坛](http://bbs.pcbeta.com/forum.php?gid=86)，在各种爬楼之后，心里终于有点底了，然后感谢同机型的 @设为主页，他应该是第一个在这台机子装上的人，他贡献了最初版的 EFI。我花了一个下午终于装上😀，其实感觉不是难装，是出现问题的时候不知道怎么解决，还好我没遇到太多问题。
 
 后来各种找驱动，学习了很多东西，就自己尝试配置 EFI，很简单的就配置出了这个 EFI。其他机型，配置相同或者大致相同的同学可以尝试使用这个 EFI。
+
+>其他机型的小伙伴可以到我的黑苹果合集里找找，可能会有合适你的 EFI
+>https://zhih.me/hackintosh/
 
 ## 说明
 
@@ -48,7 +54,7 @@ SSDT hotpatch 来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Co
 
 具体安装教程请看[我的教程](https://zhih.me/hackintosh-install-guide/)
 
-日常使用：安装好系统后，使用 `clover configurator` 挂载 macOS 所在硬盘的 ESP 分区，把 EFI 拷贝进去，重启按 <kbd>F2</kbd> 进入 BIOS 设置此引导为首选，保存重启即可
+日常使用：安装好系统后，使用 `clover configurator` 挂载 MacOS 所在硬盘的 ESP 分区，把 EFI 拷贝进去，重启按 <kbd>F2</kbd> 进入 BIOS 设置此引导为首选，保存重启即可
 
 ### 2. 声卡、耳机
 
@@ -95,4 +101,4 @@ SSDT hotpatch 来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Co
 ```
 
 
-
+>本文章发表于底噪博客 https://zhih.me , 转载请注明

@@ -1,14 +1,16 @@
 ---
-title: 在 Padavan 上使用 Entware
+title: 在Padavan 上使用Entware
 date: 2017-08-05 16:54:48
 tags:
 - entware
 - onmp
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/Padavan-entware/cover.jpg
-description: 在安装 ONMP 前，你要学会安装 Entware
+description: 在安装ONMP前，你要学会安装Entware，这篇文章教你如何快速安装Entware，让你的Padavan固件具有更加丰富的功能，Entware是一个适用于嵌入式系统的软件包库，使用opkg包管理系统进行管理，现在在官方的源上已经有超过2000个软件包了，可以说是非常的丰富
 keywords: Padavan, onmp, entware
 ---
+
+## 前言
 
 Entware 是一个适用于嵌入式系统的软件包库，使用 opkg 包管理系统进行管理，现在在官方的源上已经有超过 2000 个软件包了，可以说是非常的丰富
 
@@ -30,13 +32,13 @@ Entware 是一个适用于嵌入式系统的软件包库，使用 opkg 包管理
 
 - 如果你上面的不会，并且按照我的教程在路由器上格式化 U 盘，还可以按照以下做法
 
-```shell
-$ ejusb
-$ mkdir /media/onmp
-$ mount -t ext4 /dev/sda1 /media/onmp
+```bash
+ejusb
+mkdir /media/onmp
+mount -t ext4 /dev/sda1 /media/onmp
 # /dev/sda1 是你的 ext4 分区
 
-$ mkdir /media/onmp/opt
+mkdir /media/onmp/opt
 ```
 
 这样就创建好 opt 文件夹了，之后装的所有东西都会在里面
@@ -45,8 +47,8 @@ $ mkdir /media/onmp/opt
 
 先卸载 U 盘
 
-```shell
-$ ejusb
+```bash
+ejusb
 ```
 
 然后在路由器管理页打开 Entware
@@ -65,16 +67,16 @@ $ ejusb
 
 如果使用固件自带脚本出现错误，可以尝试使用以下脚本
 
-```shell
-$ wget -O - http://bin.entware.net/mipselsf-k3.4/installer/generic.sh | /bin/sh
+```bash
+wget -O - http://bin.entware.net/mipselsf-k3.4/installer/generic.sh | /bin/sh
 ```
 
 ### 测试 opkg 命令
 
 以上步骤之后，不出意外就装上了，我们现在可以测试一下
 
-```shell
-$ opkg update
+```bash
+opkg update
 ```
 
 ## 其他
@@ -86,3 +88,6 @@ $ opkg update
 ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](https://entware.net/) 的路由器，目前已经在 Padavan、LEDE（openwrt）、梅林上测试成功。
 
 [ONMP 安装教程](https://zhih.me/onmp-installation/)
+
+>本文章发表于底噪博客 https://zhih.me , 转载请注明
+

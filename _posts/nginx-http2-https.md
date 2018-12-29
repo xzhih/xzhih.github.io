@@ -1,5 +1,5 @@
 ---
-title: Nginx 配置 HTTPS 以及使用 HTTP2 服务器推送
+title: Nginx配置HTTPS以及使用HTTP2服务器推送
 date: 2018-04-17 20:46:56
 tags: 
 - nginx
@@ -7,15 +7,16 @@ tags:
 - web优化
 categories: 教程 
 cover_img: https://pic.zhih.me/blog/posts/nginx-http2-https/cover.jpg
-description: nginx 配置 HTTPS 教程，教你如何开启 http2 和服务器推送，加速你的网站
+description: nginx配置HTTPS教程，教你如何开启http2和服务器推送，加速你的网站，以我这个博客为例，即使VPS每秒只能跑128kb的资源，也能快速的打开网站，很多人说做产品要追求用户体验，作为一个用户，我认为一个网站最重要的就是打开的速度。所以在自己搭网站的时候，一直痴心于提高网站的速度...
 keywords: web性能优化, http2, http push, nginx服务器推送
+ld_json_img: https://pic.zhih.me/blog/posts/nginx-http2-https/blogspeed.jpg
 ---
+
+## 引言
 
 我的小博客在SSL Labs 的 [SSL Server Test](https://www.ssllabs.com/ssltest/index.html) 中得到了 A+ 的好成绩
 
 ![SSL Server Test](https://pic.zhih.me/blog/posts/nginx-http2-https/cover.jpg)
-
-## 前言
 
 虽然没搭建过什么大站，但是这几年也积累了不少经验，今天就说说在 Nginx 上配置 HTTPS、HTTP/2，并开启服务器推送。
 
@@ -73,11 +74,11 @@ web 性能优化的门路很多，有空我再另开一篇我对优化的见解�
 
 - HTTP1.1（目前主流协议）
     + 你发一句消息给朋友，需要等朋友回复你了才能发第二句
-    + 你不主动和朋友要红包，朋友不会给你
+    + 你不主动问候朋友，朋友不会理你
 
 - HTTP2.0 
     + 你可以一次发多条消息了，朋友也会一次性回复你
-    + 你的朋友会主动发红包给你
+    + 你的朋友会主动问候你
 
 是不是美滋滋
 
@@ -131,36 +132,40 @@ server {
 
 以下是我博客服务器 HTTPS 部分的完整配置，gzip 压缩等其他设置我放到了 nginx.conf 里
 
+我的配置可能会更新，可以去 [编译Nginx支持TLS1.3](https://zhih.me/make-your-website-support-tls1-3/) 那篇帖子里看，一切以那里的为最新
+
 ```
 server {
     listen 443 ssl http2;
     server_name zhih.me www.zhih.me;
+
     if ($host != zhih.me) {
         return 301 https://zhih.me$request_uri;
     }
-    root  你的站点目录;
-    charset utf-8;
-    ssl on;
+    root  /站点目录;
+
+    ssl_certificate       /ssl/zhih.me.crt;
+    ssl_certificate_key   /ssl/zhih.me.key;
+
     ssl_protocols TLSv1.2;
     ssl_ciphers 'ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256';
     ssl_prefer_server_ciphers on;
-    ssl_certificate       /ssl/zhih.me.crt;
-    ssl_certificate_key   /ssl/zhih.me.key;
+
     ssl_session_cache shared:SSL:50m;
     ssl_session_timeout 1d;
     ssl_session_tickets on;
+    
     ssl_stapling on;
     ssl_stapling_verify on;
-    add_header Strict-Transport-Security max-age=15768000;
+    
+    resolver 119.29.29.29 8.8.8.8 valid=300s;
+    resolver_timeout 10s;
+
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload";
+
     location / {
         index  index.html;
         http2_push /css/allinone.min.css;
-    }
-    location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|ico)$ {
-      expires 30d;
-    }
-    location ~ .*\.(js|css)?$ {
-      expires 15d;
     }
 }
 ```
@@ -212,8 +217,8 @@ location / {
 
 保存配置，重启 Nginx 生效
 
-```shell
-$ nginx -s reload
+```bash
+nginx -s reload
 ```
 
 #### 查看效果
@@ -222,8 +227,8 @@ HTTPS 生效结果查看很简单，直接打开你的网站，看到浏览器�
 
 我们主要看 HTTP2 是否生效，使用 curl 命令，curl 需要支持 HTTPS HTTP2
 
-```shell
-$ curl --http2 -I https://zhih.me
+```bash
+curl --http2 -I https://zhih.me
 ```
 
 ![效果](https://pic.zhih.me/blog/posts/nginx-http2-https/end.jpg)
@@ -248,7 +253,7 @@ SSL Server Test：https://www.ssllabs.com/ssltest/index.html
 
 技术的升级迭代潜移默化的影响着大家的生活，从 1960 年 Ted Nelson 构思 HTTP 协议，到 1996 年 HTTP/1.0 被正式作为标准，再到 1997 年公布并一直沿用至今的 HTTP/1.1，可以说它是人类互联网的基石，2015 年发布了 HTTP2，它为网页性能而生，他以更快，更强，更安全的特性，逐渐被的被各大公司使用，相信全面普及 HTTPS/HTTP2 不会有太长的时间。
 
-
+>本文章发表于底噪博客 https://zhih.me , 转载请注明
 
 
 

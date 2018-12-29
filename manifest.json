@@ -5,7 +5,7 @@
  "background_color": "#ffffff",
  "display": "standalone",
  "start_url": "/",
- "description": "我还没出力，你就倒下了！",
+ "description": "冰水加劲Q的博客，不定时发布原创文章，大多是教程类的，可能是自己搞了个什么没用的玩意，然后写写它的用法。",
  "icons": [
   {
    "src": "/android-icon-192x192.png",

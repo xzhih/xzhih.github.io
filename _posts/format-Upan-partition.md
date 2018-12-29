@@ -1,14 +1,16 @@
 ---
-title: 如何在路由器上格式化 U 盘、硬盘
+title: 如何在路由器上格式化U盘、硬盘
 date: 2017-08-21 04:35:19
 tags: 
 - shell 
 - 路由器
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/format-Upan-partition/cover.jpg
-description: 在梅林、padavan、LEDE（openwrt）等固件上格式化 U 盘、硬盘
+description: 在梅林、padavan、LEDE等固件上格式化U盘、硬盘本教程适用于梅林、padavan、LEDE等固件，以下具体方法都基于 ext4，NTFS 相关错误不做回答 ...
 keywords: shell, 路由器, 梅林, padavan, LEDE, openwrt
 ---
+
+## 引言
 
 本教程适用于梅林、padavan、LEDE（openwrt）等固件
 
@@ -22,17 +24,17 @@ keywords: shell, 路由器, 梅林, padavan, LEDE, openwrt
 
 一般梅林、Padavan 固件都会自带的，不用安装，如果没有则按照下面给出的命令
 
-```shell
-$ opkg update
-$ opkg install fdisk
+```bash
+opkg update
+opkg install fdisk
 # 输出Configuring fdisk. 并且没有错误
 # fdisk就安装好了
 ```
 
 ## 查看你的设备
 
-```shell
-$ fdisk -l 
+```bash
+fdisk -l 
 # 这里先输出系统分区之类的不用管，外置设备一般在最后
 Disk /dev/sda: 30.7 GB, 30752000000 bytes
 64 heads, 32 sectors/track, 29327 cylinders
@@ -47,18 +49,18 @@ Device Boot      Start         End      Blocks  Id System
 
 先卸载 U 盘，如果提示 `No such file or directory` 没关系，说明本来就没挂载上
 
-```shell
+```bash
 # padavan、梅林可以执行以下这个推出 usb
-$ ejusb
+ejusb
 
 # 其他固件，或者梅林使用以上命令无效，则可以使用这个命令卸载分区
-$ umount /dev/sda1 
+umount /dev/sda1 
 ```
 
 然后分区
 
-```
-$ fdisk /dev/sda # 这是你的设备別打成分区
+```bash
+fdisk /dev/sda # 这是你的设备別打成分区
 
 Welcome to fdisk (util-linux 2.29.2).
 Changes will remain in memory only, until you decide to write them.
@@ -88,8 +90,8 @@ Syncing disks.
 
 经过以上的操作，你可以用 `fdisk -l` 命令查看U盘上是否只有一个 Linux 分区
 
-```shell
-$ fdisk -l 
+```bash
+fdisk -l 
 # 找到你的设备 可以看到ID为83就对了
 Disk /dev/sda: 30.7 GB, 30752000000 bytes
 64 heads, 32 sectors/track, 29327 cylinders
@@ -106,8 +108,8 @@ Device Boot      Start         End      Blocks  Id System
 
 **注意**，如果下面的命令提示 `/dev/sda1 is mounted`，则需要先卸载 U 盘，和分区前卸载的方法一样
 
-```
-$ mkfs.ext4 -m 0 -L onmp /dev/sda1 
+```bash
+mkfs.ext4 -m 0 -L onmp /dev/sda1 
 # 如果你的硬盘比较大，256G以上的话，是下面这个命令：
 # mkfs.ext4 -m 0 -L ONMP -T largefile /dev/sda1
 
@@ -137,7 +139,10 @@ Writing superblocks and filesystem accounting information: done
 
 这样，U盘就被格式化完了，拔插 U 盘可以重新挂载，或者你想用以下命令挂载也行
 
-```shell
-$ mkdir /mnt/onmp
-$ mount -t ext4 /dev/sda1 /mnt/onmp
+```bash
+mkdir /mnt/onmp
+mount -t ext4 /dev/sda1 /mnt/onmp
 ```
+
+>本文章发表于底噪博客 https://zhih.me , 转载请注明
+

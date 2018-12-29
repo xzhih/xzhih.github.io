@@ -6,9 +6,12 @@ tags:
 - 全栈
 categories: WEB
 cover_img: https://pic.zhih.me/blog/posts/my-weapp-topmov/cover.jpg
-description: 做一个豆瓣电影 TOP250 排名列表微信小程序
+description: 做一个豆瓣电影TOP250排名列表微信小程序，最近把这个小程序给基本完成了，这个‘完成’，是指最初我设想的功能都实现了。其实半年前就开始着手了，不过断断续续的，后来还回家学车、过年等等，一直没有把它完成。最近又把它捡起来，主要是把后端给完成了 ...
 keywords: 微信小程序, TOP 电影看不完, 豆瓣电影, 电影排名
+ld_json_img: https://pic.zhih.me/blog/posts/my-weapp-topmov/screenshot.jpg
 ---
+
+## 引言
 
 小程序叫：TOP 电影看不完
 
@@ -114,11 +117,11 @@ Nginx
 
 注意，有些功能在个人认真的小程序是不能被审核通过的，比如我这里边的评论，我是通过先关闭评论功能，通过审核后再远程打开的😎，机智如我。
 
-## 后话
+## 结语
 
 本来还打算写点什么的，后来发现，没啥可写，终究是肚子里墨水不够，技术积累还不行，得加油啊。
 
-
+>本文章发表于底噪博客 https://zhih.me , 转载请注明
 
 
 

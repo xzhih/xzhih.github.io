@@ -1,18 +1,18 @@
 ---
-title: 使用 Pyenv 管理 PY 的版本
+title: 使用Pyenv 管理PY的版本
 date: 2018-04-05 22:34:12
 tags: 
 - Python
-- macOS
+- MacOS
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/pyenv-usage/cover.jpg
-description: 教你如何使用 Pyenv 管理 macOS 上的 Python 版本
-keywords: Python, macOS, Pyenv
+description: 教你如何使用 Pyenv 管理 MacOS 上的 Python 版本，在MacOS上python多版本共存，互不干扰、相互独立，一个命令切换
+keywords: Python, MacOS, Pyenv
 ---
 
-## 前言
+## 引言
 
-前几天使用 pip 安装腾讯云 COS 的命令行工具 [coscmd](https://github.com/tencentyun/coscmd) 的时候，macOS 自带的 Python 和 pip 让我觉得不爽。
+前几天使用 pip 安装腾讯云 COS 的命令行工具 [coscmd](https://github.com/tencentyun/coscmd) 的时候，MacOS 自带的 Python 和 pip 让我觉得不爽。
 
 顺便装一下逼，上面提到的 [coscmd](https://github.com/tencentyun/coscmd) 我提交了几行代码，得到了 merge ，😏😏**我特么也是给腾讯提交过代码的人**😏😏。
 
@@ -32,14 +32,14 @@ keywords: Python, macOS, Pyenv
 
 还是使用 homebrew 安装，关于 homebrew ，去我 [上一篇文章](https://zhih.me/make-macos-better/) 看看。
 
-```shell
-$ brew install pyenv
+```bash
+brew install pyenv
 ```
 
 安装好之后，我们还需要在打开 shell 的时候自动执行 pyenv 的初始化
 
-```shell
-$ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+```bash
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
 
 重启你的 shell 就生效了
@@ -52,17 +52,17 @@ $ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 
 首先是找到需要装的 Python 版本号
 
-```shell
-$ pyenv install --list
+```bash
+pyenv install --list
 ```
 
 列出一堆各种的版本 Python ，要装哪个就记住版本号
 
 比如说我这里要装个 2.7.14 和 3.6.5
 
-```shell
-$ pyenv install 2.7.14
-$ pyenv install 3.6.5
+```bash
+pyenv install 2.7.14
+pyenv install 3.6.5
 ```
 
 这样就装上了，你就要问了，这不就和我用 homebrew 安装一样嘛，甚至它安装都调用了 homebrew ？
@@ -75,9 +75,9 @@ $ pyenv install 3.6.5
 
 #### 全局
 
-```shell
-$ pyenv global 3.6.5
-$ pyenv rehash
+```bash
+pyenv global 3.6.5
+pyenv rehash
 ```
 
 这下，使用 `python -V` 就能看到自己版本变成了 3.6.5
@@ -88,23 +88,23 @@ $ pyenv rehash
 
 例如我要给当前目录设置为 miniconda3-4.3.30
 
-```shell
-$ pyenv local miniconda3-4.3.30
-$ pyenv rehash
+```bash
+pyenv local miniconda3-4.3.30
+pyenv rehash
 ```
 
 这样就可以了
 
 #### 查看环境设置
 
-```shell
-$ pyenv versions
+```bash
+pyenv versions
 ```
 
 这个命令可以看自己装了哪几个版本，并且哪个目录给了哪个版本，写的清清楚楚
 
-## 后话
+## 结语
 
 人生苦短，我选 Python
 
-
+>本文章发表于底噪博客 https://zhih.me , 转载请注明

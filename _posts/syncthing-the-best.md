@@ -1,14 +1,15 @@
 ---
-title: Syncthing 就是我要的同步备份软件
+title: Syncthing就是我要的同步备份软件
 date: 2018-06-13 16:19:35
-tags: macOS
+tags: MacOS
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/syncthing-the-best/cover.jpg
-description: 多设备同步解决方案，syncthing，极简可靠且易用的开源同步软件
-keywords: syncthing, 文件备份, NAS, macOS 备份, 文件同步
+description: 多设备同步解决方案syncthing，极简可靠且易用的开源同步软件，数据无价，平时不注意备份，电脑突然翻车就追悔莫及啦，最开始的时候，我在路由器上开启Samba，又因为它们的网络不理想，就又放弃使用了
+keywords: syncthing, 文件备份, NAS, MacOS 备份, 文件同步
+ld_json_img: https://pic.zhih.me/blog/posts/syncthing-the-best/end.jpg
 ---
 
-## 前言
+## 引言
 
 数据无价，平时不注意备份，电脑突然翻车就追悔莫及啦。
 
@@ -51,30 +52,30 @@ Windows，Mac，Linux 和安卓手机可以在这里下载有 GUI 界面的程�
 
 其他方法可以自己决定，我是直接下载安装包命令行启动的
 
-### 在 macOS 上安装
+### 在 MacOS 上安装
 
-我用的是 macOS，可以直接使用 homebrew 安装启动，并且可以开机自动启动，你也可以到这里 [QSyncthingTray](https://github.com/sieren/QSyncthingTray/releases) 下载 macOS 的 GUI 版
+我用的是 MacOS，可以直接使用 homebrew 安装启动，并且可以开机自动启动，你也可以到这里 [QSyncthingTray](https://github.com/sieren/QSyncthingTray/releases) 下载 MacOS 的 GUI 版
 
-```shell
-$ brew install syncthing
+```bash
+brew install syncthing
 ```
 
 启动服务（同时设置开机启动）
 
-```shell
-$ brew services start syncthing 
+```bash
+brew services start syncthing 
 ```
 
 停止服务（同时关闭自启）
 
-```shell
-$ brew services stop syncthing 
+```bash
+brew services stop syncthing 
 ```
 
 手动启动（不会开机自启）
 
-```shell
-$ syncthing
+```bash
+syncthing
 ```
 
 启动进程后，可以用浏览器打开 `http://localhost:8384/` 来查看 web 管理页 
@@ -101,28 +102,28 @@ Windows 直接在这里 [SyncTrayzor](https://github.com/canton7/SyncTrayzor/rel
 
 下载最新的包，解压，移动到 `/bin/` 里，改权限
 
-```shell
-$ wget https://github.com/syncthing/syncthing/releases/download/v0.14.49-rc.1/syncthing-linux-amd64-v0.14.49-rc.1.tar.gz
+```bash
+wget https://github.com/syncthing/syncthing/releases/download/v0.14.49-rc.1/syncthing-linux-amd64-v0.14.49-rc.1.tar.gz
 
-$ tar xzvf ./syncthing-linux-amd64-v0.14.49-rc.1.tar.gz
+tar xzvf ./syncthing-linux-amd64-v0.14.49-rc.1.tar.gz
 
-$ mv ./syncthing-linux-amd64-v0.14.49-rc.1/syncthing /bin/
+mv ./syncthing-linux-amd64-v0.14.49-rc.1/syncthing /bin/
 
-$ chmod +x /bin/syncthing
+chmod +x /bin/syncthing
 ```
 
 #### 进程守护
 
 安装 supervisor
 
-```shell
-$ apt-get install supervisor
+```bash
+apt-get install supervisor
 ```
 
 配置守护
 
-```shell
-$ vi /etc/supervisor/conf.d/syncthing.conf
+```bash
+vi /etc/supervisor/conf.d/syncthing.conf
 ```
 
 填入以下内容
@@ -142,20 +143,20 @@ environment = STNORESTART="1", HOME="/root"
 
 - 启动
 
-```shell
-$ supervisorctl start syncthing
+```bash
+supervisorctl start syncthing
 ```
 
 - 重启
 
-```shell
-$ supervisorctl restart syncthing
+```bash
+supervisorctl restart syncthing
 ```
 
 - 停止
 
-```shell
-$ supervisorctl stop syncthing
+```bash
+supervisorctl stop syncthing
 ```
 
 启动进程后，可以用浏览器打开 `http://你的IP:8384/` 来查看 web 管理页 
@@ -174,27 +175,27 @@ $ supervisorctl stop syncthing
 
 下载最新的包，解压，移动到 `/opt/bin/` 里，改权限
 
-```shell
-$ wget https://github.com/syncthing/syncthing/releases/download/v0.14.49-rc.1/syncthing-linux-amd64-v0.14.49-rc.1.tar.gz
+```bash
+wget https://github.com/syncthing/syncthing/releases/download/v0.14.49-rc.1/syncthing-linux-amd64-v0.14.49-rc.1.tar.gz
 
-$ tar xzvf ./syncthing-linux-amd64-v0.14.49-rc.1.tar.gz
+tar xzvf ./syncthing-linux-amd64-v0.14.49-rc.1.tar.gz
 
-$ mv ./syncthing-linux-amd64-v0.14.49-rc.1/syncthing /opt/bin/
+mv ./syncthing-linux-amd64-v0.14.49-rc.1/syncthing /opt/bin/
 
-$ chmod +x /opt/bin/syncthing
+chmod +x /opt/bin/syncthing
 ```
 
 #### 添加启动命令
 
 创建并编辑 `/opt/etc/init.d/S92syncthing`
 
-```shell
-$ vi /opt/etc/init.d/S92syncthing
+```bash
+vi /opt/etc/init.d/S92syncthing
 ```
 
 在里面填上下面所有字段
 
-```shell
+```bash
 #!/bin/sh
 ENABLED=yes
 PROCS=syncthing
@@ -216,8 +217,8 @@ fi
 
 然后给权限
 
-```shell
-$ chmod +x /opt/etc/init.d/S92syncthing
+```bash
+chmod +x /opt/etc/init.d/S92syncthing
 ```
 
 用法: /opt/etc/init.d/S92syncthing (start|stop|restart|check)
@@ -260,5 +261,4 @@ Syncthing 作为一款跨平台同步软件，它简单易用、功能完善强�
 
 本文简单介绍了初级使用方法，还未提及其他的诸如版本控制等功能，其他功能应用，如果以后我觉得值得一说，再更新了
 
-
-
+>本文章发表于底噪博客 https://zhih.me , 转载请注明

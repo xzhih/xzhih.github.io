@@ -1,18 +1,21 @@
 ---
-title: WEB 是如何工作的
+title: WEB是如何工作的
 date: 2018-04-28T00:34:17.000Z
 tags:
 - web
-- web 优化
+- web优化
 categories: WEB
-cover_img: 'https://pic.zhih.me/blog/posts/how-the-web-works/cover.jpg'
-description: web 是如何工作的，按下回车，浏览器干了啥，电脑干了啥，一切看似简单，实则涉及了很多知识
-keywords: 'web, web工作原理, 当按下回车, HTTP原理, DNS原理, 域名的结构'
+cover_img: https://pic.zhih.me/blog/posts/how-the-web-works/cover.jpg
+description: web是如何工作的，按下回车，浏览器干了啥，电脑干了啥，一切看似简单，实则涉及了很多知识其实就是个浏览器工作过程的拆析，然后涉及到相当多的知识点，并且这些都是搞WEB的必知的，这篇文章从网址输入开始，一直讨论到浏览器渲染结束 ...
+keywords: web, web工作原理, 当按下回车, HTTP原理, DNS原理, 域名的结构
+ld_json_img: https://pic.zhih.me/blog/posts/how-the-web-works/过程图解.jpg
 ---
+
+## 引言
 
 本来很犹豫是否要写一下这篇文章的，毕竟自己知之甚少，说些浅的知识还行，一旦深入，就会漏了马脚。但是，另一方面想，既然知道自己懂的不够，就更应该把知道的给梳理出来，也好进行下一步的学习。所以这篇文章也算是对当前所学所知进行一个总结吧，遛😂。
 
-# 简解
+## 简解
 
 先上一个大概的图解
 
@@ -20,35 +23,32 @@ keywords: 'web, web工作原理, 当按下回车, HTTP原理, DNS原理, 域名�
 
 上图简单的解释了打开一个网页的过程，稍微详细的解释就是：
 
-- 浏览器得到网址，并把网址拆解为域名和路径
+1. 浏览器得到网址，并把网址拆解为域名和路径
+    ![URL](https://pic.zhih.me/blog/posts/how-the-web-works/简解url.jpg)
 
-![URL](https://pic.zhih.me/blog/posts/how-the-web-works/简解url.jpg)
-
-- 浏览器寻找域名对应的 IP
+2. 浏览器寻找域名对应的 IP
     + 先在浏览器自己的缓存里找，如果之前访问过，会有缓存
     + 如果没有缓存，则让手机或电脑向 DNS 服务器请求获取
 
-- 浏览器向服务器请求数据
+3. 浏览器向服务器请求数据
 
-- 服务器解析请求，得到请求的路径参数等
+4. 服务器解析请求，得到请求的路径参数等
     + 如果是静态页面，直接找到对应的静态文件
     + 如果是动态页面，调用动态语言处理数据合成页面，再交给 HTTP 服务器
 
-- 服务器把页面发回浏览器
+5. 服务器把页面发回浏览器
 
-- 浏览器得到数据，进行解析、渲染、输出
+6. 浏览器得到数据，进行解析、渲染、输出
 
 最终就看到了网页。
 
-# 详解
+---
 
 从上面的简解我们可以知道，访问的过程大概可分为：URL，DNS 查询，HTTP，浏览器，这四个部分。
 
 ## URL
 
-### 是什么
-
-URL 是 Uniform Resource Locator 的简写，中文：统一资源定位符，在 web 中很多时候被叫做 ‘网址’。
+>URL 是 Uniform Resource Locator 的简写，中文：统一资源定位符，在 web 中很多时候被叫做 ‘网址’。
 
 URL 的标准格式如下：
 
@@ -64,7 +64,7 @@ URL 的标准格式如下：
 - 锚点： # 后面的数据不会被发送到服务器，它代表网页中的一个位置
 ```
 
-### 发生了什么
+**发生了什么**
 
 浏览器获取到用户输入的 URL，就按照以上格式进行解析，如果不符合标准格式，则会判断为用户输入了关键字，并跳转到搜索引擎搜索，当 URL 中存在不是 ASCII 的字符串时，会把字符串转成 [punycode](https://en.wikipedia.org/wiki/Punycode) 标准编码的字符串。
 
@@ -76,9 +76,7 @@ URL 的标准格式如下：
 
 ## DNS 查询
 
-### 是什么
-
-把网址翻译成 IP 地址。
+>DNS 查询就是把网址翻译成 IP 地址。
 
 比方说你的电脑不知道 www.zhih.me 这个域名的 IP 地址，他就会向 DNS 服务器发送个请求，让 DNS 服务器帮他寻找，此时你的电脑就是一个 DNS 客户端，实际上整个具体过程会有不同的情况。
 
@@ -106,15 +104,14 @@ URL 的标准格式如下：
 
 子域名：子域名与三级域名不同，例如：`www.zhih.me`，www 是 `zhih.me` 的子域名，但却不是三级域名
 
-### 查询过程
+### DNS 查询过程
 
-#### 本地解析
+**本地解析**
 
 1. 查看 HOSTS 记录，如果有，直接返回结果
-
 2. 查看 DNS 缓存，看看它里面是不是有你设置的域名 IP 地址，缓存信息是通过以前的查询获得的，电脑关机时缓存将会被清空
 
-#### 直接解析
+**直接解析**
 
 本地找不到，就向你电脑里设置的 DNS 服务器请求，如果没有设置具体的地址，而是自动获取，就会从 ISP 中获取 DNS 服务器的 IP 地址，我自己使用的是腾讯的 DNS 服务器，我们一般把它叫做本地 DNS 服务器
 
@@ -122,14 +119,14 @@ URL 的标准格式如下：
 
 当本地 DNS 服务器找不到结果时，就需要跟其他 DNS 服务器查询获取
 
-#### 完整解析
+**完整解析过程**
 
 ![dnsquery-2](https://pic.zhih.me/blog/posts/how-the-web-works/dnsquery-2.jpg)
 
 这个过程可以使用 dig 命令查看
 
-```shell
-$ dig www.zhih.me +trace
+```bash
+dig www.zhih.me +trace
 ```
 
 这样，电脑就拿到域名对应的 IP 地址了
@@ -177,13 +174,13 @@ https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 
 以最常用的 get 请求为例：
 
-```shell
-$ curl -v https://mov.zhih.me/weapp/list/1/2
+```bash
+curl -v https://mov.zhih.me/weapp/list/1/2
 ```
 
 ![res_req.jpg](https://pic.zhih.me/blog/posts/how-the-web-works/res_req.jpg)
 
-#### HTTP 请求
+### HTTP 请求
 
 请求报文的一般包括以下格式：请求行、请求头部、空行和请求数据
 
@@ -204,7 +201,7 @@ accept-encoding: gzip, deflate, br
 
 请求头部就是请求行和空行之间的键值对
 
-#### HTTP 响应
+### HTTP 响应
 
 响应报文也由四个部分组成，分别是：状态行、消息报头、空行和响应正文
 
@@ -342,13 +339,13 @@ img {
 
 布局完成后，浏览器会立即发出“Paint Setup”和“Paint”事件，将渲染树中的每个节点转换成屏幕上的实际像素，这一步通常称为“绘制”或“栅格化”
 
-#### 重排和重绘 
+### 重排和重绘 
 
 当 DOM 或 CSSOM 被修改时，会发生重排（Reflow），也就是把上面的步骤重新来一遍，这样才能确定哪些像素需要在屏幕上进行重新渲染，这个过程也被叫做回流
 
 如果改变的属性与元素的位置大小无关，比如背景颜色，那么浏览器只会重新绘制那个元素，这个过程叫重绘（Repaint）
 
-重排必然会引起重绘，重绘则不一定会重排
+>重排必然会引起重绘，重绘则不一定会重排
 
 ### CSS、JS 阻塞
 
@@ -368,10 +365,10 @@ https://astaxie.gitbooks.io/build-web-application-with-golang/content/zh/03.1.ht
 
 https://github.com/alex/what-happens-when
 
-# 总结
+## 总结
 
 其实就是个浏览器工作过程的拆析，然后涉及到相当多的知识点，并且这些都是搞 WEB 的必知的，写完这么多也算是消化了，下一步可能写写 WEB 性能优化相关的吧，也是一个很值得写的点
 
 知识就是力量 -- 培根
 
-
+>本文章发表于底噪博客 https://zhih.me , 转载请注明

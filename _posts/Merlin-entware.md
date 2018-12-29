@@ -1,5 +1,5 @@
 ---
-title: 在梅林上使用 Entware
+title: 在梅林上使用Entware
 date: 2017-08-03 02:43:56
 tags: 
 - 梅林
@@ -7,9 +7,11 @@ tags:
 - entware
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/Merlin-entware/cover.jpg
-description: 在安装 ONMP 前，你要学会安装 Entware
+description: 在安装ONMP前，你要学会安装Entware，这篇文章教你如何快速安装Entware，让你的梅林固件具有更加丰富的功能，Entware是一个适用于嵌入式系统的软件包库，使用opkg包管理系统进行管理，现在在官方的源上已经有超过2000个软件包了，可以说是非常的丰富
 keywords: 梅林固件, onmp, entware
 ---
+
+## 引言
 
 Entware 是一个适用于嵌入式系统的软件包库，使用 opkg 包管理系统进行管理，现在在官方的源上已经有超过 2000 个软件包了，可以说是非常的丰富
 
@@ -27,11 +29,11 @@ Entware 是一个适用于嵌入式系统的软件包库，使用 opkg 包管理
 
 分区、格式都没问题之后，开始挂载
 
-```shell
-$ mkdir /mnt/sda1
-$ mount -t ext4 /dev/sda1 /mnt/sda1/
+```bash
+mkdir /mnt/sda1
+mount -t ext4 /dev/sda1 /mnt/sda1/
 # 这样就挂载上了
-$ df -h
+df -h
 Filesystem                Size      Used Available Use% Mounted on
 /dev/sda1               975.5M      2.5M    906.6M   0% /tmp/mnt/sda1
 # 可以看到已经挂载
@@ -41,8 +43,8 @@ Filesystem                Size      Used Available Use% Mounted on
 
 梅林内置了一个安装命令很方便
 
-```
-$ entware-setup.sh
+```bash
+entware-setup.sh
 
 # 然后会提示你选择哪个分区，就选择刚才挂载的那个
 ···省略
@@ -67,3 +69,6 @@ Info:  Looking for available partitions...
 ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](https://entware.net/) 的路由器，目前已经在 Padavan、LEDE（openwrt）、梅林上测试成功。
 
 [ONMP 安装教程](https://zhih.me/onmp-installation/)
+
+>本文章发表于底噪博客 https://zhih.me , 转载请注明
+

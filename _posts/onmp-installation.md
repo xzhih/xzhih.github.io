@@ -1,14 +1,17 @@
 ---
-title: ONMP 安装教程
+title: ONMP安装教程
 date: 2017-08-06  22:05:54
 tags: 
 - onmp
 - shell
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/onmp-installation/cover.jpg
-description: ONMP 是一个 web 环境快速安装脚本，本教程教你如何在路由器上搭建网站
+description: ONMP是一个web环境快速安装脚本，本教程教你如何在路由器上搭建网站，适用于安装了Entware的路由器，目前已经在Padavan、LEDE、梅林上测试成功，LNMP代表的是：Linux系统下Nginx/MySQL/PHP这种网站服务器架构，而为了区分路由器环境的不同，使用的ONMP这个命名，本质还是LNMP ...
 keywords: ONMP, 路由器搭建网站, 私有云
+ld_json_img: https://pic.zhih.me/blog/posts/onmp-installation/安装成功.jpg
 ---
+
+## 前言
 
 之前用过极路由 1s，刷了恩山 H大的固件，发现内置了 web 环境，没想到一个路由器都能跑的动 LNMP。我之前最极限的尝试就是在一个 4刀3年 的 sentris ovz 小鸡上跑过 WordPress ，那台小鸡 配置很低，只有 64M 的内存😂。不过 LNMP 流畅运行的因素挺多，PHP 吃 CPU、MySQL 吃 IO，不同的程序表现也不一样。那台极路由被我折腾了没两下就放弃了在上面搭网站，毕竟性能太低。
 
@@ -21,9 +24,7 @@ ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](https
 和 LNMP 有什么不同？
 LNMP 代表的是：Linux 系统下 Nginx/MySQL/PHP 这种网站服务器架构，而为了区分路由器环境的不同，使用的 ONMP 这个命名，本质还是 LNMP。
 
-项目地址：[https://github.com/xzhih/ONMP](https://github.com/xzhih/ONMP)
-
-QQ交流群：346477750
+项目地址：https://github.com/xzhih/ONMP
 
 ## 特性
 
@@ -38,10 +39,9 @@ ONMP内置了以下程序的一键安装：
 (5) h5ai（优秀的文件目录）
 (6) Lychee（一个很好看，易于使用的Web相册）
 (7) Kodexplorer（可道云aka芒果云在线文档管理器）
-(8) Netdata（详细得惊人的服务器监控面板）
-(9) Typecho (流畅的轻量级开源博客程序)
-(10) Z-Blog (体积小，速度快的PHP博客程序)
-(11) DzzOffice (开源办公平台)
+(8) Typecho (流畅的轻量级开源博客程序)
+(9) Z-Blog (体积小，速度快的PHP博客程序)
+(10) DzzOffice (开源办公平台)
 ```
 
 ## 安装教程
@@ -62,27 +62,27 @@ Entware 是一个适用于嵌入式系统的软件包库，使用 opkg 包管理
 
 一键命令，复制->粘贴->回车
 
-```shell
-$ sh -c "$(curl -kfsSL https://raw.githubusercontent.com/xzhih/ONMP/master/oneclick.sh)"
+```bash
+sh -c "$(curl -kfsSL https://raw.githubusercontent.com/xzhih/ONMP/master/oneclick.sh)"
 ```
 
 一长串的复制如果出错，可以按照以下给出的命令，一步步进行安装
 
-```shell
+```bash
 # 进入 entware 挂载目录
-$ cd /opt && opkg install wget unzip 
+cd /opt && opkg install wget unzip 
 
 # 下载软件包
-$ wget --no-check-certificate -O /opt/onmp.zip https://github.com/xzhih/ONMP/archive/master.zip 
+wget --no-check-certificate -O /opt/onmp.zip https://github.com/xzhih/ONMP/archive/master.zip 
 
 # 解压
-$ unzip /opt/onmp.zip
+unzip /opt/onmp.zip
 
-$ cd /opt/onmp
+cd /opt/onmp
 
 # 运行
-$ chmod +x ./onmp.sh 
-$ ./onmp.sh
+chmod +x ./onmp.sh 
+./onmp.sh
 ```
 
 要是正常运行到脚本，会出现下面的情景，选1安装即可
@@ -113,4 +113,4 @@ $ ./onmp.sh
 
 这个位置很简单，但是很多人都说改不了密码，其实是没看提示，没输入旧密码，所以我写清楚一些。
 
-
+>本文章发表于底噪博客 https://zhih.me , 转载请注明
