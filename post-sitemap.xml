@@ -8,8 +8,8 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/syncthing-the-best/</loc>
-        <lastmod>2018-12-18T18:00:49.680Z</lastmod>
+        <loc>https://zhih.me/zerotier-getting-started/</loc>
+        <lastmod>2018-12-29T06:09:43.161Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +17,15 @@
 
     <url>
         <loc>https://zhih.me/onmp-installation/</loc>
-        <lastmod>2018-12-18T18:00:05.563Z</lastmod>
+        <lastmod>2018-12-25T11:52:30.842Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/syncthing-the-best/</loc>
+        <lastmod>2018-12-18T18:00:49.680Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
