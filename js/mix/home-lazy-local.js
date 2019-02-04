@@ -1,1 +1,133 @@
-!function(t,e){"function"==typeof define&&define.amd?define(e):"object"==typeof exports?module.exports=e():t.Blazy=e()}(this,function(){function t(t){var o=t._util;o.elements=function(t){for(var e=[],o=(t=t.root.querySelectorAll(t.selector)).length;o--;e.unshift(t[o]));return e}(t.options),o.count=o.elements.length,o.destroyed&&(o.destroyed=!1,t.options.container&&f(t.options.container,function(t){l(t,"scroll",o.validateT)}),l(window,"resize",o.saveViewportOffsetT),l(window,"resize",o.validateT),l(window,"scroll",o.validateT)),e(t)}function e(t){for(var e=t._util,n=0;n<e.count;n++){var s,r=e.elements[n],a=r;s=t.options;var c=a.getBoundingClientRect();s.container&&m&&(a=a.closest(s.containerClass))?s=!!o(a=a.getBoundingClientRect(),h)&&o(c,{top:a.top-s.offset,right:a.right+s.offset,bottom:a.bottom+s.offset,left:a.left-s.offset}):s=o(c,h),(s||i(r,t.options.successClass))&&(t.load(r),e.elements.splice(n,1),e.count--,n--)}0===e.count&&t.destroy()}function o(t,e){return t.right>=e.left&&t.bottom>=e.top&&t.left<=e.right&&t.top<=e.bottom}function n(t,e,o){if(!i(t,o.successClass)&&(e||o.loadInvisible||0<t.offsetWidth&&0<t.offsetHeight))if(e=t.getAttribute(d)||t.getAttribute(o.src)){var n=(e=e.split(o.separator))[v&&1<e.length?1:0],c=t.getAttribute(o.srcset),p="img"===t.nodeName.toLowerCase(),h=(e=t.parentNode)&&"picture"===e.nodeName.toLowerCase();if(p||void 0===t.src){var m=new Image,g=function(){o.error&&o.error(t,"invalid"),a(t,o.errorClass),u(m,"error",g),u(m,"load",w)},w=function(){p?h||r(t,n,c):t.style.backgroundImage='url("'+n+'")',s(t,o),u(m,"load",w),u(m,"error",g)};h&&(m=t,f(e.getElementsByTagName("source"),function(t){var e=o.srcset,n=t.getAttribute(e);n&&(t.setAttribute("srcset",n),t.removeAttribute(e))})),l(m,"error",g),l(m,"load",w),r(m,n,c)}else t.src=n,s(t,o)}else"video"===t.nodeName.toLowerCase()?(f(t.getElementsByTagName("source"),function(t){var e=o.src,n=t.getAttribute(e);n&&(t.setAttribute("src",n),t.removeAttribute(e))}),t.load(),s(t,o)):(o.error&&o.error(t,"missing"),a(t,o.errorClass))}function s(t,e){a(t,e.successClass),e.success&&e.success(t),t.removeAttribute(e.src),t.removeAttribute(e.srcset),f(e.breakpoints,function(e){t.removeAttribute(e.src)})}function r(t,e,o){o&&t.setAttribute("srcset",o),t.src=e}function i(t,e){return-1!==(" "+t.className+" ").indexOf(" "+e+" ")}function a(t,e){i(t,e)||(t.className+=" "+e)}function c(t){h.bottom=(window.innerHeight||document.documentElement.clientHeight)+t,h.right=(window.innerWidth||document.documentElement.clientWidth)+t}function l(t,e,o){t.attachEvent?t.attachEvent&&t.attachEvent("on"+e,o):t.addEventListener(e,o,{capture:!1,passive:!0})}function u(t,e,o){t.detachEvent?t.detachEvent&&t.detachEvent("on"+e,o):t.removeEventListener(e,o,{capture:!1,passive:!0})}function f(t,e){if(t&&e)for(var o=t.length,n=0;n<o&&!1!==e(t[n],n);n++);}function p(t,e,o){var n=0;return function(){var s=+new Date;s-n<e||(n=s,t.apply(o,arguments))}}var d,h,v,m;return function(o){if(!document.querySelectorAll){var s=document.createStyleSheet();document.querySelectorAll=function(t,e,o,n,r){for(r=document.all,e=[],o=(t=t.replace(/\[for\b/gi,"[htmlFor").split(",")).length;o--;){for(s.addRule(t[o],"k:v"),n=r.length;n--;)r[n].currentStyle.k&&e.push(r[n]);s.removeRule(0)}return e}}var r=this,i=r._util={};i.elements=[],i.destroyed=!0,r.options=o||{},r.options.error=r.options.error||!1,r.options.offset=r.options.offset||100,r.options.root=r.options.root||document,r.options.success=r.options.success||!1,r.options.selector=r.options.selector||".b-lazy",r.options.separator=r.options.separator||"|",r.options.containerClass=r.options.container,r.options.container=!!r.options.containerClass&&document.querySelectorAll(r.options.containerClass),r.options.errorClass=r.options.errorClass||"b-error",r.options.breakpoints=r.options.breakpoints||!1,r.options.loadInvisible=r.options.loadInvisible||!1,r.options.successClass=r.options.successClass||"b-loaded",r.options.validateDelay=r.options.validateDelay||25,r.options.saveViewportOffsetDelay=r.options.saveViewportOffsetDelay||50,r.options.srcset=r.options.srcset||"data-srcset",r.options.src=d=r.options.src||"data-src",m=Element.prototype.closest,v=1<window.devicePixelRatio,(h={}).top=0-r.options.offset,h.left=0-r.options.offset,r.revalidate=function(){t(r)},r.load=function(t,e){var o=this.options;void 0===t.length?n(t,e,o):f(t,function(t){n(t,e,o)})},r.destroy=function(){var t=this._util;this.options.container&&f(this.options.container,function(e){u(e,"scroll",t.validateT)}),u(window,"scroll",t.validateT),u(window,"resize",t.validateT),u(window,"resize",t.saveViewportOffsetT),t.count=0,t.elements.length=0,t.destroyed=!0},i.validateT=p(function(){e(r)},r.options.validateDelay,r),i.saveViewportOffsetT=p(function(){c(r.options.offset)},r.options.saveViewportOffsetDelay,r),c(r.options.offset),f(r.options.breakpoints,function(t){if(t.width>=window.screen.width)return d=t.src,!1}),setTimeout(function(){t(r)})}});var keepSearchData=function(t){fetch(t+"searchData.json").then(function(t){return t.json()}).then(function(t){localStorage.setItem("searchData",JSON.stringify(t))})},checkAndGetData=function(t){fetch(t+"searchVersion.txt?t="+ +new Date).then(function(t){return t.text()}).then(function(e){localStorage.getItem("searchVersion")!==e&&(localStorage.setItem("searchVersion",e),keepSearchData(t))})},searchFunc=function(t){checkAndGetData(t);var e=localStorage.getItem("searchData"),o=JSON.parse(e),n=document.getElementById("local-search-input");if(n){var s=document.getElementById("local-search-result");n.addEventListener("input",function(){"string"!=typeof e&&(e=localStorage.getItem("searchData"),o=JSON.parse(e)),printRs(this,o,s)})}},searchFuncSW=function(t){fetch(t+"searchData.json").then(function(t){return t.json()}).then(function(t){var e=JSON.stringify(t),o=JSON.parse(e),n=document.getElementById("local-search-input");if(n){var s=document.getElementById("local-search-result");n.addEventListener("input",function(){printRs(this,o,s)})}})},printRs=function(t,e,o){var n='<ul class="search-result-list">',s=t.value.trim().toLowerCase().split(/[\s\-]+/);o.innerHTML="",t.value.trim().length<=0||(e.forEach(function(t){var e=!0;t.title&&""!==t.title.trim()||(t.title="Untitled");var o=t.title.trim().toLowerCase(),r=t.content.trim().replace(/<[^>]+>/g,"").toLowerCase(),i=t.url,a=-1,c=-1,l=-1;if(""!==r?s.forEach(function(t,n){a=o.indexOf(t),c=r.indexOf(t),a<0&&c<0?e=!1:(c<0&&(c=0),0==n&&(l=c))}):e=!1,e){n+="<li><a href='"+i+"' class='search-result-title'>"+o+"</a>";var u=t.content.trim().replace(/<[^>]+>/g,"");if(l>=0){var f=l-20,p=l+80;f<0&&(f=0),0==f&&(p=100),p>u.length&&(p=u.length);var d=u.substr(f,p);s.forEach(function(t){var e=new RegExp(t,"gi");d=d.replace(e,'<em class="search-keyword">'+t+"</em>")}),n+='<p class="search-result">'+d+"...</p>"}n+="</li>"}}),n+="</ul>",o.innerHTML=n)};
+/*!
+  hey, [be]Lazy.js - v1.8.2 - 2016.10.25
+  A fast, small and dependency free lazy load script (https://github.com/dinbror/blazy)
+  (c) Bjoern Klinggaard - @bklinggaard - http://dinbror.dk/blazy
+*/
+  (function(q,m){"function"===typeof define&&define.amd?define(m):"object"===typeof exports?module.exports=m():q.Blazy=m()})(this,function(){function q(b){var c=b._util;c.elements=E(b.options);c.count=c.elements.length;c.destroyed&&(c.destroyed=!1,b.options.container&&l(b.options.container,function(a){n(a,"scroll",c.validateT)}),n(window,"resize",c.saveViewportOffsetT),n(window,"resize",c.validateT),n(window,"scroll",c.validateT));m(b)}function m(b){for(var c=b._util,a=0;a<c.count;a++){var d=c.elements[a],e;a:{var g=d;e=b.options;var p=g.getBoundingClientRect();if(e.container&&y&&(g=g.closest(e.containerClass))){g=g.getBoundingClientRect();e=r(g,f)?r(p,{top:g.top-e.offset,right:g.right+e.offset,bottom:g.bottom+e.offset,left:g.left-e.offset}):!1;break a}e=r(p,f)}if(e||t(d,b.options.successClass))b.load(d),c.elements.splice(a,1),c.count--,a--}0===c.count&&b.destroy()}function r(b,c){return b.right>=c.left&&b.bottom>=c.top&&b.left<=c.right&&b.top<=c.bottom}function z(b,c,a){if(!t(b,a.successClass)&&(c||a.loadInvisible||0<b.offsetWidth&&0<b.offsetHeight))if(c=b.getAttribute(u)||b.getAttribute(a.src)){c=c.split(a.separator);var d=c[A&&1<c.length?1:0],e=b.getAttribute(a.srcset),g="img"===b.nodeName.toLowerCase(),p=(c=b.parentNode)&&"picture"===c.nodeName.toLowerCase();if(g||void 0===b.src){var h=new Image,w=function(){a.error&&a.error(b,"invalid");v(b,a.errorClass);k(h,"error",w);k(h,"load",f)},f=function(){g?p||B(b,d,e):b.style.backgroundImage='url("'+d+'")';x(b,a);k(h,"load",f);k(h,"error",w)};p&&(h=b,l(c.getElementsByTagName("source"),function(b){var c=a.srcset,e=b.getAttribute(c);e&&(b.setAttribute("srcset",e),b.removeAttribute(c))}));n(h,"error",w);n(h,"load",f);B(h,d,e)}else b.src=d,x(b,a)}else"video"===b.nodeName.toLowerCase()?(l(b.getElementsByTagName("source"),function(b){var c=a.src,e=b.getAttribute(c);e&&(b.setAttribute("src",e),b.removeAttribute(c))}),b.load(),x(b,a)):(a.error&&a.error(b,"missing"),v(b,a.errorClass))}function x(b,c){v(b,c.successClass);c.success&&c.success(b);b.removeAttribute(c.src);b.removeAttribute(c.srcset);l(c.breakpoints,function(a){b.removeAttribute(a.src)})}function B(b,c,a){a&&b.setAttribute("srcset",a);b.src=c}function t(b,c){return-1!==(" "+b.className+" ").indexOf(" "+c+" ")}function v(b,c){t(b,c)||(b.className+=" "+c)}function E(b){var c=[];b=b.root.querySelectorAll(b.selector);for(var a=b.length;a--;c.unshift(b[a]));return c}function C(b){f.bottom=(window.innerHeight||document.documentElement.clientHeight)+b;f.right=(window.innerWidth||document.documentElement.clientWidth)+b}function n(b,c,a){b.attachEvent?b.attachEvent&&b.attachEvent("on"+c,a):b.addEventListener(c,a,{capture:!1,passive:!0})}function k(b,c,a){b.detachEvent?b.detachEvent&&b.detachEvent("on"+c,a):b.removeEventListener(c,a,{capture:!1,passive:!0})}function l(b,c){if(b&&c)for(var a=b.length,d=0;d<a&&!1!==c(b[d],d);d++);}function D(b,c,a){var d=0;return function(){var e=+new Date;e-d<c||(d=e,b.apply(a,arguments))}}var u,f,A,y;return function(b){if(!document.querySelectorAll){var c=document.createStyleSheet();document.querySelectorAll=function(a,b,d,h,f){f=document.all;b=[];a=a.replace(/\[for\b/gi,"[htmlFor").split(",");for(d=a.length;d--;){c.addRule(a[d],"k:v");for(h=f.length;h--;)f[h].currentStyle.k&&b.push(f[h]);c.removeRule(0)}return b}}var a=this,d=a._util={};d.elements=[];d.destroyed=!0;a.options=b||{};a.options.error=a.options.error||!1;a.options.offset=a.options.offset||100;a.options.root=a.options.root||document;a.options.success=a.options.success||!1;a.options.selector=a.options.selector||".b-lazy";a.options.separator=a.options.separator||"|";a.options.containerClass=a.options.container;a.options.container=a.options.containerClass?document.querySelectorAll(a.options.containerClass):!1;a.options.errorClass=a.options.errorClass||"b-error";a.options.breakpoints=a.options.breakpoints||!1;a.options.loadInvisible=a.options.loadInvisible||!1;a.options.successClass=a.options.successClass||"b-loaded";a.options.validateDelay=a.options.validateDelay||25;a.options.saveViewportOffsetDelay=a.options.saveViewportOffsetDelay||50;a.options.srcset=a.options.srcset||"data-srcset";a.options.src=u=a.options.src||"data-src";y=Element.prototype.closest;A=1<window.devicePixelRatio;f={};f.top=0-a.options.offset;f.left=0-a.options.offset;a.revalidate=function(){q(a)};a.load=function(a,b){var c=this.options;void 0===a.length?z(a,b,c):l(a,function(a){z(a,b,c)})};a.destroy=function(){var a=this._util;this.options.container&&l(this.options.container,function(b){k(b,"scroll",a.validateT)});k(window,"scroll",a.validateT);k(window,"resize",a.validateT);k(window,"resize",a.saveViewportOffsetT);a.count=0;a.elements.length=0;a.destroyed=!0};d.validateT=D(function(){m(a)},a.options.validateDelay,a);d.saveViewportOffsetT=D(function(){C(a.options.offset)},a.options.saveViewportOffsetDelay,a);C(a.options.offset);l(a.options.breakpoints,function(a){if(a.width>=window.screen.width)return u=a.src,!1});setTimeout(function(){q(a)})}});
+
+// 保存搜索数据
+var keepSearchData = function (siteRoot) {
+    fetch(siteRoot + 'searchData.json')
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(resData) {
+        localStorage.setItem('searchData', JSON.stringify(resData));
+    })
+}
+
+// 检查和获取搜索数据
+var checkAndGetData = function (siteRoot) {
+    fetch(siteRoot + 'searchVersion.txt?t=' + (+new Date()))
+    .then(function(response) {
+        return response.text();
+    })
+    .then(function(resVersion) {
+        if (localStorage.getItem('searchVersion') !== resVersion) {
+            localStorage.setItem('searchVersion', resVersion);
+            keepSearchData(siteRoot)
+        }
+    })
+}
+
+// 监听搜索
+var searchFunc = function(siteRoot) {
+    checkAndGetData(siteRoot)
+    var localSearchData = localStorage.getItem("searchData");
+    var datas = JSON.parse(localSearchData);
+    var input = document.getElementById("local-search-input");
+    if (!input) return;
+    var resultContent = document.getElementById("local-search-result");
+    input.addEventListener("input", function() {
+        if (typeof(localSearchData) !== 'string') {
+            localSearchData = localStorage.getItem("searchData");
+            datas = JSON.parse(localSearchData);
+        }
+        printRs(this, datas, resultContent)
+    });
+};
+
+// 监听搜索(SW)
+var searchFuncSW = function(siteRoot) {
+    fetch(siteRoot + 'searchData.json')
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(resData) {
+        var localSearchData = JSON.stringify(resData);
+        var datas = JSON.parse(localSearchData);
+        var input = document.getElementById("local-search-input");
+        if (!input) return;
+        var resultContent = document.getElementById("local-search-result");
+        input.addEventListener("input", function() {
+            printRs(this, datas, resultContent)
+        });
+    });
+};
+
+// 打印结果
+var printRs = function (input, datas, resultContent) {
+    var str = '<ul class="search-result-list">';
+    var keywords = input.value.trim().toLowerCase().split(/[\s\-]+/);
+    resultContent.innerHTML = "";
+    if (input.value.trim().length <= 0) {
+        return;
+    }
+    datas.forEach(function(data) {
+        var isMatch = true;
+        var content_index = [];
+        if (!data.title || data.title.trim() === "") {
+            data.title = "Untitled";
+        }
+        var data_title = data.title.trim().toLowerCase();
+        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+        var data_url = data.url;
+        var index_title = -1;
+        var index_content = -1;
+        var first_occur = -1;
+        if (data_content !== "") {
+            keywords.forEach(function(keyword, i) {
+                index_title = data_title.indexOf(keyword);
+                index_content = data_content.indexOf(keyword);
+                if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                } else {
+                    if (index_content < 0) {
+                        index_content = 0;
+                    }
+                    if (i == 0) {
+                        first_occur = index_content;
+                    }
+                }
+            });
+        } else {
+            isMatch = false;
+        }
+        if (isMatch) {
+            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+            var content = data.content.trim().replace(/<[^>]+>/g, "");
+            if (first_occur >= 0) {
+                var start = first_occur - 20;
+                var end = first_occur + 80;
+                if (start < 0) {
+                    start = 0;
+                }
+                if (start == 0) {
+                    end = 100;
+                }
+                if (end > content.length) {
+                    end = content.length;
+                }
+                var match_content = content.substr(start, end);
+                keywords.forEach(function(keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, '<em class="search-keyword">' + keyword + "</em>");
+                });
+                str += '<p class="search-result">' + match_content + "...</p>";
+            }
+            str += "</li>";
+        }
+    });
+    str += "</ul>";
+    resultContent.innerHTML = str;
+}
