@@ -16,6 +16,12 @@ keywords: MacOS, Xcode, Homebrew, Oh My Zsh, GitHub
 
 那么，刚装上一个新的系统，应该怎样去设置，让它更好用呢？
 
+## 0. 软件
+
+我收集了一些免费的 macOS APP，可以去看看，如果你有推荐的，也可以回复我
+
+https://zhih.me/hackintosh/#/freeapp
+
 ## 1. 系统设置
 
 ### dock栏（程序坞）
@@ -86,26 +92,13 @@ brew 就是 Homebrew 的包管理命令了，用法类似 debian 的 apt-get
 
 ### 换源
 
-Homebrew 默认的源服务器在国外，这样我们在国内使用的时候速度可能比较慢，阿里云提供了镜像源，我们可以使用以下命令替换
+Homebrew 默认的源服务器在国外，这样我们在国内使用的时候速度可能比较慢，阿里云提供了镜像源，我们可以在阿里开源镜像站找到
 
-注意，以下命令为Zsh终端的配置，所以要执行 `brew install zsh` 安装zsh。
+https://opsx.alibaba.com/mirror
 
-```bash
-# 替换brew.git:
-cd "$(brew --repo)"
-git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git
+找到 homebrew，点击后面的**帮助**可以查看安装和卸载教程
 
-# 替换homebrew-core.git:
-cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
-git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git
-
-# 应用生效
-brew update
-
-# 替换homebrew-bottles:
-echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles' >> ~/.zshrc
-source ~/.zshrc
-```
+>如果你在使用 homebrew 的时候无法下载程序包，可以尝试换源，一般情况下或者有代理的环境下不建议换源 
 
 ### 用法
 
@@ -153,7 +146,7 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize we
 
 ### Zsh
 
-我们在上面已经提到过 zsh，它是个令人感到惊艳的 shell，关于它，自行搜索看看吧。
+它是个令人感到惊艳的 shell，关于它，自行搜索看看吧。
 
 使用 homebrew 安装
 
@@ -185,13 +178,71 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 #### 插件
 
-Oh My Zsh 有丰富的插件，你可以在 `~/.zshrc` 里的 `plugins` 字段添加插件
+Oh My Zsh 有丰富的插件
 
-这里我给几个推荐的插件，在 https://github.com/zsh-users 这里能找到后面 3 个安装方法，前面的不用其他安装方式
+内置的可以在这里找到 https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins
+
+说几个我觉得比较好用的
+
+1. [osx](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/osx) 快捷命令
+
+2. [brew](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/brew) 快捷命令
+
+3. [git](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/git)  快捷命令
+
+4. [colored-man-pages](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/colored-man-pages) man 页面上色
+
+5. [colorize](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/colorize) 给输出代码上色
+    
+    要先安装 Pygments
+
+    ```bash
+    pip install pygments
+    ```
+
+    就可以用 `ccat` 命令输出高亮代码
+
+6. [autojump](https://github.com/wting/autojump) 一种更快捷的文件系统导航方式
+    
+    ```bash
+    brew install autojump
+    ```
+
+7. [syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) 语法高亮
+    
+    ```bash
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    ```
+
+8. [autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) 命令自动提示
+    
+    ```bash
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    ```
+
+9. [history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) 历史搜索
+
+    输入历史记录中任何命令的任何部分，然后按上下键筛选
+    
+    ```bash
+    git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
+    ```
+
+在 zsh 配置文件中的 `plugins` 字段里添加插件
+
+```bash
+vi ~/.zshrc
+```
+
+像这样
 
 ```
-plugins=(git autojump colored-man-pages colorize pip python osx brew zsh-autosuggestions zsh-syntax-highlighting history-substring-search)
+plugins=(osx brew git colorize colored-man-pages autojump zsh-syntax-highlighting zsh-autosuggestions)
 ```
+
+以上插件按需添加，不想要的删掉括号里的插件名字就行
+
+重启终端，开始玩爽吧
 
 ## 6. Git
 

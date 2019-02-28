@@ -3,7 +3,6 @@ title: WEB是如何工作的
 date: 2018-04-28T00:34:17.000Z
 tags:
 - web
-- web优化
 categories: WEB
 cover_img: https://pic.zhih.me/blog/posts/how-the-web-works/cover.jpg
 description: web是如何工作的，按下回车，浏览器干了啥，电脑干了啥，一切看似简单，实则涉及了很多知识其实就是个浏览器工作过程的拆析，然后涉及到相当多的知识点，并且这些都是搞WEB的必知的，这篇文章从网址输入开始，一直讨论到浏览器渲染结束 ...

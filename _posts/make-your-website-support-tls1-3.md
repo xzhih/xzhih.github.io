@@ -4,7 +4,7 @@ date: 2018-06-18 01:51:22
 tags:
 - nginx
 - https
-- web优化
+- web
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/make-your-website-support-tls1.3/cover.jpg
 description: 编译安装Nginx，让你的网站支持TLS1.3，对于TLS1.2有重大改写，既提高了安全性又提高了速度，从第一份草案编写至今，已经有几年时间了，在最近的Chrome版本更新中也逐步对TLS1.3进行支持...

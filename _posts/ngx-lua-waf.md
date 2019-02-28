@@ -4,7 +4,7 @@ cover_img: https://pic.zhih.me/blog/posts/ngx-lua-waf/cover.jpg
 date: 2018-11-27 01:39:34
 tags: 
 - nginx
-- web优化
+- web
 categories: 教程
 description: 编译nginx支持ngx_lua_waf防火墙，从此不再怕被黑，前几天有个朋友跟我说，他的一个WordPress站经常访问慢，帮他看了一下日志，发现整天被人扫网站目录，开始我还以为是主机商帮扫漏洞之类的，后来发现实在是太密集了，看来不是...
 keywords: ngx_lua_waf, nginx, nginx防火墙, 服务器防火墙, web防火墙，网站防火墙, nginx编译, brotli

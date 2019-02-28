@@ -33,13 +33,18 @@ curl  https://get.acme.sh | sh
 
 ## 生成证书
 
-使用 http 方式验证域名，需要先搭建 HTTP 站点，接下来指定域名、指定站点目录，开始签发
+使用 http 方式验证域名，需要先搭建 HTTP 站点，这里使用 acme.sh 自带的 webserver，所以先把 nginx 停掉
+
+```bash
+service nginx stop
+```
+
+接下来指定域名，开始签发
 
 ```bash
 acme.sh --issue -d onmp.ooo \
-          --webroot /wwwroot/onmp.ooo/ \
-          --keylength ec-256 \
-          --nginx
+        --keylength ec-256 \
+        --standalone
 ```
 
 如果是多域名，可以使用 -d 参数添加，如：`-d www.onmp.ooo` 
@@ -52,9 +57,9 @@ acme.sh --issue -d onmp.ooo \
 
 ```bash
 acme.sh --ecc --installcert -d onmp.ooo \
-          --key-file /usr/local/nginx/conf/ssl/onmp.ooo.key \
-          --fullchain-file /usr/local/nginx/conf/ssl/onmp.ooo.cer \
-          --reloadcmd "service nginx force-reload"
+        --key-file /usr/local/nginx/conf/ssl/onmp.ooo.key \
+        --fullchain-file /usr/local/nginx/conf/ssl/onmp.ooo.cer \
+        --reloadcmd "service nginx force-reload"
 ```
 
 指定域名，指定证书保存目录，我这里设置在 `/usr/local/nginx/conf/ssl/`，指定 Nginx 重载命令，如果签发的不是 ECC 证书，把 `--ecc` 参数去掉

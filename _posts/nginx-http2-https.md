@@ -4,7 +4,7 @@ date: 2018-04-17 20:46:56
 tags: 
 - nginx
 - https
-- web优化
+- web
 categories: 教程 
 cover_img: https://pic.zhih.me/blog/posts/nginx-http2-https/cover.jpg
 description: nginx配置HTTPS教程，教你如何开启http2和服务器推送，加速你的网站，以我这个博客为例，即使VPS每秒只能跑128kb的资源，也能快速的打开网站，很多人说做产品要追求用户体验，作为一个用户，我认为一个网站最重要的就是打开的速度。所以在自己搭网站的时候，一直痴心于提高网站的速度...

@@ -2,7 +2,9 @@
 title: ZeroTier内网穿透教程
 cover_img: https://pic.zhih.me/blog/posts/zerotier-getting-started/cover.jpg
 date: 2018-12-28 18:39:41
-tags: Linux
+tags: 
+- Linux
+- 内网穿透
 categories: 教程
 description: 使用ZeroTier来内网穿透，在外地也能访问家里或公司里的设备，让网络设备异地组网，实现在跨局域网或跨广域网的互相访问
 keywords: linux, 内网穿透, 局域网, DDNS, FRP, Ngrok
@@ -37,7 +39,7 @@ ld_json_img: https://pic.zhih.me/blog/posts/zerotier-getting-started/android-tes
 
 ## 基本原理介绍
 
-说白了就是 P2P(Peer to Peer)，而且运行方式很像 DNS(关于 DNS 可以看[这里](https://zhih.me/how-the-web-works/#DNS-%E6%9F%A5%E8%AF%A2))
+说白了就是 P2P(Peer to Peer)，而且组织方式很像 DNS(关于 DNS 可以看[这里](https://zhih.me/how-the-web-works/#DNS-%E6%9F%A5%E8%AF%A2))
 
 根服务器 R 记录了路径信息，设备 A 能通过**ZeroTier唯一地址标识**找到需要连接的设备 B
 
@@ -49,7 +51,7 @@ ld_json_img: https://pic.zhih.me/blog/posts/zerotier-getting-started/android-tes
 4. A 和 B 获取它们的会合消息并尝试相互发送测试消息，可能会对 NAT 或状态防火墙进行穿透。如果这样可以建立直接链路，则不再需要中继。
 5. 如果无法建立直接路径，则通信可以继续中继(速度慢)
 
-ZeroTier 官方搭建了一个行星根服务器叫做地球 Earth，行星根服务器唯一的且是免费的，它记录了所有的路径信息，一般情况下大家都只直接用的这个。除此之外还有有 12 个遍布全球的根服务器，这些是收费的服务。所以如果使用免费套餐，连接时的延迟可能会很高，另外由于 Earth 在国外，一些不确定因素可能会影响到使用。考虑到网络的不确定性，ZeroTier 能自己创建根服务器月球 Moons，这样就能在大局域网中得到更好的体验了。
+ZeroTier 官方搭建了一个行星根服务器叫做地球 Earth，行星根服务器唯一的且是免费的，它记录了所有的路径信息，一般情况下大家都直接用的这个。除此之外还有 12 个遍布全球的根服务器，这些是收费的服务。所以如果使用免费套餐，连接时的延迟可能会很高，另外由于 Earth 在国外，一些不确定因素可能会影响到使用。考虑到网络的不确定性，ZeroTier 能自己创建根服务器月球 Moons，这样就能在大局域网中得到更好的体验了。
 
 ## 安装
 
@@ -122,7 +124,7 @@ zerotier-cli listnetworks
 
 ## 结语
 
-目前 IPv6 还没得到普及，虽然我这里已经能有 IPv6 地址并且能 IPv6 站点了，奈何不是固定 IP，也不知道哪时才能人手一个独立 IP。就目前情况来看，使用 ZeroTier 来做内网穿透还是不错的，使用门槛较低，可用性也还行，值得一试。 
+目前 IPv6 还没得到普及，虽然我这里已经能有 IPv6 地址并且能 IPv6 站点了，奈何不是固定 IP，也不知道哪时才能人手一个固定 IP。就目前情况来看，使用 ZeroTier 来做内网穿透还是不错的，使用门槛较低，可用性也还行，值得一试。 
 
 >本文章发表于底噪博客 https://zhih.me , 转载请注明
 
