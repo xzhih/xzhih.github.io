@@ -8,6 +8,78 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/website-darkmode-on-macos/</loc>
+        <lastmod>2019-03-27T04:54:38.558Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/zerotier-getting-started/</loc>
+        <lastmod>2019-03-27T04:46:53.686Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/syncthing-the-best/</loc>
+        <lastmod>2019-03-27T04:46:53.683Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/pyenv-usage/</loc>
+        <lastmod>2019-03-27T04:46:53.680Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/one-key-hidpi/</loc>
+        <lastmod>2019-03-27T04:46:53.668Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/make-macos-better/</loc>
+        <lastmod>2019-03-27T04:46:53.665Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/macos-mount-ntfs-ext/</loc>
+        <lastmod>2019-03-27T04:46:53.661Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/hackintosh-install-guide/</loc>
+        <lastmod>2019-03-27T04:46:53.652Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/dell-7460-7560-hackintosh/</loc>
+        <lastmod>2019-03-27T04:46:53.639Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/acme-sh-guide/</loc>
         <lastmod>2019-03-16T16:52:38.579Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -16,32 +88,8 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/dell-7460-7560-hackintosh/</loc>
-        <lastmod>2019-03-13T20:35:26.026Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/https://mp.weixin.qq.com/s/j1peUPif3e6LgsH7iFEKaQ#a/</loc>
         <lastmod>2019-03-01T02:17:47.962Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/one-key-hidpi/</loc>
-        <lastmod>2019-02-27T12:22:23.597Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/make-macos-better/</loc>
-        <lastmod>2019-01-21T17:33:44.194Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -80,14 +128,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/zerotier-getting-started/</loc>
-        <lastmod>2018-12-29T08:51:02.069Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/onmp-installation/</loc>
         <lastmod>2018-12-25T11:52:30.842Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -96,24 +136,8 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/syncthing-the-best/</loc>
-        <lastmod>2018-12-18T18:00:49.680Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/my-weapp-topmov/</loc>
         <lastmod>2018-12-18T17:58:18.802Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/macos-mount-ntfs-ext/</loc>
-        <lastmod>2018-12-18T17:57:04.128Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -130,14 +154,6 @@
     <url>
         <loc>https://zhih.me/hexo-casper-usage/</loc>
         <lastmod>2018-12-18T17:56:02.430Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/hackintosh-install-guide/</loc>
-        <lastmod>2018-12-18T17:55:28.824Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -170,14 +186,6 @@
     <url>
         <loc>https://zhih.me/format-Upan-partition/</loc>
         <lastmod>2018-12-14T16:45:21.081Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/pyenv-usage/</loc>
-        <lastmod>2018-12-14T16:41:00.640Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
