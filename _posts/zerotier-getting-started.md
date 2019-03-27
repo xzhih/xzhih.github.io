@@ -91,7 +91,7 @@ Windows、macOS、Linux、iOS、Android、QNAP、Synology、西数 MyCloud NAS�
 
 **电脑**
 
-![MacOS](https://pic.zhih.me/blog/posts/zerotier-getting-started/macos-join.jpg)
+![macOS](https://pic.zhih.me/blog/posts/zerotier-getting-started/macos-join.jpg)
 
 **路由器**
 

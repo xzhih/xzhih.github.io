@@ -1,17 +1,17 @@
 ---
-title: MacOS读写NTFS，及EXT分区格式化和挂载
+title: macOS读写NTFS，及EXT分区格式化和挂载
 date: 2018-06-01 06:09:18
-tags: MacOS
+tags: macOS
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/macos-mount-ntfs-ext/cover.jpg 
-description: 有时候需要在MacOS读写NTFS分区，但是系统默认只能读取不能写入，我这里使用的是osxfuse，因为它不仅能支持NTFS，还支持Ext等其他文件系统，在MacOS上挂载NTFS和Ext分区，在MacOS上格式化Exts分区
-keywords: MacOS 读写 NTFS，MacOS 挂载 NTFS, MacOS 挂载 Ext, MacOS 格式化 Ext, osxfuse, ntfs-3g
+description: 有时候需要在macOS读写NTFS分区，但是系统默认只能读取不能写入，我这里使用的是osxfuse，因为它不仅能支持NTFS，还支持Ext等其他文件系统，在macOS上挂载NTFS和Ext分区，在macOS上格式化Exts分区
+keywords: macOS 读写 NTFS，macOS 挂载 NTFS, macOS 挂载 Ext, macOS 格式化 Ext, osxfuse, ntfs-3g
 ld_json_img: https://pic.zhih.me/blog/posts/macos-mount-ntfs-ext/panes.jpg
 ---
 
 ## 引言
 
-有时候需要在 MacOS 读写 NTFS 分区，但是系统默认只能读取不能写入，修改 fstab 和使用 Paragon NTFS 软件都可以实现读写，而我这里使用的是 osxfuse，因为它不仅能支持 NTFS, 还支持 Ext 等其他文件系统
+有时候需要在 macOS 读写 NTFS 分区，但是系统默认只能读取不能写入，修改 fstab 和使用 Paragon NTFS 软件都可以实现读写，而我这里使用的是 osxfuse，因为它不仅能支持 NTFS, 还支持 Ext 等其他文件系统
 
 ![panes](https://pic.zhih.me/blog/posts/macos-mount-ntfs-ext/panes.jpg)
 
@@ -19,7 +19,7 @@ ld_json_img: https://pic.zhih.me/blog/posts/macos-mount-ntfs-ext/panes.jpg
 
 ## 安装 osxfuse
 
-`FUSE for OS X` 是用在 MacOS 上的第三方文件系统扩展，地址：https://github.com/osxfuse/osxfuse/wiki
+`FUSE for OS X` 是用在 macOS 上的第三方文件系统扩展，地址：https://github.com/osxfuse/osxfuse/wiki
 
 使用 [homebrew](https://brew.sh/) 安装
 
@@ -33,7 +33,7 @@ brew cask install osxfuse
 
 ## 读写 NTFS 分区
 
-让 MacOS 读写 NTFS 需要安装 ntfs-3g
+让 macOS 读写 NTFS 需要安装 ntfs-3g
 
 ```bash
 brew install ntfs-3g
@@ -58,7 +58,7 @@ sudo ntfs-3g /dev/disk4s1 ~/Desktop/UDISK -o allow_other
 
 ### 自动挂载
 
-我们知道，MacOS 开机时会自动挂载 NTFS 分区，但是只能读取
+我们知道，macOS 开机时会自动挂载 NTFS 分区，但是只能读取
 
 安装 ntfs-3g 后，我们需要让新的 mount_ntfs 替换系统自带的版本，实现写入
 

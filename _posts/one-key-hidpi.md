@@ -1,13 +1,13 @@
 ---
-title: 一键开启MacOS HiDPI
+title: 一键开启macOS HiDPI
 date: 2018-04-03 05:01:09
 tags: 
 - shell
-- MacOS
+- macOS
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/one-key-hidpi/cover.jpg
 description: 为中低分辨率的屏幕开启HiDPI选项，并且具有原生的HiDPI设置，不需要RDM软件即可在系统显示器设置中设置，作为一个黑苹果用户，从第一视觉上最重要的就是屏幕了，当然自带的屏幕素质没法改变，除非换屏了，然而换屏又违背了省钱的初衷，于是只能通过UI上的改变来提升体验了
-keywords: MacOS, shell, HiDPI, 黑苹果
+keywords: macOS, shell, HiDPI, 黑苹果
 ld_json_img: https://pic.zhih.me/blog/posts/one-key-hidpi/hidpi-setting.jpg
 ---
 
@@ -21,7 +21,7 @@ ld_json_img: https://pic.zhih.me/blog/posts/one-key-hidpi/hidpi-setting.jpg
 
  此脚本的目的是为中低分辨率的屏幕开启 HiDPI 选项，并且具有原生的 HiDPI 设置，不需要 RDM 软件即可在系统显示器设置中设置
 
-MacOS 的 dpi 机制和 win 下不一样，比如 1080p 的屏幕在 win 下有 125%、150% 这样的缩放选项，而同样的屏幕在 MacOS 下，缩放选项里只是单纯的调节分辨率，这就使得在默认分辨率下字体和 UI 看起来很小，降低分辨率又显得模糊。
+macOS 的 dpi 机制和 win 下不一样，比如 1080p 的屏幕在 win 下有 125%、150% 这样的缩放选项，而同样的屏幕在 macOS 下，缩放选项里只是单纯的调节分辨率，这就使得在默认分辨率下字体和 UI 看起来很小，降低分辨率又显得模糊。
 
 同时，此脚本也可以通过注入修补后的 EDID 修复闪屏，或者睡眠唤醒后的闪屏问题，当然这个修复因人而异
 

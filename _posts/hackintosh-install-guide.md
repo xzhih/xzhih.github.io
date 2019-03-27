@@ -3,11 +3,11 @@ title: 黑苹果安装教程
 date: 2018-03-31 19:42:54
 tags: 
 - hackintosh
-- MacOS
+- macOS
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/hackintosh-install-guide/cover.jpg
 description: 详细的黑苹果安装教程(视频加文字教程)，提供所有工具。黑果安装的教程大同小异，就是各个机型的配置不一样，从而导致EFI不一样，理论上讲，配置和燃7000相同或相近的机器都能按照这个教程安装好，其他机型也可以在使用我收集的EFI ...
-keywords: hackintosh, MacOS, 黑苹果, dell, 燃7000
+keywords: hackintosh, macOS, 黑苹果, dell, 燃7000
 ld_json_img: https://pic.zhih.me/blog/posts/hackintosh-install-guide/抹盘.jpg
 ---
 
@@ -32,7 +32,7 @@ YouTube：https://youtu.be/IZCF3E_oQB8
 
 分区精灵 http://www.diskgenius.cn
 
-黑果小兵的 [MacOS 镜像](https://zhih.me/hackintosh/#/OS-images)
+黑果小兵的 [macOS 镜像](https://zhih.me/hackintosh/#/OS-images)
 
 镜像写入工具：[Etcher](https://www.balena.io/etcher/)
 
@@ -44,7 +44,7 @@ YouTube：https://youtu.be/IZCF3E_oQB8
 
 ![ESP分区](https://pic.zhih.me/blog/posts/hackintosh-install-guide/ESP分区.jpg)
 
-分出你想要装 MacOS 的分区，大小你自己定，格式随便，因为安装时要抹盘
+分出你想要装 macOS 的分区，大小你自己定，格式随便，因为安装时要抹盘
 
 ## 3. 写入镜像
 
@@ -103,23 +103,23 @@ YouTube：https://youtu.be/IZCF3E_oQB8
 
 ![clover启动设置](https://pic.zhih.me/blog/posts/hackintosh-install-guide/clover启动设置.jpg)
 
-返回选择 MacOS 安装引导项
+返回选择 macOS 安装引导项
 
 ### 抹盘
 
-以上不出意外，就能看到 MacOS 的恢复模式了
+以上不出意外，就能看到 macOS 的恢复模式了
 
 进入磁盘工具
 
-选择你要安装到的分区，点击抹掉，选择格式为 `MacOS扩展（日志式）`，抹掉
+选择你要安装到的分区，点击抹掉，选择格式为 `macOS扩展（日志式）`，抹掉
 
 ![抹盘](https://pic.zhih.me/blog/posts/hackintosh-install-guide/抹盘.jpg)
 
 抹盘出现错误的，一般是分区所在硬盘的 ESP 分区不足 200M 导致的
 
-### 安装 MacOS
+### 安装 macOS
 
-退出磁盘工具，选择安装 MacOS
+退出磁盘工具，选择安装 macOS
 
 之后就能正常安装了，具体的我就不上图了，想看过程就去看视频版的吧
 

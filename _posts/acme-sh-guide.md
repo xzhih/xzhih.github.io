@@ -59,7 +59,7 @@ acme.sh --issue -d onmp.ooo \
 acme.sh --ecc --installcert -d onmp.ooo \
         --key-file /usr/local/nginx/conf/ssl/onmp.ooo.key \
         --fullchain-file /usr/local/nginx/conf/ssl/onmp.ooo.cer \
-        --reloadcmd "service nginx force-reload"
+        --reloadcmd "service nginx restart"
 ```
 
 指定域名，指定证书保存目录，我这里设置在 `/usr/local/nginx/conf/ssl/`，指定 Nginx 重载命令，如果签发的不是 ECC 证书，把 `--ecc` 参数去掉

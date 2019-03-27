@@ -5,7 +5,7 @@ date: 2019-02-28 18:11:27
 categories: 影评
 description: 最近卡梅隆的改编自漫画《铳梦》的电影《阿丽塔：战斗天使》上映了
 keywords: 铳梦, 阿丽塔：战斗天使, 卡梅隆翻车, 阿丽塔, 2019最值得期待的外语电影
-permalink: https://mp.weixin.qq.com/s?src=11&timestamp=1551349463&ver=1456&signature=26zEiL4i8ct-ylqHGZ-N4aySLeSWnIg2ZcyJxLlPRcsv9zADvQecyAvnAUgNBpo4Y-*lckeKo65kRFKbBZD0GFj5NImrHQqs-CgTHWst7OyKvrh9VnZcdcWa8rBKgQBf&new=1
+permalink: https://mp.weixin.qq.com/s/j1peUPif3e6LgsH7iFEKaQ#a
 ---
 
 《阿凡达》到现在已经有10年的了，当年那令人震撼的3D效果、逼真的场景开创了新3D时，并且仍是影史最高票房，全球票房27.88亿美元。

@@ -1,11 +1,11 @@
 ---
 title: Syncthing就是我要的同步备份软件
 date: 2018-06-13 16:19:35
-tags: MacOS
+tags: macOS
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/syncthing-the-best/cover.jpg
 description: 多设备同步解决方案syncthing，极简可靠且易用的开源同步软件，数据无价，平时不注意备份，电脑突然翻车就追悔莫及啦，最开始的时候，我在路由器上开启Samba，又因为它们的网络不理想，就又放弃使用了
-keywords: syncthing, 文件备份, NAS, MacOS 备份, 文件同步
+keywords: syncthing, 文件备份, NAS, macOS 备份, 文件同步
 ld_json_img: https://pic.zhih.me/blog/posts/syncthing-the-best/end.jpg
 ---
 
@@ -52,9 +52,9 @@ Windows，Mac，Linux 和安卓手机可以在这里下载有 GUI 界面的程�
 
 其他方法可以自己决定，我是直接下载安装包命令行启动的
 
-### 在 MacOS 上安装
+### 在 macOS 上安装
 
-我用的是 MacOS，可以直接使用 homebrew 安装启动，并且可以开机自动启动，你也可以到这里 [QSyncthingTray](https://github.com/sieren/QSyncthingTray/releases) 下载 MacOS 的 GUI 版
+我用的是 macOS，可以直接使用 homebrew 安装启动，并且可以开机自动启动，你也可以到这里 [QSyncthingTray](https://github.com/sieren/QSyncthingTray/releases) 下载 macOS 的 GUI 版
 
 ```bash
 brew install syncthing

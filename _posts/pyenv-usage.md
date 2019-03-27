@@ -3,16 +3,16 @@ title: 使用Pyenv 管理PY的版本
 date: 2018-04-05 22:34:12
 tags: 
 - Python
-- MacOS
+- macOS
 categories: 教程
 cover_img: https://pic.zhih.me/blog/posts/pyenv-usage/cover.jpg
-description: 教你如何使用 Pyenv 管理 MacOS 上的 Python 版本，在MacOS上python多版本共存，互不干扰、相互独立，一个命令切换
-keywords: Python, MacOS, Pyenv
+description: 教你如何使用 Pyenv 管理 macOS 上的 Python 版本，在macOS上python多版本共存，互不干扰、相互独立，一个命令切换
+keywords: Python, macOS, Pyenv
 ---
 
 ## 引言
 
-前几天使用 pip 安装腾讯云 COS 的命令行工具 [coscmd](https://github.com/tencentyun/coscmd) 的时候，MacOS 自带的 Python 和 pip 让我觉得不爽。
+前几天使用 pip 安装腾讯云 COS 的命令行工具 [coscmd](https://github.com/tencentyun/coscmd) 的时候，macOS 自带的 Python 和 pip 让我觉得不爽。
 
 顺便装一下逼，上面提到的 [coscmd](https://github.com/tencentyun/coscmd) 我提交了几行代码，得到了 merge ，😏😏**我特么也是给腾讯提交过代码的人**😏😏。
 
