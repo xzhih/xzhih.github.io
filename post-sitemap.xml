@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/how-the-web-works/</loc>
+        <lastmod>2019-03-28T11:39:17.843Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/test/</loc>
+        <lastmod>2019-03-28T00:46:08.345Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/website-darkmode-on-macos/</loc>
-        <lastmod>2019-03-27T04:54:38.558Z</lastmod>
+        <lastmod>2019-03-27T05:05:49.953Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -114,14 +130,6 @@
     <url>
         <loc>https://zhih.me/make-your-website-support-tls1-3/</loc>
         <lastmod>2019-01-21T14:46:15.599Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/how-the-web-works/</loc>
-        <lastmod>2019-01-21T14:46:15.586Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
