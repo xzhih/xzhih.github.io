@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/one-key-hidpi/</loc>
+        <lastmod>2019-08-06T13:38:01.345Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/website-darkmode-on-macos/</loc>
-        <lastmod>2019-06-22T04:32:08.865Z</lastmod>
+        <lastmod>2019-06-22T04:32:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -25,151 +33,7 @@
 
     <url>
         <loc>https://zhih.me/dell-7460-7560-hackintosh/</loc>
-        <lastmod>2019-04-22T11:28:08.136Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/make-macos-better/</loc>
-        <lastmod>2019-04-22T06:08:26.771Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/zerotier-getting-started/</loc>
-        <lastmod>2019-04-22T06:08:26.768Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/syncthing-the-best/</loc>
-        <lastmod>2019-04-22T06:08:26.762Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/pyenv-usage/</loc>
-        <lastmod>2019-04-22T06:08:26.760Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/Padavan-entware/</loc>
-        <lastmod>2019-04-22T06:08:26.757Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/onmp-installation/</loc>
-        <lastmod>2019-04-22T06:08:26.755Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/one-key-hidpi/</loc>
-        <lastmod>2019-04-22T06:08:26.751Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/ngx-lua-waf/</loc>
-        <lastmod>2019-04-22T06:08:26.749Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/nginx-http2-https/</loc>
-        <lastmod>2019-04-22T06:08:26.746Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/my-weapp-topmov/</loc>
-        <lastmod>2019-04-22T06:08:26.743Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/Merlin-entware/</loc>
-        <lastmod>2019-04-22T06:08:26.739Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/make-your-website-support-tls1-3/</loc>
-        <lastmod>2019-04-22T06:08:26.736Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/macos-mount-ntfs-ext/</loc>
-        <lastmod>2019-04-22T06:08:26.733Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/lnmp-on-128m-ram-vps/</loc>
-        <lastmod>2019-04-22T06:08:26.730Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/LEDE-entware/</loc>
-        <lastmod>2019-04-22T06:08:26.728Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/hexo-casper-usage/</loc>
-        <lastmod>2019-04-22T06:08:26.721Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/hackintosh-install-guide/</loc>
-        <lastmod>2019-04-22T06:08:26.717Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/format-Upan-partition/</loc>
-        <lastmod>2019-04-22T06:08:26.715Z</lastmod>
+        <lastmod>2019-04-22T11:28:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -177,7 +41,143 @@
 
     <url>
         <loc>https://zhih.me/https://mp.weixin.qq.com/s/j1peUPif3e6LgsH7iFEKaQ#a/</loc>
-        <lastmod>2019-04-22T06:08:26.708Z</lastmod>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/LEDE-entware/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/Merlin-entware/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/Padavan-entware/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/format-Upan-partition/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/hackintosh-install-guide/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/hexo-casper-usage/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/lnmp-on-128m-ram-vps/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/macos-mount-ntfs-ext/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/make-macos-better/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/make-your-website-support-tls1-3/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/my-weapp-topmov/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/nginx-http2-https/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/ngx-lua-waf/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/onmp-installation/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/pyenv-usage/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/syncthing-the-best/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/zerotier-getting-started/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -185,7 +185,7 @@
 
     <url>
         <loc>https://zhih.me/acme-sh-guide/</loc>
-        <lastmod>2019-04-22T06:03:57.645Z</lastmod>
+        <lastmod>2019-04-22T06:03:57.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
