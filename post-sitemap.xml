@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/hexo-casper-usage/</loc>
+        <lastmod>2019-08-21T18:53:48.620Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/website-darkmode-on-macos/</loc>
         <lastmod>2019-08-08T14:03:47.734Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -81,14 +89,6 @@
 
     <url>
         <loc>https://zhih.me/hackintosh-install-guide/</loc>
-        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/hexo-casper-usage/</loc>
         <lastmod>2019-04-22T06:08:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
