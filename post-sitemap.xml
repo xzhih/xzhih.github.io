@@ -9,7 +9,7 @@
 
     <url>
         <loc>https://zhih.me/hexo-casper-usage/</loc>
-        <lastmod>2019-08-21T18:53:48.620Z</lastmod>
+        <lastmod>2019-08-24T17:52:22.813Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -56,6 +56,14 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/Padavan-entware/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/LEDE-entware/</loc>
         <lastmod>2019-04-22T06:08:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -65,14 +73,6 @@
 
     <url>
         <loc>https://zhih.me/Merlin-entware/</loc>
-        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/Padavan-entware/</loc>
         <lastmod>2019-04-22T06:08:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -120,7 +120,7 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/my-weapp-topmov/</loc>
+        <loc>https://zhih.me/make-your-website-support-tls1-3/</loc>
         <lastmod>2019-04-22T06:08:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -128,7 +128,7 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/make-your-website-support-tls1-3/</loc>
+        <loc>https://zhih.me/my-weapp-topmov/</loc>
         <lastmod>2019-04-22T06:08:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
