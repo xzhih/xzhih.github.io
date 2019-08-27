@@ -56,14 +56,6 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/Padavan-entware/</loc>
-        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/LEDE-entware/</loc>
         <lastmod>2019-04-22T06:08:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -73,6 +65,14 @@
 
     <url>
         <loc>https://zhih.me/Merlin-entware/</loc>
+        <lastmod>2019-04-22T06:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/Padavan-entware/</loc>
         <lastmod>2019-04-22T06:08:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
