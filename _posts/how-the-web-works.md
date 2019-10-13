@@ -141,7 +141,7 @@ https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ### 请求方法
 
 | 方法 | 描述 |
-| --- | --- |
+| ---- | ---- |
 | GET | 请求指定的页面信息，并返回实体主体 |
 | HEAD | 类似于get请求，只不过返回的响应中没有具体的内容，用于获取报头 |
 | POST | 向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST请求可能会导致新的资源的建立和/或已有资源的修改 |
@@ -273,17 +273,17 @@ content-length: 589
 
 浏览器自上而下的解析 HTML 文档，并在解析的同时构建 DOM（文档对象模型） 树，DOM 树里有各个标签的属性和它们之间的关系
 
-```html
+```
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link href="style.css" rel="stylesheet">
-	<title>Critical Path</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <title>Critical Path</title>
 </head>
 <body>
-	<p>Hello <span>web performance</span> students!</p>
-	<div><img src="awesome-photo.jpg"></div>
+    <p>Hello <span>web performance</span> students!</p>
+    <div><img src="awesome-photo.jpg"></div>
 </body>
 </html>
 ```
@@ -297,21 +297,25 @@ content-length: 589
 
 在上面的 HTML 中，`<head>` 里有个外部样式表 `style.css`，HTML 解析到这里时会向服务器请求资源，得到这样的资源：
 
-```css
-body { 
-	font-size: 16px
+```
+body {
+    font-size: 16px
 }
-p { 
-	font-weight: bold 
+
+p {
+    font-weight: bold 
 }
-span { 
-	color: red 
+
+span {
+    color: red 
 }
-p span { 
-	display: none 
+
+p span {
+    display: none 
 }
-img { 
-	float: right 
+
+img {
+    float: right 
 }
 ```
 和处理 HTML 类似，浏览器处理 CSS 构建了 CSSOM
@@ -371,3 +375,4 @@ https://github.com/alex/what-happens-when
 知识就是力量 -- 培根
 
 >本文章发表于底噪博客 https://zhih.me , 转载请注明
+>直接偷的人，你打球真蔡

@@ -38,7 +38,7 @@ macOS 的 dpi 机制和 win 下不一样，比如 1080p 的屏幕在 win 下有 
 在终端输入以下命令回车即可
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi-zh.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
 ```
 
 ![运行](https://pic.zhih.me/blog/posts/one-key-hidpi/run.jpg)
@@ -82,4 +82,5 @@ cp -r ./HIDPI/backup/* ./
 ```
 
 >本文章发表于底噪博客 https://zhih.me , 转载请注明
+>直接偷的人，你打球真蔡
 

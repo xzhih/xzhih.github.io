@@ -1,18 +1,22 @@
 ---
-title: 让你的网站支持macOS的深色模式
+title: 让你的网站支持macOS和IOS的深色模式
 cover_img: https://pic.zhih.me/blog/posts/website-darkmode-on-macos/cover.jpg
 date: 2019-03-26 12:52:01
 tags: 
 - web
 - macOS
 categories: WEB
-description: macOS Mojave 深色模式现已支持网页，本博客第一时间进行了适配
+description: macOS Mojave 深色模式现已支持网页，本博客第一时间进行了适配，使用方式很简单，只需要一个媒体查询即可
 keywords: 深色模式, Dark Mode, macOS Mojave, prefers-color-scheme, CSS, 暗黑主题
 ---
 
 ## 前言
 
 如果你在使用 macOS 10.14.4 或者之后的系统，在系统内开启深色模式，打开 Safari 浏览器，你会发现我的博客变成了暗黑版本。
+
+<p class="success">本文发表于2019-03-26，而在2019-06-04凌晨，Apple 发布了 IOS 13，本文所说的方法也同时适用于 IOS Safari</p>
+
+<p class="success">2019-08-08 今天突然发现 Chrome 也支持了</p>
 
 深色模式（Dark Mode）是 Apple 在 macOS Mojave 上全新推出的一项功能，macOS 内置的 App 能完美支持，凭借着易用的接口，越来越多的第三方 App 已经进行了适配，可大家使用最多的浏览器却没能很好的支持，虽然你可以使用 Safari 的阅读视图浏览深色模式下的页面内容，但体验终归没有网站自身支持的好。
 
@@ -30,7 +34,7 @@ Value:  no-preference | light | dark
 
 - no-preference：无颜色偏好
 - light：浅色模式
-- dark: 深色模式
+- dark：深色模式
 
 和你是用的其他媒体查询一样，用起来很简单
 
@@ -104,4 +108,5 @@ Value:  no-preference | light | dark
 在深色模式推出之后，得到了不错的反响，我认为 IOS 13 会引入一定深色模式。另外，Windows 也有“暗”模式，相信越来越多的应用会进行这样深色模式的适配，在 macOS 10.14.4 升级之后，我在第一时间进行了博客主题更新，只有大家都用了这个新的媒体查询，才会推动其他平台和浏览器的适配，好东西值得推崇。
 
 >本文章发表于底噪博客 https://zhih.me , 转载请注明
+>直接偷的人，你打球真蔡
 

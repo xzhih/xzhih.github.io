@@ -90,4 +90,5 @@ ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](https
 [ONMP 安装教程](https://zhih.me/onmp-installation/)
 
 >本文章发表于底噪博客 https://zhih.me , 转载请注明
+>直接偷的人，你打球真蔡
 

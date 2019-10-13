@@ -286,6 +286,7 @@ git config --global credential.helper osxkeychain
 macOS 作为一个对开发者友好的系统，还有很对技巧等着大家发掘，并且每个人的习惯都是不同的，而 macOS 也容纳了大家的不同，提供了大家个性化设置的基础，相信在你的调教下，它会成为你手中的大杀器。
 
 >本文章发表于底噪博客 https://zhih.me , 转载请注明
+>直接偷的人，你打球真蔡
 
 
 

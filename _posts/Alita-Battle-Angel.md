@@ -199,3 +199,6 @@ permalink: https://mp.weixin.qq.com/s/j1peUPif3e6LgsH7iFEKaQ#a
 特别是在今天，人们进入影院选择看科幻电影，就是为了寻找感官上丰富的刺激。
 
 在这一点上，《阿丽塔》作为电影工业的顶级产品，可谓是诚意满满。
+
+>本文章发表于底噪博客 https://zhih.me , 转载请注明
+>直接偷的人，你打球真蔡

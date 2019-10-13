@@ -254,6 +254,7 @@ SSL Server Test：https://www.ssllabs.com/ssltest/index.html
 技术的升级迭代潜移默化的影响着大家的生活，从 1960 年 Ted Nelson 构思 HTTP 协议，到 1996 年 HTTP/1.0 被正式作为标准，再到 1997 年公布并一直沿用至今的 HTTP/1.1，可以说它是人类互联网的基石，2015 年发布了 HTTP2，它为网页性能而生，他以更快，更强，更安全的特性，逐渐被的被各大公司使用，相信全面普及 HTTPS/HTTP2 不会有太长的时间。
 
 >本文章发表于底噪博客 https://zhih.me , 转载请注明
+>直接偷的人，你打球真蔡
 
 
 

@@ -61,7 +61,7 @@ deb-src http://mirrors.asnet.am/dotdeb/ jessie all
 
 GPG主要是实现官方发布的包的签名。
 
-```bash
+```
 wget https://www.dotdeb.org/dotdeb.gpg
 sudo apt-key add dotdeb.gpg
 ```
@@ -143,4 +143,4 @@ apt-get install mysql-client mysql-server -y
 这里是我的优惠链接：[https://m.do.co/c/5ddae9064d7f](https://m.do.co/c/5ddae9064d7f)，通过这个链接注册，你可以得到10美元用来购买vps。
 
 >本文章发表于底噪博客 https://zhih.me , 转载请注明
-
+>直接偷的人，你打球真蔡

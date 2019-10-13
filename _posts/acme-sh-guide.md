@@ -77,3 +77,4 @@ acme.sh --upgrade --auto-upgrade
 证书已经获取并且可以自动更新了，具体安装方法看 [编译Nginx支持TLS1.3](https://zhih.me/make-your-website-support-tls1-3/) 
 
 >本文章发表于底噪博客 https://zhih.me , 转载请注明
+>直接偷的人，你打球真蔡

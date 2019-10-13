@@ -218,4 +218,4 @@ ONMP 是一个 web 环境快速安装脚本，适用于安装了 [Entware](https
 [How To Configure Routers Asus RT-N56U/RT-N65U For Entware Usage](https://bitbucket.org/padavan/rt-n56u/wiki/EN/HowToConfigureEntware)
 
 >本文章发表于底噪博客 https://zhih.me , 转载请注明
-
+>直接偷的人，你打球真蔡

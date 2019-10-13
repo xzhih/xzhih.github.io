@@ -44,6 +44,7 @@ DEMO [https://xzhih.github.io/hexo-theme-casper/](https://xzhih.github.io/hexo-t
 - Valine 评论系统
 - Baidu 链接提交、Google Analytics
 - Service Worker
+- MacOS、IOS and Android dark mode (Safari、Chrome)
 
 ## 安装方法
 
@@ -129,7 +130,7 @@ widgets:
   # 这是个简洁的主题，我认为3个就够了
 
 # 文章图片相册（点击图片可以放大）
-# https://github.com/sachinchoolur/lightgallery.js
+# https://github.com/dimsemenov/PhotoSwipe
 lightgallery: true
 
 # 懒加载
@@ -151,6 +152,7 @@ valine:
   placeholder: Just go go # comment box placeholder
   avatar: mm # gravatar style
   pageSize: 10 # pagination size
+  visitor: true # page view record
 
 # PWA 
 # 你需要在 hexo 目录的 source 文件夹里创建一个 manifest.json 文件
@@ -178,3 +180,4 @@ https://github.com/SuperKieran/hexo-generator-search-zip
 [https://github.com/TryGhost/Casper/blob/master/LICENSE](https://github.com/TryGhost/Casper/blob/master/LICENSE)
 
 >本文章发表于底噪博客 https://zhih.me , 转载请注明
+>直接偷的人，你打球真蔡
