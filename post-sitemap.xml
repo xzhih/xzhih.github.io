@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://zhih.me/one-key-hidpi/</loc>
+        <lastmod>2019-11-30T11:24:08.822Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://zhih.me/hexo-casper-usage/</loc>
         <lastmod>2019-08-24T17:52:22.813Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,14 +26,6 @@
     <url>
         <loc>https://zhih.me/website-darkmode-on-macos/</loc>
         <lastmod>2019-08-08T14:03:47.734Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://zhih.me/one-key-hidpi/</loc>
-        <lastmod>2019-08-06T13:38:01.345Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
