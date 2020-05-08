@@ -8,16 +8,8 @@
     </url>
 
     <url>
-        <loc>https://zhih.me/one-key-hidpi/</loc>
-        <lastmod>2020-01-12T00:35:35.535Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://zhih.me/dell-7460-7560-hackintosh/</loc>
-        <lastmod>2020-01-12T00:35:30.843Z</lastmod>
+        <lastmod>2020-05-08T18:12:36.597Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -25,7 +17,15 @@
 
     <url>
         <loc>https://zhih.me/hackintosh-install-guide/</loc>
-        <lastmod>2020-01-12T00:35:30.843Z</lastmod>
+        <lastmod>2020-05-08T18:11:48.244Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://zhih.me/one-key-hidpi/</loc>
+        <lastmod>2020-05-08T18:11:41.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
